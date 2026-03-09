@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes">
+  <title>Contact Us | GDS Garage Doors & Openers Ottawa</title>
+  <meta name="description" content="Contact GDS Ottawa for garage door repair, installation &amp; maintenance. Call or text 343-777-8893, email, or use our form. Same-day service, free estimates. Open 9 AM – 9 PM daily.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Open+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "GDS - Garage Doors & Openers Ottawa",
+    "telephone": "+1-343-777-8893",
+    "email": "gdsottawa@gmail.com",
+    "url": "https://garagedoorsolutionsottawa.ca",
+    "address": { "@type": "PostalAddress", "addressLocality": "Ottawa", "addressRegion": "ON", "addressCountry": "CA" },
+    "openingHoursSpecification": [
+      { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"], "opens": "09:00", "closes": "21:00" }
+    ],
+    "areaServed": { "@type": "GeoCircle", "geoMidpoint": { "@type": "GeoCoordinates", "latitude": 45.4215, "longitude": -75.6972 }, "geoRadius": "50000" }
+  }
+  </script>
+  <style>
+    :root { --primary-blue: #0066cc; --primary-dark: #1a1a1a; --accent-orange: #ff6600; --danger: #dc3545; --success: #25D366; --text-dark: #333; --text-light: #666; --light-gray: #f5f5f5; --medium-gray: #e0e0e0; --white: #fff; }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body { font-family: 'Open Sans', Arial, sans-serif; line-height: 1.6; color: var(--text-dark); background: #fff; }
+
+    .landing-header { position: sticky; top: 0; z-index: 100; background: rgba(255,255,255,0.98); box-shadow: 0 2px 20px rgba(0,0,0,0.08); padding: 12px 24px; }
+    .landing-header-inner { max-width: 1200px; margin: 0 auto; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 16px; }
+    .landing-logo { height: 48px; width: auto; display: block; }
+    .landing-logo-link { display: inline-block; text-decoration: none; }
+    .landing-header-nav { display: flex; align-items: center; gap: 6px; flex-wrap: wrap; }
+    .landing-header-nav a { text-decoration: none; font-family: 'Montserrat', system-ui, sans-serif; font-size: 0.9rem; font-weight: 600; color: #1a1a1a; padding: 8px 14px; border-radius: 8px; transition: all 0.25s ease; }
+    .landing-header-nav a:hover { background: rgba(0,102,204,0.1); color: #0066cc; }
+    .nav-dropdown { position: relative; }
+    .nav-dropdown-trigger { display: inline-flex; align-items: center; gap: 4px; text-decoration: none; font-family: 'Montserrat', system-ui, sans-serif; font-size: 0.9rem; font-weight: 600; color: #1a1a1a; padding: 8px 14px; border-radius: 8px; background: none; border: none; cursor: pointer; }
+    .nav-dropdown-trigger:hover { background: rgba(0,102,204,0.1); color: #0066cc; }
+    .nav-dropdown-trigger::after { content: '\25BC'; font-size: 0.6rem; opacity: 0.8; }
+    .nav-dropdown-service-area .nav-dropdown-trigger::after { content: none; }
+    .nav-dropdown-service-area .nav-dropdown-trigger span { font-size: 0.6rem; opacity: 0.8; margin-left: 2px; }
+    .nav-dropdown-menu { position: absolute; top: 100%; left: 0; min-width: 260px; background: white; border-radius: 12px; box-shadow: 0 10px 40px rgba(0,0,0,0.15); padding: 8px 0; margin-top: 4px; opacity: 0; visibility: hidden; transform: translateY(-8px); transition: opacity 0.25s ease, transform 0.25s ease, visibility 0.25s; z-index: 200; border: 1px solid rgba(0,0,0,0.08); }
+    .nav-dropdown:hover .nav-dropdown-menu, .nav-dropdown:focus-within .nav-dropdown-menu { opacity: 1; visibility: visible; transform: translateY(0); }
+    .nav-dropdown-service-area:hover .nav-dropdown-menu, .nav-dropdown-service-area:focus-within .nav-dropdown-menu { opacity: 1; visibility: visible; transform: translateY(0); }
+    .nav-dropdown-menu.nav-dropdown-menu--scroll { max-height: 70vh; overflow-y: auto; }
+    .nav-dropdown-menu a { display: block; padding: 12px 20px; font-size: 0.9rem; color: #2b2b2b; text-decoration: none; white-space: nowrap; }
+    .nav-dropdown-menu a:hover { background: rgba(0,102,204,0.08); color: #0066cc; }
+    .landing-nav-ctas { display: flex; align-items: center; gap: 12px; flex-wrap: wrap; }
+    .landing-nav-ctas a { text-decoration: none; font-weight: 700; font-size: 0.95rem; padding: 10px 20px; border-radius: 50px; transition: all 0.3s ease; }
+    .landing-cta-phone { background: #0066cc; color: white; }
+    .landing-cta-phone:hover { background: #ff6600; transform: translateY(-2px); }
+    .landing-cta-quote { background: white; color: #0066cc; border: 2px solid #0066cc; }
+    .landing-cta-quote:hover { background: #0066cc; color: white; transform: translateY(-2px); }
+    @media (max-width: 900px) { .landing-header-nav { display: none; } .landing-header-inner .landing-nav-ctas { margin-left: auto; } }
+
+    .contact-hero { background: linear-gradient(135deg, var(--primary-blue), var(--accent-orange)); color: white; text-align: center; padding: 60px 20px; }
+    .contact-hero h1 { font-family: 'Montserrat', Arial, sans-serif; font-size: clamp(1.8rem, 4vw, 2.8rem); font-weight: 800; margin-bottom: 12px; text-shadow: 0 2px 4px rgba(0,0,0,0.2); }
+    .contact-hero p { font-size: clamp(1rem, 2vw, 1.2rem); opacity: 0.95; margin-bottom: 28px; max-width: 600px; margin-left: auto; margin-right: auto; }
+    .contact-hero .hero-btns { display: flex; gap: 16px; justify-content: center; flex-wrap: wrap; }
+    .contact-hero .hero-btn { display: inline-flex; align-items: center; gap: 8px; padding: 14px 28px; border-radius: 50px; text-decoration: none; font-weight: 700; font-size: 1rem; font-family: 'Montserrat', Arial, sans-serif; transition: all 0.3s ease; border: 3px solid transparent; }
+    .contact-hero .hero-btn-white { background: white; color: var(--primary-blue); }
+    .contact-hero .hero-btn-white:hover { background: var(--accent-orange); color: white; transform: translateY(-2px); }
+    .contact-hero .hero-btn-outline { background: transparent; color: white; border-color: white; }
+    .contact-hero .hero-btn-outline:hover { background: white; color: var(--primary-blue); transform: translateY(-2px); }
+
+    .contact-page { max-width: 1200px; margin: 0 auto; padding: 50px 20px 60px; }
+    .contact-page h2 { font-family: 'Montserrat', Arial, sans-serif; font-size: clamp(1.5rem, 3vw, 2rem); font-weight: 800; color: var(--primary-dark); margin-bottom: 20px; }
+    .contact-page h3 { font-family: 'Montserrat', Arial, sans-serif; font-size: 1.25rem; font-weight: 700; color: var(--primary-dark); margin-bottom: 12px; }
+    .contact-page p { margin-bottom: 14px; color: var(--text-dark); }
+    .contact-page a { color: var(--primary-blue); text-decoration: none; font-weight: 600; }
+    .contact-page a:hover { text-decoration: underline; }
+
+    .contact-primary { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 24px; margin-bottom: 50px; }
+    .contact-primary-card { background: white; border-radius: 16px; padding: 28px; box-shadow: 0 8px 30px rgba(0,0,0,0.1); border: 2px solid var(--medium-gray); transition: all 0.3s ease; text-align: center; }
+    .contact-primary-card:hover { border-color: var(--primary-blue); box-shadow: 0 12px 40px rgba(0,102,204,0.15); transform: translateY(-4px); }
+    .contact-primary-card .icon { font-size: 2.5rem; margin-bottom: 12px; display: block; }
+    .contact-primary-card .label { font-size: 0.9rem; color: var(--text-light); margin-bottom: 8px; text-transform: uppercase; letter-spacing: 0.5px; font-weight: 600; }
+    .contact-primary-card .value { font-family: 'Montserrat', Arial, sans-serif; font-size: 1.25rem; font-weight: 700; }
+    .contact-primary-card .value a { color: var(--primary-blue); font-size: 1.2rem; }
+    .contact-primary-card .cta { display: inline-block; margin-top: 14px; padding: 10px 22px; background: var(--primary-blue); color: white !important; border-radius: 50px; font-weight: 700; font-size: 0.95rem; transition: all 0.3s ease; }
+    .contact-primary-card .cta:hover { background: var(--accent-orange); transform: translateY(-2px); text-decoration: none !important; }
+    .contact-primary-card.whatsapp .cta { background: var(--success); }
+    .contact-primary-card.whatsapp .cta:hover { background: #128C7E; }
+
+    .contact-emergency { background: linear-gradient(135deg, var(--danger), #c82333); color: white; padding: 28px 32px; border-radius: 16px; margin-bottom: 50px; text-align: center; border: 2px solid rgba(255,255,255,0.3); }
+    .contact-emergency h2 { color: white; margin-bottom: 10px; }
+    .contact-emergency p { color: rgba(255,255,255,0.95); margin-bottom: 18px; }
+    .contact-emergency a { color: white; text-decoration: underline; font-weight: 800; font-size: 1.3rem; }
+
+    .contact-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 40px; max-width: 1000px; margin: 0 auto 50px; align-items: start; }
+    @media (max-width: 768px) { .contact-grid { grid-template-columns: 1fr; } }
+    .contact-form-card, .contact-info-card { background: white; padding: 32px; border-radius: 16px; box-shadow: 0 10px 30px rgba(0,0,0,0.1); border: 2px solid var(--medium-gray); }
+    .contact-form-card h3, .contact-info-card h3 { font-family: 'Montserrat', Arial, sans-serif; font-size: 1.4rem; color: var(--primary-dark); margin-bottom: 20px; }
+    .contact-form label { display: block; font-weight: 600; color: var(--text-dark); margin-bottom: 6px; font-size: 0.95rem; }
+    .contact-form input[type="text"], .contact-form input[type="email"], .contact-form input[type="tel"], .contact-form textarea { width: 100%; padding: 12px 16px; border: 2px solid var(--medium-gray); border-radius: 10px; font-size: 1rem; margin-bottom: 18px; font-family: inherit; }
+    .contact-form input:focus, .contact-form textarea:focus { outline: none; border-color: var(--primary-blue); }
+    .contact-form textarea { min-height: 120px; resize: vertical; }
+    .contact-form .btn-send { padding: 14px 32px; background: var(--primary-blue); color: white; border: none; border-radius: 50px; font-weight: 700; font-size: 1rem; cursor: pointer; font-family: 'Montserrat', Arial, sans-serif; transition: all 0.3s ease; }
+    .contact-form .btn-send:hover { background: var(--accent-orange); transform: translateY(-2px); }
+    .contact-detail { display: flex; align-items: flex-start; gap: 10px; margin-bottom: 12px; font-size: 0.98rem; }
+    .contact-detail strong { min-width: 90px; color: var(--primary-dark); }
+    .hours-list { list-style: none; padding: 0; margin: 0; margin-top: 12px; }
+    .hours-list li { display: flex; justify-content: space-between; padding: 8px 0; border-bottom: 1px solid var(--light-gray); font-size: 0.95rem; }
+    .hours-list .day { font-weight: 600; min-width: 40px; }
+
+    .contact-section-block { background: var(--light-gray); border-radius: 16px; padding: 36px 32px; margin-bottom: 40px; }
+    .contact-section-block h2 { margin-bottom: 16px; }
+    .contact-section-block ul { margin: 0 0 0 20px; padding: 0; }
+    .contact-section-block li { margin-bottom: 8px; }
+    .contact-section-block .service-links { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 16px; }
+    .contact-section-block .service-links a { display: inline-block; padding: 10px 18px; background: white; border: 2px solid var(--primary-blue); border-radius: 10px; font-size: 0.95rem; transition: all 0.3s ease; }
+    .contact-section-block .service-links a:hover { background: var(--primary-blue); color: white; text-decoration: none; }
+    .contact-areas-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(140px, 1fr)); gap: 10px; margin-top: 16px; }
+    .contact-areas-grid a { display: block; padding: 10px; background: white; border-radius: 8px; text-align: center; font-size: 0.9rem; border: 2px solid var(--medium-gray); transition: all 0.2s ease; }
+    .contact-areas-grid a:hover { border-color: var(--primary-blue); background: var(--primary-blue); color: white; text-decoration: none; }
+
+    .contact-what-to-expect { background: white; border: 2px solid var(--primary-blue); border-radius: 16px; padding: 32px; margin-bottom: 40px; }
+    .contact-what-to-expect ol { margin: 0 0 0 22px; padding: 0; }
+    .contact-what-to-expect li { margin-bottom: 14px; line-height: 1.6; }
+
+    .contact-map-wrap { border-radius: 16px; overflow: hidden; box-shadow: 0 10px 40px rgba(0,0,0,0.12); margin-bottom: 50px; }
+    .contact-map-wrap iframe { width: 100%; height: 400px; border: none; display: block; }
+
+    .contact-payment-note { font-size: 0.95rem; color: var(--text-light); padding: 20px; background: #fff8e6; border-radius: 12px; border-left: 4px solid var(--accent-orange); margin-bottom: 40px; }
+    .contact-social { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 20px; }
+    .contact-social a { display: inline-flex; align-items: center; gap: 8px; padding: 12px 20px; background: var(--light-gray); border-radius: 50px; font-size: 0.95rem; font-weight: 600; transition: all 0.3s ease; }
+    .contact-social a:hover { background: var(--primary-blue); color: white; text-decoration: none; }
+  </style>
+</head>
+<body>
+
+  <header class="landing-header">
+    <div class="landing-header-inner">
+      <a href="index.html" class="landing-logo-link" aria-label="GDS Ottawa Home">
+        <img src="https://img1.wsimg.com/isteam/ip/1b277bec-adfe-487a-a8c7-5e77b97e6d1d/blob-962e0d4.png/:/rs=w:104,h:104,cg:true,m/cr=w:104,h:104/qt=q:95" alt="GDS Ottawa" class="landing-logo" width="104" height="104">
+      </a>
+      <nav class="landing-header-nav" aria-label="Main navigation">
+        <a href="index.html">Home</a>
+        <div class="nav-dropdown">
+          <a href="index.html#services" class="nav-dropdown-trigger">Services</a>
+          <div class="nav-dropdown-menu">
+            <a href="garage-door-installation.html">Garage Door Installation</a>
+            <a href="garage-door-spring-repair.html">Garage Door Spring Repair</a>
+            <a href="garage-door-cable-repair.html">Garage Door Cable Repair</a>
+            <a href="garage-door-opener.html">Garage Door Opener</a>
+            <a href="garage-door-maintenance.html">Garage Door Maintenance</a>
+          </div>
+        </div>
+        <a href="faq.html">FAQ</a>
+        <div class="nav-dropdown nav-dropdown-service-area">
+          <span class="nav-dropdown-trigger" role="button" aria-haspopup="true" aria-expanded="false" tabindex="0">Service Area <span aria-hidden="true">&#9660;</span></span>
+          <div class="nav-dropdown-menu nav-dropdown-menu--scroll">
+            <a href="carp.html">Carp</a>
+            <a href="kanata.html">Kanata</a>
+            <a href="nepean.html">Nepean</a>
+            <a href="richmond.html">Richmond</a>
+            <a href="manotick.html">Manotick</a>
+            <a href="orleans.html">Orleans</a>
+            <a href="vanier.html">Vanier</a>
+            <a href="carleton-place.html">Carleton Place</a>
+            <a href="hunt-club.html">Hunt Club</a>
+            <a href="dunrobin.html">Dunrobin</a>
+            <a href="kemptville.html">Kemptville</a>
+            <a href="metcalfe.html">Metcalfe</a>
+            <a href="greely.html">Greely</a>
+            <a href="stittsville.html">Stittsville</a>
+            <a href="barrhaven.html">Barrhaven</a>
+            <a href="gloucester.html">Gloucester</a>
+            <a href="riverside-south.html">Riverside South</a>
+            <a href="findlay-creek.html">Findlay Creek</a>
+            <a href="alta-vista.html">Alta Vista</a>
+            <a href="westboro.html">Westboro</a>
+            <a href="rockcliffe-park.html">Rockcliffe Park</a>
+            <a href="embrun.html">Embrun</a>
+            <a href="russell.html">Russell</a>
+          </div>
+        </div>
+        <a href="about.html">About Us</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="blog.html">Blog</a>
+        <a href="contact-us.html">Contact Us</a>
+      </nav>
+      <div class="landing-nav-ctas">
+        <a href="tel:3437778893" class="landing-cta-phone">&#128222; 343-777-8893</a>
+        <a href="#form" class="landing-cta-quote">Get Free Quote</a>
+      </div>
+    </div>
+  </header>
+
+  <section class="contact-hero">
+    <h1>Contact GDS Ottawa</h1>
+    <p>We're here to help with garage door repair, installation, and maintenance across Ottawa and the surrounding area. Same-day service available — call, text, or send a message.</p>
+    <div class="hero-btns">
+      <a href="tel:3437778893" class="hero-btn hero-btn-white" aria-label="Call GDS Ottawa">&#128222; Call 343-777-8893</a>
+      <a href="https://wa.me/13437778893" target="_blank" rel="noopener" class="hero-btn hero-btn-outline">&#128172; WhatsApp</a>
+    </div>
+  </section>
+
+  <div class="contact-page">
+    <!-- Primary contact methods -->
+    <div class="contact-primary">
+      <div class="contact-primary-card">
+        <span class="icon" aria-hidden="true">&#128222;</span>
+        <div class="label">Phone &amp; Text</div>
+        <div class="value"><a href="tel:3437778893">343-777-8893</a></div>
+        <p style="font-size: 0.9rem; color: var(--text-light); margin-top: 6px;">Fastest way to reach us. We respond to texts and calls daily.</p>
+        <a href="tel:3437778893" class="cta">Call or Text Now</a>
+      </div>
+      <div class="contact-primary-card whatsapp">
+        <span class="icon" aria-hidden="true">&#128172;</span>
+        <div class="label">WhatsApp</div>
+        <div class="value"><a href="https://wa.me/13437778893" target="_blank" rel="noopener">Message on WhatsApp</a></div>
+        <p style="font-size: 0.9rem; color: var(--text-light); margin-top: 6px;">Send photos of your door or opener for a quicker quote.</p>
+        <a href="https://wa.me/13437778893" target="_blank" rel="noopener" class="cta">Open WhatsApp</a>
+      </div>
+      <div class="contact-primary-card">
+        <span class="icon" aria-hidden="true">&#128231;</span>
+        <div class="label">Email</div>
+        <div class="value"><a href="mailto:gdsottawa@gmail.com">gdsottawa@gmail.com</a></div>
+        <p style="font-size: 0.9rem; color: var(--text-light); margin-top: 6px;">We typically reply within 24 hours.</p>
+        <a href="mailto:gdsottawa@gmail.com" class="cta">Send Email</a>
+      </div>
+    </div>
+
+    <!-- Emergency -->
+    <div class="contact-emergency">
+      <h2>&#128680; Emergency? Door Stuck or Spring Broken?</h2>
+      <p>We offer same-day emergency service. Call or text now — we'll get you a time and honest quote right away.</p>
+      <a href="tel:3437778893">&#128222; 343-777-8893</a>
+    </div>
+
+    <!-- Guarantee strip -->
+    <div class="contact-guarantee-strip" style="text-align: center; padding: 20px 16px; margin-bottom: 32px; background: linear-gradient(135deg, #f0f7ff 0%, #fff8f0 100%); border-radius: 12px; border: 2px solid rgba(0,102,204,0.2); font-family: 'Montserrat', system-ui, sans-serif; font-weight: 700; font-size: 1rem; color: var(--primary-dark);">
+      Satisfaction guaranteed &bull; Upfront pricing &bull; Same-day service
+    </div>
+    <!-- Contact form + Info -->
+    <h2 id="form" style="text-align: center; margin-bottom: 24px;">Send Us a Message</h2>
+    <p style="text-align: center; color: var(--text-light); max-width: 600px; margin: 0 auto 12px;">Use the form below for non-urgent requests, quotes, or questions. For same-day repair, calling or texting is fastest.</p>
+    <p style="text-align: center; color: var(--text-dark); max-width: 600px; margin: 0 auto 36px; font-weight: 600;">We respond to form submissions within 2 hours during business hours; when you call or text, we'll get back same-day.</p>
+    <div class="contact-grid">
+      <div class="contact-form-card">
+        <h3>Request a quote or ask a question</h3>
+        <form class="contact-form" action="https://formspree.io/f/REPLACE_WITH_YOUR_FORMSPREE_ID" method="POST" enctype="multipart/form-data">
+          <label for="contact-name">Name <span style="color: var(--danger);">*</span></label>
+          <input type="text" id="contact-name" name="name" placeholder="Your name" required>
+          <label for="contact-email">Email <span style="color: var(--danger);">*</span></label>
+          <input type="email" id="contact-email" name="email" placeholder="your@email.com" required>
+          <label for="contact-phone">Phone</label>
+          <input type="tel" id="contact-phone" name="phone" placeholder="(613) 555-1234">
+          <label for="contact-service">Service needed</label>
+          <input type="text" id="contact-service" name="service" placeholder="e.g. Spring repair, new door, opener install">
+          <label for="contact-message">Message <span style="color: var(--danger);">*</span></label>
+          <textarea id="contact-message" name="message" placeholder="Describe your issue or request..." required></textarea>
+          <button type="submit" class="btn-send">Send Message</button>
+        </form>
+      </div>
+      <div class="contact-info-card">
+        <h3>GDS - Garage Doors &amp; Openers Ottawa</h3>
+        <p>Ottawa, ON, Canada — serving Ottawa and surrounding communities.</p>
+        <div class="contact-detail"><strong>Call or Text:</strong> <a href="tel:3437778893">343-777-8893</a></div>
+        <div class="contact-detail"><strong>Email:</strong> <a href="mailto:gdsottawa@gmail.com">gdsottawa@gmail.com</a></div>
+        <h3 style="margin-top: 28px; margin-bottom: 8px;">Hours</h3>
+        <ul class="hours-list">
+          <li><span class="day">Mon – Sun</span> <span>9:00 AM – 9:00 PM</span></li>
+        </ul>
+        <p style="margin-top: 12px; font-size: 0.95rem; color: var(--text-light);">Open every day. Same-day and emergency service available.</p>
+        <h3 style="margin-top: 24px; margin-bottom: 10px;">Follow us</h3>
+        <div class="contact-social">
+          <a href="https://www.facebook.com/505472135986046" target="_blank" rel="noopener">Facebook</a>
+          <a href="https://www.instagram.com/GDSottawa" target="_blank" rel="noopener">Instagram</a>
+          <a href="https://www.youtube.com/@GDS-GarageDoorsOpenersOttawa" target="_blank" rel="noopener">YouTube</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- What we do -->
+    <div class="contact-section-block">
+      <h2>What We Do</h2>
+      <p>We repair, install, and maintain residential and commercial garage doors and openers across the Ottawa region. Common requests:</p>
+      <ul>
+        <li>Emergency garage door repair (broken spring, cable, off-track door)</li>
+        <li>Garage door spring replacement (torsion and extension)</li>
+        <li>New garage door installation (insulated doors for Ottawa winters)</li>
+        <li>Garage door opener repair and installation (LiftMaster, Chamberlain, Genie, etc.)</li>
+        <li>Garage door maintenance and tune-ups</li>
+        <li>Weather seals, rollers, and track repairs</li>
+      </ul>
+      <div class="service-links">
+        <a href="garage-door-spring-repair.html">Spring Repair</a>
+        <a href="garage-door-installation.html">Door Installation</a>
+        <a href="garage-door-opener.html">Opener Service</a>
+        <a href="garage-door-cable-repair.html">Cable Repair</a>
+        <a href="garage-door-maintenance.html">Maintenance</a>
+      </div>
+    </div>
+
+    <!-- Service area -->
+    <div class="contact-section-block">
+      <h2>Service Area</h2>
+      <p>We serve Ottawa and 23+ surrounding neighbourhoods and communities. Select your area for local information and same-day service:</p>
+      <div class="contact-areas-grid">
+        <a href="kanata.html">Kanata</a>
+        <a href="nepean.html">Nepean</a>
+        <a href="barrhaven.html">Barrhaven</a>
+        <a href="orleans.html">Orleans</a>
+        <a href="stittsville.html">Stittsville</a>
+        <a href="gloucester.html">Gloucester</a>
+        <a href="manotick.html">Manotick</a>
+        <a href="carp.html">Carp</a>
+        <a href="richmond.html">Richmond</a>
+        <a href="riverside-south.html">Riverside South</a>
+        <a href="findlay-creek.html">Findlay Creek</a>
+        <a href="alta-vista.html">Alta Vista</a>
+        <a href="westboro.html">Westboro</a>
+        <a href="vanier.html">Vanier</a>
+        <a href="rockcliffe-park.html">Rockcliffe Park</a>
+        <a href="hunt-club.html">Hunt Club</a>
+        <a href="dunrobin.html">Dunrobin</a>
+        <a href="carleton-place.html">Carleton Place</a>
+        <a href="kemptville.html">Kemptville</a>
+        <a href="metcalfe.html">Metcalfe</a>
+        <a href="greely.html">Greely</a>
+        <a href="embrun.html">Embrun</a>
+        <a href="russell.html">Russell</a>
+      </div>
+    </div>
+
+    <!-- What to expect -->
+    <div class="contact-what-to-expect">
+      <h2>What to Expect When You Contact Us</h2>
+      <ol>
+        <li><strong>Call or text:</strong> We'll answer or call you back quickly. Tell us what's wrong (e.g. spring broke, door won't open) and we'll give you an honest estimate over the phone.</li>
+        <li><strong>Same-day option:</strong> For emergencies we can often schedule a technician the same day. We carry common parts on our trucks so many repairs are completed in one visit.</li>
+        <li><strong>Written quote on-site:</strong> Before any work, you get a clear written quote. No hidden fees — the price we quote is what you pay.</li>
+        <li><strong>Warranty:</strong> Our work is backed by a 1-year warranty. We're licensed, insured, and BBB accredited.</li>
+      </ol>
+    </div>
+
+    <!-- Payment & credentials -->
+    <div class="contact-payment-note">
+      <strong>Pricing &amp; payment:</strong> We accept cash, debit, and credit. Transparent upfront pricing — no surprise charges. Seniors receive a 10% discount on repairs. Free estimates for installation and larger jobs.
+    </div>
+    <p style="margin-bottom: 40px;">GDS is a family-owned, licensed, and insured Ottawa garage door company. We're BBB accredited and maintain a 5.0 Google rating. For emergency repair or a free quote, call or text <a href="tel:3437778893">343-777-8893</a> or email <a href="mailto:gdsottawa@gmail.com">gdsottawa@gmail.com</a>.</p>
+
+    <!-- Map -->
+    <h2 style="margin-bottom: 16px;">Service Area Map</h2>
+    <p style="margin-bottom: 20px; color: var(--text-light);">We serve Ottawa and the surrounding region. Contact us to confirm we cover your address.</p>
+    <div class="contact-map-wrap">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d179169.98!2d-75.6972!3d45.4215!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cce05b25f5113af%3A0x8a6a51e131dd15ed!2sOttawa%2C%20ON!5e0!3m2!1sen!2sca!4v1706389500000" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Ottawa service area - GDS Garage Doors"></iframe>
+    </div>
+  </div>
+  <link rel="stylesheet" href="css/sticky-call.css">
+  <div class="sticky-call-bar" aria-label="Call us"><a href="tel:3437778893">&#128222; Call 343-777-8893</a></div>
+</body>
+</html>

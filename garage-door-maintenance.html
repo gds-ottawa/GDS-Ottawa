@@ -1,0 +1,1360 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes">
+  <title>Garage Door Maintenance Ottawa | Annual Tune-Up Service | $120-$180</title>
+  <meta name="description" content="Professional garage door maintenance in Ottawa. 21-point inspection, lubrication, safety testing. Prevent breakdowns. $120-$180. Call 343-777-8893!">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Open+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "serviceType": "Garage Door Maintenance",
+    "provider": {
+      "@type": "LocalBusiness",
+      "name": "GDS - Garage Doors & Openers Ottawa",
+      "telephone": "343-777-8893",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Ottawa",
+        "addressRegion": "ON",
+        "addressCountry": "CA"
+      }
+    }
+  }
+  </script>
+
+  <style>
+    :root {
+      --primary-dark: #1a1a1a;
+      --primary-blue: #0066cc;
+      --accent-orange: #ff6600;
+      --danger: #dc3545;
+      --success: #28a745;
+      --light-gray: #f5f5f5;
+      --medium-gray: #e0e0e0;
+      --text-dark: #333333;
+      --text-light: #666666;
+      --white: #ffffff;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    body {
+      font-family: 'Open Sans', Arial, sans-serif;
+      line-height: 1.6;
+      color: var(--text-dark);
+      background: #fff;
+    }
+
+    .container { 
+      max-width: 1200px; 
+      margin: 0 auto; 
+      padding: 0 20px; 
+    }
+
+    /* Header - match index */
+    .landing-header {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      background: rgba(255, 255, 255, 0.98);
+      box-shadow: 0 2px 20px rgba(0, 0, 0, 0.08);
+      padding: 12px 24px;
+    }
+    .landing-header-inner {
+      max-width: 1200px;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 16px;
+    }
+    .landing-logo { height: 48px; width: auto; display: block; }
+    .landing-logo-link { display: inline-block; text-decoration: none; }
+    .landing-header-nav { display: flex; align-items: center; gap: 6px; flex-wrap: wrap; }
+    .landing-header-nav a {
+      text-decoration: none;
+      font-family: 'Montserrat', system-ui, sans-serif;
+      font-size: 0.9rem;
+      font-weight: 600;
+      color: #1a1a1a;
+      padding: 8px 14px;
+      border-radius: 8px;
+      transition: all 0.25s ease;
+    }
+    .landing-header-nav a:hover { background: rgba(0,102,204,0.1); color: #0066cc; }
+    .nav-dropdown { position: relative; }
+    .nav-dropdown-trigger {
+      display: inline-flex;
+      align-items: center;
+      gap: 4px;
+      text-decoration: none;
+      font-family: 'Montserrat', system-ui, sans-serif;
+      font-size: 0.9rem;
+      font-weight: 600;
+      color: #1a1a1a;
+      padding: 8px 14px;
+      border-radius: 8px;
+      transition: all 0.25s ease;
+      background: none;
+      border: none;
+      cursor: pointer;
+    }
+    .nav-dropdown-trigger:hover { background: rgba(0,102,204,0.1); color: #0066cc; }
+    .nav-dropdown-trigger::after { content: '\25BC'; font-size: 0.6rem; opacity: 0.8; }
+    .nav-dropdown-service-area .nav-dropdown-trigger::after { content: none; }
+    .nav-dropdown-service-area .nav-dropdown-trigger span { font-size: 0.6rem; opacity: 0.8; margin-left: 2px; }
+    .nav-dropdown-menu {
+      position: absolute;
+      top: 100%;
+      left: 0;
+      min-width: 260px;
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 10px 40px rgba(0,0,0,0.15);
+      padding: 8px 0;
+      margin-top: 4px;
+      opacity: 0;
+      visibility: hidden;
+      transform: translateY(-8px);
+      transition: opacity 0.25s ease, transform 0.25s ease, visibility 0.25s;
+      z-index: 200;
+      border: 1px solid rgba(0,0,0,0.08);
+    }
+    .nav-dropdown:hover .nav-dropdown-menu,
+    .nav-dropdown:focus-within .nav-dropdown-menu {
+      opacity: 1;
+      visibility: visible;
+      transform: translateY(0);
+    }
+    .nav-dropdown-service-area:hover .nav-dropdown-menu,
+    .nav-dropdown-service-area:focus-within .nav-dropdown-menu {
+      opacity: 1;
+      visibility: visible;
+      transform: translateY(0);
+    }
+    .nav-dropdown-menu.nav-dropdown-menu--scroll { max-height: 70vh; overflow-y: auto; }
+    .nav-dropdown-menu a {
+      display: block;
+      padding: 12px 20px;
+      font-size: 0.9rem;
+      color: #2b2b2b;
+      border-radius: 0;
+      white-space: nowrap;
+    }
+    .nav-dropdown-menu a:hover { background: rgba(0,102,204,0.08); color: #0066cc; }
+    .landing-nav-ctas { display: flex; align-items: center; gap: 12px; flex-wrap: wrap; }
+    .landing-nav-ctas a {
+      text-decoration: none;
+      font-weight: 700;
+      font-size: 0.95rem;
+      padding: 10px 20px;
+      border-radius: 50px;
+      transition: all 0.3s ease;
+    }
+    .landing-cta-phone { background: #0066cc; color: white; }
+    .landing-cta-phone:hover { background: #ff6600; transform: translateY(-2px); box-shadow: 0 6px 20px rgba(255, 102, 0, 0.35); }
+    .landing-cta-quote { background: white; color: #0066cc; border: 2px solid #0066cc; }
+    .landing-cta-quote:hover { background: #0066cc; color: white; transform: translateY(-2px); }
+    @media (max-width: 900px) {
+      .landing-header-nav { display: none; }
+      .landing-header-inner .landing-nav-ctas { margin-left: auto; }
+    }
+
+    /* Hero Section */
+    .hero-section {
+      position: relative;
+      min-height: clamp(450px, 60vh, 600px);
+      background: linear-gradient(135deg, var(--success), #218838);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      color: white;
+      padding: clamp(40px, 5vw, 60px) 20px;
+    }
+
+    .hero-content {
+      position: relative;
+      z-index: 2;
+      max-width: 900px;
+      width: 100%;
+    }
+
+    .hero-badge {
+      display: inline-block;
+      background: rgba(255, 255, 255, 0.2);
+      backdrop-filter: blur(10px);
+      padding: clamp(10px, 2vw, 12px) clamp(18px, 3vw, 25px);
+      border-radius: 50px;
+      font-weight: 600;
+      margin-bottom: clamp(15px, 2vw, 20px);
+      border: 2px solid rgba(255, 255, 255, 0.3);
+      font-size: clamp(0.8rem, 1.5vw, 1rem);
+    }
+
+    .hero-title {
+      font-family: 'Montserrat', Arial, sans-serif;
+      font-size: clamp(1.75rem, 4.5vw, 4rem);
+      font-weight: 800;
+      margin-bottom: clamp(15px, 2vw, 20px);
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+      line-height: 1.2;
+    }
+
+    .hero-subtitle {
+      font-size: clamp(1rem, 2vw, 1.4rem);
+      margin-bottom: clamp(20px, 3vw, 30px);
+      opacity: 0.95;
+      line-height: 1.5;
+    }
+
+    .hero-buttons {
+      display: flex;
+      gap: clamp(10px, 2vw, 15px);
+      justify-content: center;
+      flex-wrap: wrap;
+      margin-top: clamp(20px, 3vw, 30px);
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      padding: clamp(12px, 2vw, 16px) clamp(25px, 4vw, 35px);
+      border-radius: 50px;
+      text-decoration: none !important;
+      font-weight: 700;
+      font-size: clamp(0.95rem, 1.5vw, 1.1rem);
+      transition: all 0.3s ease;
+      font-family: 'Montserrat', Arial, sans-serif;
+      border: 3px solid transparent;
+      cursor: pointer;
+      min-height: 48px;
+    }
+
+    .btn-white {
+      background: white;
+      color: var(--success) !important;
+      border: 3px solid white;
+    }
+
+    .btn-white:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+      background: var(--accent-orange);
+      color: white !important;
+    }
+
+    .btn-outline-white {
+      background: transparent;
+      color: white !important;
+      border: 3px solid white;
+    }
+
+    .btn-outline-white:hover {
+      background: white;
+      color: var(--success) !important;
+    }
+
+    .btn-success {
+      background: var(--success);
+      color: white !important;
+    }
+
+    .btn-success:hover {
+      background: #218838;
+      transform: translateY(-3px);
+    }
+
+    /* Trust Stats */
+    .trust-stats {
+      background: var(--white);
+      padding: clamp(30px, 5vw, 40px) 20px;
+      box-shadow: 0 -5px 25px rgba(0, 0, 0, 0.1);
+    }
+
+    .stats-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(min(100%, 180px), 1fr));
+      gap: clamp(20px, 3vw, 30px);
+      text-align: center;
+    }
+
+    .stat-item {
+      padding: clamp(15px, 2vw, 20px);
+    }
+
+    .stat-icon {
+      font-size: clamp(2.5rem, 5vw, 3rem);
+      color: var(--success);
+      margin-bottom: 10px;
+    }
+
+    .stat-number {
+      font-family: 'Montserrat', Arial, sans-serif;
+      font-size: clamp(1.5rem, 3vw, 2rem);
+      font-weight: 700;
+      color: var(--primary-dark);
+      margin-bottom: 5px;
+    }
+
+    .stat-label {
+      color: var(--text-light);
+      font-size: clamp(0.85rem, 1.5vw, 0.95rem);
+    }
+
+    /* Main Section */
+    .maintenance-section {
+      padding: clamp(40px, 6vw, 60px) 20px;
+      background: var(--white);
+    }
+
+    .section-title {
+      font-family: 'Montserrat', Arial, sans-serif;
+      font-size: clamp(1.6rem, 4vw, 2.5rem);
+      font-weight: 700;
+      color: var(--primary-dark);
+      margin-bottom: 15px;
+      text-align: center;
+    }
+
+    .section-subtitle {
+      font-size: clamp(1rem, 2vw, 1.1rem);
+      color: var(--text-light);
+      max-width: 800px;
+      margin: 0 auto 40px;
+      text-align: center;
+      line-height: 1.7;
+    }
+
+    /* Info Banner */
+    .info-banner {
+      background: linear-gradient(135deg, var(--success), #218838);
+      color: white;
+      padding: clamp(20px, 3vw, 25px) clamp(20px, 3vw, 30px);
+      border-radius: 12px;
+      margin-bottom: clamp(30px, 4vw, 40px);
+      display: flex;
+      align-items: center;
+      gap: clamp(15px, 2vw, 20px);
+      box-shadow: 0 5px 20px rgba(40, 167, 69, 0.3);
+      flex-wrap: wrap;
+    }
+
+    .info-icon {
+      font-size: clamp(2.5rem, 5vw, 3rem);
+      flex-shrink: 0;
+    }
+
+    .info-content h3 {
+      font-family: 'Montserrat', Arial, sans-serif;
+      font-size: clamp(1.2rem, 2.5vw, 1.5rem);
+      margin-bottom: 8px;
+    }
+
+    /* Content Boxes */
+    .content-box {
+      background: var(--light-gray);
+      padding: clamp(25px, 4vw, 40px);
+      border-radius: 16px;
+      border: 2px solid var(--medium-gray);
+      max-width: 900px;
+      margin: 30px auto;
+    }
+
+    .content-box h3 {
+      font-family: 'Montserrat', Arial, sans-serif;
+      font-size: clamp(1.4rem, 3vw, 1.8rem);
+      color: var(--primary-dark);
+      margin-bottom: 20px;
+    }
+
+    .content-box h4 {
+      font-family: 'Montserrat', Arial, sans-serif;
+      font-size: clamp(1.2rem, 2.5vw, 1.4rem);
+      color: var(--primary-dark);
+      margin: 25px 0 15px;
+    }
+
+    .content-box p {
+      font-size: clamp(0.95rem, 1.5vw, 1.05rem);
+      line-height: 1.8;
+      margin-bottom: 15px;
+    }
+
+    .content-box ul {
+      list-style: none;
+      padding: 0;
+      margin: 20px 0;
+    }
+
+    .content-box ul li {
+      padding: clamp(8px, 1.5vw, 10px) 0 clamp(8px, 1.5vw, 10px) 30px;
+      position: relative;
+      font-size: clamp(0.95rem, 1.5vw, 1.05rem);
+      line-height: 1.6;
+    }
+
+    .content-box ul li::before {
+      content: "✓";
+      position: absolute;
+      left: 0;
+      color: var(--success);
+      font-weight: bold;
+      font-size: 1.3rem;
+    }
+
+    /* Checklist Grid */
+    .checklist-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(min(100%, 280px), 1fr));
+      gap: clamp(25px, 4vw, 30px);
+      margin: clamp(30px, 4vw, 40px) 0;
+    }
+
+    .checklist-card {
+      background: var(--light-gray);
+      border: 2px solid var(--medium-gray);
+      border-radius: 16px;
+      padding: clamp(25px, 4vw, 30px);
+      transition: all 0.3s ease;
+      text-align: center;
+    }
+
+    .checklist-card:hover {
+      border-color: var(--success);
+      transform: translateY(-5px);
+      box-shadow: 0 10px 30px rgba(40, 167, 69, 0.15);
+    }
+
+    .checklist-card-icon {
+      font-size: clamp(2.5rem, 5vw, 3rem);
+      color: var(--success);
+      margin-bottom: 15px;
+    }
+
+    .checklist-card h4 {
+      font-family: 'Montserrat', Arial, sans-serif;
+      font-size: clamp(1.2rem, 2.5vw, 1.4rem);
+      color: var(--primary-dark);
+      margin-bottom: 15px;
+    }
+
+    .checklist-card p {
+      color: var(--text-dark);
+      line-height: 1.7;
+      font-size: clamp(0.9rem, 1.5vw, 1rem);
+    }
+
+    /* Pricing Box */
+    .pricing-box {
+      background: linear-gradient(135deg, var(--success), #218838);
+      color: white;
+      padding: clamp(30px, 5vw, 40px);
+      border-radius: 16px;
+      text-align: center;
+      margin: clamp(30px, 4vw, 40px) 0;
+      box-shadow: 0 10px 30px rgba(40, 167, 69, 0.3);
+    }
+
+    .pricing-box h3 {
+      font-family: 'Montserrat', Arial, sans-serif;
+      font-size: clamp(1.5rem, 3vw, 2rem);
+      margin-bottom: 15px;
+    }
+
+    .price {
+      font-family: 'Montserrat', Arial, sans-serif;
+      font-size: clamp(2.5rem, 6vw, 3.5rem);
+      font-weight: 800;
+      margin: 20px 0;
+    }
+
+    .pricing-box ul {
+      list-style: none;
+      padding: 0;
+      margin: 25px 0;
+      text-align: left;
+      max-width: 500px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .pricing-box ul li {
+      padding: clamp(8px, 1.5vw, 10px) 0 clamp(8px, 1.5vw, 10px) 30px;
+      position: relative;
+    }
+
+    .pricing-box ul li::before {
+      content: "✓";
+      position: absolute;
+      left: 0;
+      font-weight: bold;
+      font-size: 1.3rem;
+    }
+
+    /* Warning Boxes */
+    .warning-box {
+      padding: clamp(20px, 3vw, 25px);
+      border-radius: 8px;
+      margin: clamp(25px, 3vw, 30px) 0;
+    }
+
+    .warning-box h4 {
+      font-family: 'Montserrat', Arial, sans-serif;
+      margin-bottom: 10px;
+      font-size: clamp(1.1rem, 2vw, 1.2rem);
+    }
+
+    .warning-box p {
+      line-height: 1.7;
+      margin: 0;
+    }
+
+    .warning-annual {
+      background: #fff3cd;
+      border-left: 5px solid #ffc107;
+    }
+
+    .warning-annual h4, .warning-annual p {
+      color: #856404;
+    }
+
+    .warning-biennial {
+      background: #d1ecf1;
+      border-left: 5px solid #17a2b8;
+    }
+
+    .warning-biennial h4, .warning-biennial p {
+      color: #0c5460;
+    }
+
+    .warning-urgent {
+      background: #f8d7da;
+      border-left: 5px solid #dc3545;
+    }
+
+    .warning-urgent h4, .warning-urgent p {
+      color: #721c24;
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      .stats-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .hero-buttons {
+        flex-direction: column;
+        width: 100%;
+      }
+
+      .btn {
+        width: 100%;
+      }
+
+      .info-banner {
+        flex-direction: column;
+        text-align: center;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .stats-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    /* How It Works section */
+    .hiw-section {
+      --hiw-primary-blue: #0066cc;
+      --hiw-primary-blue-dark: #004999;
+      --hiw-accent-orange: #ff6600;
+      --hiw-success: #25D366;
+      --hiw-text-dark: #2b2b2b;
+      --hiw-text-light: #5f5f5f;
+      --hiw-light-gray: #f8f9fa;
+      padding: 70px 20px;
+      background: linear-gradient(180deg, #fff 0%, var(--hiw-light-gray) 50%, #fff 100%);
+      position: relative;
+      overflow: hidden;
+    }
+    .hiw-section::before {
+      content: '';
+      position: absolute;
+      top: 0; left: 0; right: 0;
+      height: 5px;
+      background: linear-gradient(90deg, var(--hiw-primary-blue), var(--hiw-accent-orange));
+    }
+    .hiw-section::after {
+      content: '';
+      position: absolute;
+      bottom: 0; left: 0; right: 0;
+      height: 5px;
+      background: linear-gradient(90deg, var(--hiw-accent-orange), var(--hiw-primary-blue));
+    }
+    .hiw-container { max-width: 1100px; margin: 0 auto; position: relative; z-index: 1; }
+    .hiw-header { text-align: center; margin-bottom: 60px; }
+    .hiw-header h2 {
+      font-family: 'Montserrat', system-ui, sans-serif;
+      font-size: clamp(2rem, 5vw, 3rem);
+      font-weight: 800;
+      color: #1a1a1a;
+      margin-bottom: 15px;
+      line-height: 1.2;
+    }
+    .hiw-highlight {
+      background: linear-gradient(135deg, var(--hiw-primary-blue), var(--hiw-accent-orange));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+    .hiw-header p {
+      font-family: 'Open Sans', system-ui, sans-serif;
+      font-size: clamp(1rem, 2vw, 1.15rem);
+      color: var(--hiw-text-light);
+      max-width: 650px;
+      margin: 0 auto;
+      line-height: 1.7;
+    }
+    .hiw-steps {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 0;
+      position: relative;
+      margin-bottom: 60px;
+    }
+    .hiw-steps::before {
+      content: '';
+      position: absolute;
+      top: 70px;
+      left: 16.66%;
+      right: 16.66%;
+      height: 4px;
+      background: linear-gradient(90deg, var(--hiw-primary-blue), var(--hiw-accent-orange), var(--hiw-success));
+      border-radius: 2px;
+      z-index: 0;
+    }
+    .hiw-step { text-align: center; padding: 0 25px; position: relative; z-index: 1; }
+    .hiw-step-number {
+      width: 90px;
+      height: 90px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto 25px;
+      font-family: 'Montserrat', system-ui, sans-serif;
+      font-size: 2.2rem;
+      font-weight: 800;
+      color: white;
+      position: relative;
+      transition: all 0.4s ease;
+      box-shadow: 0 8px 30px rgba(0,0,0,0.15);
+    }
+    .hiw-step:nth-child(1) .hiw-step-number { background: linear-gradient(135deg, var(--hiw-primary-blue), #3388dd); }
+    .hiw-step:nth-child(2) .hiw-step-number { background: linear-gradient(135deg, var(--hiw-accent-orange), #ff8833); }
+    .hiw-step:nth-child(3) .hiw-step-number { background: linear-gradient(135deg, var(--hiw-success), #2ecc71); }
+    .hiw-step:hover .hiw-step-number { transform: scale(1.15); box-shadow: 0 12px 40px rgba(0,0,0,0.25); }
+    .hiw-step-icon { font-size: 2.5rem; line-height: 1; }
+    .hiw-step-title {
+      font-family: 'Montserrat', system-ui, sans-serif;
+      font-size: clamp(1.2rem, 2.5vw, 1.5rem);
+      font-weight: 700;
+      color: #1a1a1a;
+      margin-bottom: 12px;
+    }
+    .hiw-step-desc {
+      font-family: 'Open Sans', system-ui, sans-serif;
+      font-size: 1rem;
+      color: var(--hiw-text-light);
+      line-height: 1.7;
+      max-width: 300px;
+      margin: 0 auto 15px;
+    }
+    .hiw-step-detail {
+      font-family: 'Montserrat', system-ui, sans-serif;
+      font-size: 0.85rem;
+      font-weight: 700;
+      color: var(--hiw-primary-blue);
+      background: #f0f8ff;
+      padding: 6px 16px;
+      border-radius: 20px;
+      display: inline-block;
+    }
+    .hiw-step:nth-child(2) .hiw-step-detail { color: var(--hiw-accent-orange); background: #fff8f0; }
+    .hiw-step:nth-child(3) .hiw-step-detail { color: var(--hiw-success); background: #f0fff4; }
+    .hiw-promise-bar {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(min(100%, 200px), 1fr));
+      gap: 20px;
+      padding: 35px 30px;
+      background: linear-gradient(135deg, var(--hiw-primary-blue), var(--hiw-primary-blue-dark));
+      border-radius: 20px;
+      box-shadow: 0 10px 40px rgba(0,102,204,0.25);
+      margin-bottom: 40px;
+    }
+    .hiw-promise-item { text-align: center; color: white; padding: 10px; }
+    .hiw-promise-icon { font-size: 1.8rem; margin-bottom: 8px; display: block; }
+    .hiw-promise-text { font-family: 'Open Sans', system-ui, sans-serif; font-size: 0.9rem; font-weight: 600; line-height: 1.4; }
+    .hiw-cta { text-align: center; }
+    .hiw-cta p {
+      font-family: 'Open Sans', system-ui, sans-serif;
+      font-size: clamp(1.05rem, 2vw, 1.2rem);
+      color: var(--hiw-text-dark);
+      margin-bottom: 25px;
+      line-height: 1.7;
+    }
+    .hiw-cta-buttons { display: flex; gap: 15px; justify-content: center; flex-wrap: wrap; }
+    .hiw-btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      padding: 14px 32px;
+      border-radius: 50px;
+      text-decoration: none;
+      font-family: 'Montserrat', system-ui, sans-serif;
+      font-weight: 700;
+      font-size: 1rem;
+      transition: all 0.3s ease;
+      border: 3px solid transparent;
+    }
+    .hiw-btn-primary { background: var(--hiw-primary-blue); color: white; }
+    .hiw-btn-primary:hover { background: var(--hiw-accent-orange); transform: translateY(-3px); box-shadow: 0 8px 25px rgba(255,102,0,0.3); }
+    .hiw-btn-outline { background: transparent; color: var(--hiw-primary-blue); border: 3px solid var(--hiw-primary-blue); }
+    .hiw-btn-outline:hover { background: var(--hiw-primary-blue); color: white; transform: translateY(-3px); }
+    @media (max-width: 768px) {
+      .hiw-steps { grid-template-columns: 1fr; gap: 40px; }
+      .hiw-steps::before { display: none; }
+      .hiw-step { padding: 0 20px; }
+      .hiw-step-number { width: 80px; height: 80px; }
+      .hiw-cta-buttons { flex-direction: column; align-items: center; }
+      .hiw-btn { width: 100%; max-width: 400px; }
+    }
+
+    /* Contact section */
+    .contact-section {
+      margin-top: 50px;
+      padding: clamp(40px, 5vw, 60px) 20px;
+      background: linear-gradient(135deg, #f8f9fa, #e9ecef);
+      border-radius: 20px;
+      border: 2px solid var(--primary-blue);
+    }
+    .contact-section h2 {
+      font-family: 'Montserrat', Arial, sans-serif;
+      font-size: clamp(1.8rem, 4vw, 2.2rem);
+      font-weight: 800;
+      color: var(--primary-dark);
+      text-align: center;
+      margin-bottom: 10px;
+    }
+    .contact-section .contact-subtitle {
+      text-align: center;
+      color: var(--text-light);
+      font-size: 1.05rem;
+      margin-bottom: 40px;
+    }
+    .contact-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 40px;
+      max-width: 1000px;
+      margin: 0 auto;
+      align-items: start;
+    }
+    @media (max-width: 768px) {
+      .contact-grid { grid-template-columns: 1fr; }
+    }
+    .contact-form-card {
+      background: white;
+      padding: 32px;
+      border-radius: 16px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+      border: 2px solid var(--medium-gray);
+    }
+    .contact-form-card h3 {
+      font-family: 'Montserrat', Arial, sans-serif;
+      font-size: 1.4rem;
+      color: var(--primary-dark);
+      margin-bottom: 24px;
+    }
+    .contact-form label {
+      display: block;
+      font-weight: 600;
+      color: var(--text-dark);
+      margin-bottom: 6px;
+      font-size: 0.95rem;
+    }
+    .contact-form input[type="text"],
+    .contact-form input[type="email"],
+    .contact-form textarea {
+      width: 100%;
+      padding: 12px 16px;
+      border: 2px solid var(--medium-gray);
+      border-radius: 10px;
+      font-family: 'Open Sans', Arial, sans-serif;
+      font-size: 1rem;
+      margin-bottom: 18px;
+      transition: border-color 0.2s;
+    }
+    .contact-form input:focus,
+    .contact-form textarea:focus {
+      outline: none;
+      border-color: var(--primary-blue);
+    }
+    .contact-form textarea { min-height: 120px; resize: vertical; }
+    .contact-form .attach-hint {
+      font-size: 0.9rem;
+      color: var(--text-light);
+      margin-bottom: 18px;
+    }
+    .contact-form .btn-send {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 14px 32px;
+      background: var(--primary-blue);
+      color: white !important;
+      border: none;
+      border-radius: 50px;
+      font-family: 'Montserrat', Arial, sans-serif;
+      font-weight: 700;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: all 0.3s ease;
+    }
+    .contact-form .btn-send:hover {
+      background: var(--accent-orange);
+      transform: translateY(-2px);
+      box-shadow: 0 8px 20px rgba(255,102,0,0.3);
+    }
+    .contact-form .recaptcha-note {
+      font-size: 0.75rem;
+      color: var(--text-light);
+      margin-top: 16px;
+      line-height: 1.5;
+    }
+    .contact-form .recaptcha-note a { color: var(--primary-blue); }
+    .contact-info-card {
+      background: white;
+      padding: 32px;
+      border-radius: 16px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+      border: 2px solid var(--medium-gray);
+    }
+    .contact-info-card h3 {
+      font-family: 'Montserrat', Arial, sans-serif;
+      font-size: 1.3rem;
+      color: var(--primary-dark);
+      margin-bottom: 20px;
+    }
+    .contact-info-card p {
+      color: var(--text-dark);
+      line-height: 1.7;
+      margin-bottom: 20px;
+    }
+    .contact-info-card .whatsapp-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 12px 20px;
+      background: #25D366;
+      color: white !important;
+      text-decoration: none;
+      border-radius: 50px;
+      font-weight: 700;
+      margin-bottom: 24px;
+      transition: all 0.3s ease;
+    }
+    .contact-info-card .whatsapp-link:hover {
+      background: #128C7E;
+      transform: translateY(-2px);
+    }
+    .contact-detail {
+      display: flex;
+      align-items: flex-start;
+      gap: 10px;
+      margin-bottom: 12px;
+      font-size: 0.98rem;
+    }
+    .contact-detail strong { min-width: 80px; color: var(--primary-dark); }
+    .contact-detail a { color: var(--primary-blue); text-decoration: none; font-weight: 600; }
+    .contact-detail a:hover { text-decoration: underline; }
+    .hours-list { list-style: none; padding: 0; margin: 0; margin-top: 16px; }
+    .hours-list li {
+      display: flex;
+      justify-content: space-between;
+      padding: 8px 0;
+      border-bottom: 1px solid var(--light-gray);
+      font-size: 0.95rem;
+    }
+    .hours-list li:last-child { border-bottom: none; }
+    .hours-list .day { font-weight: 600; color: var(--primary-dark); min-width: 40px; }
+  </style>
+</head>
+<body>
+
+  <!-- Header (match index.html) -->
+  <header class="landing-header">
+    <div class="landing-header-inner">
+      <a href="index.html" class="landing-logo-link" aria-label="GDS Ottawa Home">
+        <img src="https://img1.wsimg.com/isteam/ip/1b277bec-adfe-487a-a8c7-5e77b97e6d1d/blob-962e0d4.png/:/rs=w:104,h:104,cg:true,m/cr=w:104,h:104/qt=q:95" alt="GDS Ottawa - Garage Doors & Openers" class="landing-logo" width="104" height="104">
+      </a>
+      <nav class="landing-header-nav" aria-label="Main navigation">
+        <a href="index.html">Home</a>
+        <div class="nav-dropdown">
+          <a href="index.html#services" class="nav-dropdown-trigger" id="services-dropdown-trigger" aria-haspopup="true" aria-expanded="false">Services</a>
+          <div class="nav-dropdown-menu" role="menu" aria-labelledby="services-dropdown-trigger">
+            <a href="garage-door-installation.html" role="menuitem">Garage Door Installation</a>
+            <a href="garage-door-spring-repair.html" role="menuitem">Garage Door Spring Repair</a>
+            <a href="garage-door-cable-repair.html" role="menuitem">Garage Door Cable Repair</a>
+            <a href="garage-door-opener.html" role="menuitem">Garage Door Opener</a>
+            <a href="garage-door-maintenance.html" role="menuitem">Garage Door Maintenance</a>
+          </div>
+        </div>
+        <a href="faq.html">FAQ</a>
+        <div class="nav-dropdown nav-dropdown-service-area">
+          <span class="nav-dropdown-trigger" role="button" aria-haspopup="true" aria-expanded="false" tabindex="0">Service Area <span aria-hidden="true">&#9660;</span></span>
+          <div class="nav-dropdown-menu nav-dropdown-menu--scroll">
+            <a href="carp.html">Carp</a>
+            <a href="nepean.html">Nepean</a>
+            <a href="richmond.html">Richmond</a>
+            <a href="manotick.html">Manotick</a>
+            <a href="orleans.html">Orleans</a>
+            <a href="vanier.html">Vanier</a>
+            <a href="carleton-place.html">Carleton Place</a>
+            <a href="hunt-club.html">Hunt Club</a>
+            <a href="dunrobin.html">Dunrobin</a>
+            <a href="kemptville.html">Kemptville</a>
+            <a href="metcalfe.html">Metcalfe</a>
+            <a href="greely.html">Greely</a>
+            <a href="stittsville.html">Stittsville</a>
+            <a href="kanata.html">Kanata</a>
+            <a href="barrhaven.html">Barrhaven</a>
+            <a href="gloucester.html">Gloucester</a>
+            <a href="riverside-south.html">Riverside South</a>
+            <a href="findlay-creek.html">Findlay Creek</a>
+            <a href="alta-vista.html">Alta Vista</a>
+            <a href="westboro.html">Westboro</a>
+            <a href="rockcliffe-park.html">Rockcliffe Park</a>
+            <a href="embrun.html">Embrun</a>
+            <a href="russell.html">Russell</a>
+          </div>
+        </div>
+        <a href="about.html">About Us</a>
+        <a href="index.html#gallery">Gallery</a>
+        <a href="blog.html">Blog</a>
+        <a href="contact-us.html">Contact Us</a>
+      </nav>
+      <div class="landing-nav-ctas">
+        <a href="tel:3437778893" class="landing-cta-phone">📞 343-777-8893</a>
+        <a href="contact-us.html" class="landing-cta-quote">Get Free Quote</a>
+      </div>
+    </div>
+  </header>
+
+<!-- Hero Section -->
+<section class="hero-section">
+  <div class="hero-content">
+    <div class="hero-badge">🛠️ PREVENT BREAKDOWNS • SAVE MONEY • EXTEND LIFESPAN</div>
+    <h1 class="hero-title">Keep Your Garage Door Running Like New</h1>
+    <p class="hero-subtitle">Professional annual maintenance prevents breakdowns and extends lifespan. 21-point inspection, lubrication, safety testing. $120-$180.</p>
+    <div class="hero-buttons">
+      <a href="tel:3437778893" class="btn btn-white">📞 Call 343-777-8893 Now</a>
+      <a href="contact-us.html" class="btn btn-outline-white">Schedule Maintenance</a>
+    </div>
+  </div>
+</section>
+
+<!-- Trust Stats -->
+<section class="trust-stats">
+  <div class="container">
+    <div class="stats-grid">
+      <div class="stat-item">
+        <div class="stat-icon">⏱️</div>
+        <div class="stat-number">45-90 Min</div>
+        <div class="stat-label">Service Time</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-icon">💰</div>
+        <div class="stat-number">$120-$180</div>
+        <div class="stat-label">Complete Service</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-icon">📅</div>
+        <div class="stat-number">1-2 Years</div>
+        <div class="stat-label">Service Frequency</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-icon">⭐</div>
+        <div class="stat-number">5.0</div>
+        <div class="stat-label">Google Rating</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Main Content -->
+<section class="maintenance-section">
+  <div class="container">
+    <!-- Info Banner -->
+    <div class="info-banner">
+      <div class="info-icon">💡</div>
+      <div class="info-content">
+        <h3>Preventive Maintenance Saves You Money!</h3>
+        <p>A $150 annual tune-up prevents $500-$1,500 emergency repairs. Catch small problems before they become big, expensive breakdowns.</p>
+      </div>
+    </div>
+
+    <h2 class="section-title">Professional Garage Door Maintenance in Ottawa</h2>
+    <p class="section-subtitle">
+      Regular maintenance keeps your door running smoothly, prevents breakdowns, and extends the life of expensive components like springs and openers.
+    </p>
+
+    <!-- 21-Point Checklist -->
+    <h3 class="section-title" style="margin-top: 60px;">Complete 21-Point Inspection & Service</h3>
+    <div class="checklist-grid">
+      
+      <div class="checklist-card">
+        <div class="checklist-card-icon">🔍</div>
+        <h4>Visual Inspection</h4>
+        <p>Check springs, cables, tracks, rollers, hinges, brackets, sensors, and weather stripping for wear, damage, or rust.</p>
+      </div>
+
+      <div class="checklist-card">
+        <div class="checklist-card-icon">🛢️</div>
+        <h4>Complete Lubrication</h4>
+        <p>Apply high-quality lubricant to all moving parts: rollers, hinges, tracks, springs, and opener chain/belt.</p>
+      </div>
+
+      <div class="checklist-card">
+        <div class="checklist-card-icon">🔧</div>
+        <h4>Hardware Tightening</h4>
+        <p>Tighten all loose bolts, screws, and brackets. Ottawa's cold winters cause hardware to loosen over time.</p>
+      </div>
+
+      <div class="checklist-card">
+        <div class="checklist-card-icon">⚖️</div>
+        <h4>Door Balance Test</h4>
+        <p>Test balance by manually lifting door halfway. Adjust spring tension if door doesn't stay in place.</p>
+      </div>
+
+      <div class="checklist-card">
+        <div class="checklist-card-icon">📏</div>
+        <h4>Track Alignment</h4>
+        <p>Check tracks for proper alignment and spacing. Misaligned tracks cause binding and premature wear.</p>
+      </div>
+
+      <div class="checklist-card">
+        <div class="checklist-card-icon">🛡️</div>
+        <h4>Safety Sensor Test</h4>
+        <p>Test sensors with obstruction. Clean lenses, adjust alignment, verify auto-reverse works properly.</p>
+      </div>
+
+      <div class="checklist-card">
+        <div class="checklist-card-icon">⚙️</div>
+        <h4>Opener Force Check</h4>
+        <p>Test opener force and limit settings. Adjust if door reverses too easily or doesn't stop correctly.</p>
+      </div>
+
+      <div class="checklist-card">
+        <div class="checklist-card-icon">❄️</div>
+        <h4>Weather Stripping</h4>
+        <p>Inspect bottom seal and side stripping. Replace if cracked to keep Ottawa's cold air and snow out.</p>
+      </div>
+
+      <div class="checklist-card">
+        <div class="checklist-card-icon">✅</div>
+        <h4>Final Testing</h4>
+        <p>Test operation multiple times, check for smooth movement, listen for noises, verify all safety features work.</p>
+      </div>
+
+    </div>
+
+    <!-- Benefits -->
+    <div class="content-box" style="background: linear-gradient(135deg, #e3f2fd, #f0f8ff); border: 3px solid var(--primary-blue); margin-top: 60px;">
+      <h3>💎 Why Regular Maintenance Matters</h3>
+      
+      <h4>🛡️ Enhanced Safety</h4>
+      <p>Properly maintained sensors, springs, and cables prevent accidents. A 300-400 lb door falling is extremely dangerous.</p>
+
+      <h4>📅 Extended Lifespan</h4>
+      <p>Regular lubrication and adjustments extend spring life by 2-3 years, saving $400-$600 on premature replacement.</p>
+
+      <h4>🔇 Quieter Operation</h4>
+      <p>Lubrication eliminates squeaks, grinding, and rattling. Your neighbors (and family) will thank you.</p>
+
+      <h4>💰 Prevent Costly Repairs</h4>
+      <p>Catch small problems early. A $150 tune-up prevents $500-$1,500 emergency repairs from worn cables, broken springs, or seized rollers.</p>
+
+      <h4>⚡ Energy Efficiency</h4>
+      <p>Good weather stripping and proper alignment keep cold Ottawa air out, reducing heating costs in winter.</p>
+
+      <h4>🎯 Smoother Operation</h4>
+      <p>Balanced doors with lubricated parts operate effortlessly, reducing strain on the opener and extending its life.</p>
+
+      <div style="background: white; padding: 20px; border-radius: 8px; margin-top: 25px; border-left: 5px solid var(--success);">
+        <strong>💡 ROI: Maintenance Pays for Itself</strong>
+        <p style="margin-top: 10px;">Annual maintenance ($120-$180) prevents emergency repairs ($500-$1,500), extends spring life (saves $400-$600), and extends opener life (saves $650-$950). One prevented emergency pays for 3-10 years of maintenance!</p>
+      </div>
+    </div>
+
+    <!-- How Often -->
+    <h3 class="section-title" style="margin-top: 60px;">📅 How Often Should You Schedule Maintenance?</h3>
+    
+    <div class="content-box">
+      <h3>General Recommendation: Every 1-2 Years</h3>
+      <p>For most residential garage doors in Ottawa, we recommend professional maintenance every 1-2 years. However, the ideal frequency depends on your usage:</p>
+    </div>
+
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 280px), 1fr)); gap: 25px; margin-top: 30px;">
+      
+      <div class="warning-box warning-annual">
+        <h4>📆 Annual Maintenance (Every Year)</h4>
+        <p><strong>Recommended if:</strong><br>
+        • You use door 10+ times per day<br>
+        • You have an attached garage<br>
+        • Your door is 10+ years old<br>
+        • You want maximum reliability<br>
+        • You park expensive vehicles inside</p>
+      </div>
+
+      <div class="warning-box warning-biennial">
+        <h4>📅 Every 2 Years</h4>
+        <p><strong>Acceptable if:</strong><br>
+        • You use door 3-6 times per day<br>
+        • Door is relatively new (under 5 years)<br>
+        • You have a detached garage<br>
+        • No unusual noises or problems<br>
+        • Budget-conscious schedule</p>
+      </div>
+
+      <div class="warning-box warning-urgent">
+        <h4>⚠️ Immediate Service Needed</h4>
+        <p><strong>Call us now if:</strong><br>
+        • Door makes grinding/squealing noises<br>
+        • Door is off-balance or crooked<br>
+        • Door jerks or stops mid-cycle<br>
+        • Haven't had service in 3+ years<br>
+        • Springs or cables show rust/wear</p>
+      </div>
+
+    </div>
+
+    <div class="content-box" style="margin-top: 30px;">
+      <h3>🥶 Ottawa Winters = More Wear</h3>
+      <p>Ottawa's harsh winters (-20°C to -30°C) accelerate wear and tear:</p>
+      <ul>
+        <li><strong>Metal Fatigue:</strong> Springs and cables become brittle in extreme cold</li>
+        <li><strong>Lubricant Breakdown:</strong> Grease thickens or dries out faster</li>
+        <li><strong>Hardware Loosening:</strong> Freeze-thaw cycles loosen bolts and brackets</li>
+        <li><strong>Weather Seal Damage:</strong> Rubber becomes brittle and cracks</li>
+      </ul>
+      <p style="background: white; padding: 15px; border-radius: 8px; margin-top: 20px; border-left: 5px solid var(--success);">
+        <strong>Bottom Line:</strong> Ottawa doors need maintenance more frequently than doors in milder climates. Annual service is ideal for maximum reliability.
+      </p>
+    </div>
+
+    <!-- Pricing -->
+    <div class="pricing-box">
+      <h3>Annual Maintenance Service</h3>
+      <div class="price">$120 - $180</div>
+      <p style="font-size: 1.1rem; margin-bottom: 25px;">Complete inspection, lubrication, and adjustment (45-90 minutes)</p>
+      
+      <ul>
+        <li>21-point comprehensive inspection</li>
+        <li>Complete lubrication of all moving parts</li>
+        <li>Hardware tightening throughout</li>
+        <li>Door balance adjustment</li>
+        <li>Track alignment check</li>
+        <li>Safety sensor testing and alignment</li>
+        <li>Opener force and limit adjustment</li>
+        <li>Weather stripping inspection</li>
+        <li>Written report with recommendations</li>
+        <li>1-year warranty on adjustments</li>
+      </ul>
+
+      <a href="tel:3437778893" class="btn btn-white" style="margin-top: 20px;">📞 Call to Schedule</a>
+    </div>
+
+    <!-- Comparison -->
+    <div class="content-box" style="background: #fff3cd; border: 3px solid #ffc107;">
+      <h3 style="color: #856404;">💰 Maintenance vs Emergency Repair Cost</h3>
+      <p style="color: #856404;"><strong>Compare the costs:</strong></p>
+      <ul style="color: #856404;">
+        <li>Annual maintenance: $120-$180</li>
+        <li>Emergency spring repair: $220-$350</li>
+        <li>Emergency cable repair: $150-$250</li>
+        <li>Opener replacement: $650-$950</li>
+        <li>Door panel replacement: $400-$800</li>
+      </ul>
+      <p style="background: white; padding: 15px; border-radius: 8px; margin-top: 20px; color: #856404; border-left: 5px solid #ffc107;">
+        <strong>The Math is Simple:</strong> A single prevented emergency repair pays for 3-10 years of maintenance! Plus you get peace of mind, quieter operation, and extended component life.
+      </p>
+    </div>
+
+    <!-- Why Choose Us -->
+    <div class="content-box">
+      <h3>Why Choose GDS for Maintenance?</h3>
+      <ul>
+        <li><strong>Thorough Service:</strong> Complete 21-point inspection, not a quick lube job</li>
+        <li><strong>Honest Assessment:</strong> No high-pressure sales, just facts and recommendations</li>
+        <li><strong>Certified Technicians:</strong> 10+ years experience, fully insured</li>
+        <li><strong>Transparent Pricing:</strong> $120-$180 for complete service, no surprises</li>
+        <li><strong>Written Reports:</strong> Detailed documentation of condition and work performed</li>
+        <li><strong>Same-Day Service:</strong> Flexible scheduling across all Ottawa areas</li>
+        <li><strong>1-Year Warranty:</strong> All adjustments covered for 12 months</li>
+      </ul>
+      <a href="tel:3437778893" class="btn btn-success" style="margin-top: 20px;">📞 Call 343-777-8893 - Schedule Maintenance</a>
+    </div>
+
+    <!-- Service Areas -->
+    <div style="background: var(--light-gray); padding: 40px; border-radius: 12px; margin-top: 50px; border: 2px solid var(--medium-gray);">
+      <h3 style="font-family: 'Montserrat', Arial, sans-serif; font-size: 1.8rem; text-align: center; margin-bottom: 25px;">📍 Maintenance Service Areas</h3>
+      <p style="text-align: center; margin-bottom: 20px;">Professional garage door maintenance across Ottawa and surrounding communities:</p>
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 15px;">
+        <div style="padding: 12px; background: white; border-radius: 8px; text-align: center; font-weight: 600;">Kanata</div>
+        <div style="padding: 12px; background: white; border-radius: 8px; text-align: center; font-weight: 600;">Barrhaven</div>
+        <div style="padding: 12px; background: white; border-radius: 8px; text-align: center; font-weight: 600;">Orleans</div>
+        <div style="padding: 12px; background: white; border-radius: 8px; text-align: center; font-weight: 600;">Stittsville</div>
+        <div style="padding: 12px; background: white; border-radius: 8px; text-align: center; font-weight: 600;">Nepean</div>
+        <div style="padding: 12px; background: white; border-radius: 8px; text-align: center; font-weight: 600;">Gloucester</div>
+        <div style="padding: 12px; background: white; border-radius: 8px; text-align: center; font-weight: 600;">Manotick</div>
+        <div style="padding: 12px; background: white; border-radius: 8px; text-align: center; font-weight: 600;">Greely</div>
+      </div>
+    </div>
+
+    <!-- How It Works -->
+    <section class="hiw-section" aria-label="How it works">
+      <div class="hiw-container">
+        <div class="hiw-header">
+          <h2>Getting Started Is <span class="hiw-highlight">Simple</span></h2>
+          <p>From your first call to a fully working garage door — most jobs completed the same day you call.</p>
+        </div>
+        <div class="hiw-steps">
+          <div class="hiw-step">
+            <div class="hiw-step-number"><span class="hiw-step-icon" aria-hidden="true">&#128222;</span></div>
+            <h3 class="hiw-step-title">1. Call or Text Us</h3>
+            <p class="hiw-step-desc">Tell us what's happening with your garage door. We'll give you an honest estimate over the phone — no pressure, no obligation.</p>
+            <span class="hiw-step-detail">&#9201;&#65039; Takes 2 minutes</span>
+          </div>
+          <div class="hiw-step">
+            <div class="hiw-step-number"><span class="hiw-step-icon" aria-hidden="true">&#128736;&#65039;</span></div>
+            <h3 class="hiw-step-title">2. We Diagnose &amp; Quote</h3>
+            <p class="hiw-step-desc">Our technician arrives with a fully-stocked truck, diagnoses the issue on-site, and gives you a written quote before any work begins.</p>
+            <span class="hiw-step-detail">&#128176; No surprise fees</span>
+          </div>
+          <div class="hiw-step">
+            <div class="hiw-step-number"><span class="hiw-step-icon" aria-hidden="true">&#9989;</span></div>
+            <h3 class="hiw-step-title">3. Fixed Same Day</h3>
+            <p class="hiw-step-desc">We fix it right then and there. 85% of repairs done on the first visit. You get a warranty, a safety check, and a working door.</p>
+            <span class="hiw-step-detail">&#128170; 1-year warranty</span>
+          </div>
+        </div>
+        <div class="hiw-promise-bar">
+          <div class="hiw-promise-item">
+            <span class="hiw-promise-icon" aria-hidden="true">&#128337;</span>
+            <p class="hiw-promise-text">1–2 Hour<br>Response Time</p>
+          </div>
+          <div class="hiw-promise-item">
+            <span class="hiw-promise-icon" aria-hidden="true">&#128176;</span>
+            <p class="hiw-promise-text">Written Quote<br>Before Work Starts</p>
+          </div>
+          <div class="hiw-promise-item">
+            <span class="hiw-promise-icon" aria-hidden="true">&#128666;</span>
+            <p class="hiw-promise-text">Parts On Truck<br>85% First-Visit Fix</p>
+          </div>
+          <div class="hiw-promise-item">
+            <span class="hiw-promise-icon" aria-hidden="true">&#128737;&#65039;</span>
+            <p class="hiw-promise-text">Licensed &amp; Insured<br>$2M Coverage</p>
+          </div>
+        </div>
+        <div class="hiw-cta">
+          <p>Ready to get your garage door working again? Most Ottawa homeowners go from phone call to fixed door in under 3 hours.</p>
+          <div class="hiw-cta-buttons">
+            <a href="tel:3437778893" class="hiw-btn hiw-btn-primary" aria-label="Call GDS Ottawa at 343-777-8893">&#128222; Call 343-777-8893</a>
+            <a href="contact-us.html" class="hiw-btn hiw-btn-outline">Request Free Quote</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Us Section -->
+    <section class="contact-section" id="contact">
+      <h2>Drop us a line!</h2>
+      <p class="contact-subtitle">Fast and affordable garage door repair — we're here to help.</p>
+      <div class="contact-grid">
+        <div class="contact-form-card">
+          <h3>Send us a message</h3>
+          <form class="contact-form" action="https://formspree.io/f/REPLACE_WITH_YOUR_FORMSPREE_ID" method="POST" enctype="multipart/form-data">
+            <label for="contact-name">Name</label>
+            <input type="text" id="contact-name" name="name" placeholder="Your name">
+            <label for="contact-email">Email <span style="color: var(--danger);">*</span></label>
+            <input type="email" id="contact-email" name="email" placeholder="your@email.com" required>
+            <label for="contact-message">Message</label>
+            <textarea id="contact-message" name="message" placeholder="Your message..."></textarea>
+            <label>Attach Files</label>
+            <input type="file" name="attachment" multiple accept=".pdf,.doc,.docx,.jpg,.jpeg,.png" style="margin-bottom: 8px;">
+            <p class="attach-hint">Attachments (optional) — max 10MB total</p>
+            <button type="submit" class="btn-send">Send</button>
+            <p class="recaptcha-note">This site is protected by reCAPTCHA and the Google <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Privacy Policy</a> and <a href="https://policies.google.com/terms" target="_blank" rel="noopener">Terms of Service</a> apply.</p>
+          </form>
+        </div>
+        <div class="contact-info-card">
+          <h3>Fast and affordable garage door repair</h3>
+          <p>Have a question about garage door repair, replacement, or installation? We're here to help!</p>
+          <a href="https://wa.me/13437778893" target="_blank" rel="noopener" class="whatsapp-link">💬 Message us on WhatsApp</a>
+          <p style="font-weight: 700; color: var(--primary-dark); margin-bottom: 8px;">GDS - Garage Doors & Openers Ottawa</p>
+          <p style="margin-bottom: 16px;">Ottawa, ON, Canada</p>
+          <div class="contact-detail"><strong>Call or Text:</strong> <a href="tel:3437778893">343-777-8893</a></div>
+          <div class="contact-detail"><strong>Email:</strong> <a href="mailto:gdsottawa@gmail.com">gdsottawa@gmail.com</a></div>
+          <h3 style="margin-top: 28px; margin-bottom: 8px;">Hours</h3>
+          <ul class="hours-list">
+            <li><span class="day">Mon</span> <span>09:00 a.m. – 09:00 p.m.</span></li>
+            <li><span class="day">Tue</span> <span>09:00 a.m. – 09:00 p.m.</span></li>
+            <li><span class="day">Wed</span> <span>09:00 a.m. – 09:00 p.m.</span></li>
+            <li><span class="day">Thu</span> <span>09:00 a.m. – 09:00 p.m.</span></li>
+            <li><span class="day">Fri</span> <span>09:00 a.m. – 09:00 p.m.</span></li>
+            <li><span class="day">Sat</span> <span>09:00 a.m. – 09:00 p.m.</span></li>
+            <li><span class="day">Sun</span> <span>09:00 a.m. – 09:00 p.m.</span></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Final CTA -->
+    <div style="margin-top: 50px; text-align: center; padding: 60px 30px; background: linear-gradient(135deg, var(--success), #218838); border-radius: 16px; color: white;">
+      <h3 style="font-family: 'Montserrat', Arial, sans-serif; font-size: clamp(1.6rem, 4vw, 2.5rem); margin-bottom: 20px;">Don't Wait for a Breakdown</h3>
+      <p style="font-size: clamp(1.1rem, 2vw, 1.3rem); margin-bottom: 30px; opacity: 0.95;">Schedule your annual maintenance today. Prevent emergencies and extend the life of your door. $120-$180.</p>
+      <div style="display: flex; gap: 15px; justify-content: center; flex-wrap: wrap;">
+        <a href="tel:3437778893" class="btn btn-white" style="font-size: 1.2rem;">📞 Call 343-777-8893 Now</a>
+        <a href="contact-us.html" class="btn btn-outline-white" style="font-size: 1.2rem;">Schedule Online</a>
+      </div>
+      <p style="margin-top: 25px; font-size: 0.95rem; opacity: 0.85;">Same-Day Service Available • 1-Year Warranty • Written Report Included</p>
+    </div>
+  </div>
+</section>
+
+  <link rel="stylesheet" href="css/sticky-call.css">
+  <div class="sticky-call-bar" aria-label="Call us"><a href="tel:3437778893">&#128222; Call 343-777-8893</a></div>
+</body>
+</html>

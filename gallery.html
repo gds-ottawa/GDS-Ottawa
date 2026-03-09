@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes">
+  <title>Garage Door Gallery Ottawa | See Our Installations &amp; Repairs | GDS Ottawa</title>
+  <meta name="description" content="Real before &amp; after photos: garage door repair, installation, spring replacement, opener upgrades across Ottawa, Barrhaven, Kanata, Nepean, Stittsville &amp; more. 10% senior discount.">
+  <link rel="canonical" href="https://garagedoorsolutionsottawa.ca/gallery">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Open+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root { --primary-blue: #0066cc; --primary-dark: #1a1a1a; --accent-orange: #ff6600; --text-dark: #333; --text-light: #666; --light-gray: #f5f5f5; --medium-gray: #e0e0e0; }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body { font-family: 'Open Sans', Arial, sans-serif; line-height: 1.6; color: var(--text-dark); background: #fff; }
+    .landing-header { position: sticky; top: 0; z-index: 100; background: rgba(255,255,255,0.98); box-shadow: 0 2px 20px rgba(0,0,0,0.08); padding: 12px 24px; }
+    .landing-header-inner { max-width: 1200px; margin: 0 auto; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 16px; }
+    .landing-logo { height: 48px; width: auto; }
+    .landing-header-nav { display: flex; align-items: center; gap: 6px; flex-wrap: wrap; }
+    .landing-header-nav a { text-decoration: none; font-family: 'Montserrat', system-ui, sans-serif; font-size: 0.9rem; font-weight: 600; color: #1a1a1a; padding: 8px 14px; border-radius: 8px; transition: all 0.25s ease; }
+    .landing-header-nav a:hover { background: rgba(0,102,204,0.1); color: #0066cc; }
+    .nav-dropdown { position: relative; }
+    .nav-dropdown-trigger { display: inline-flex; align-items: center; text-decoration: none; font-family: 'Montserrat', system-ui, sans-serif; font-size: 0.9rem; font-weight: 600; color: #1a1a1a; padding: 8px 14px; border-radius: 8px; background: none; border: none; cursor: pointer; }
+    .nav-dropdown-trigger:hover { background: rgba(0,102,204,0.1); color: #0066cc; }
+    .nav-dropdown-trigger::after { content: '\25BC'; font-size: 0.6rem; opacity: 0.8; }
+    .nav-dropdown-service-area .nav-dropdown-trigger::after { content: none; }
+    .nav-dropdown-menu { position: absolute; top: 100%; left: 0; min-width: 260px; background: white; border-radius: 12px; box-shadow: 0 10px 40px rgba(0,0,0,0.15); padding: 8px 0; margin-top: 4px; opacity: 0; visibility: hidden; transform: translateY(-8px); transition: opacity 0.25s, transform 0.25s, visibility 0.25s; z-index: 200; border: 1px solid rgba(0,0,0,0.08); }
+    .nav-dropdown:hover .nav-dropdown-menu, .nav-dropdown:focus-within .nav-dropdown-menu { opacity: 1; visibility: visible; transform: translateY(0); }
+    .nav-dropdown-service-area:hover .nav-dropdown-menu, .nav-dropdown-service-area:focus-within .nav-dropdown-menu { opacity: 1; visibility: visible; transform: translateY(0); }
+    .nav-dropdown-menu.nav-dropdown-menu--scroll { max-height: 70vh; overflow-y: auto; }
+    .nav-dropdown-menu a { display: block; padding: 12px 20px; font-size: 0.9rem; color: #2b2b2b; text-decoration: none; white-space: nowrap; }
+    .nav-dropdown-menu a:hover { background: rgba(0,102,204,0.08); color: #0066cc; }
+    .landing-nav-ctas { display: flex; align-items: center; gap: 12px; flex-wrap: wrap; }
+    .landing-nav-ctas a { text-decoration: none; font-weight: 700; font-size: 0.95rem; padding: 10px 20px; border-radius: 50px; transition: all 0.3s ease; }
+    .landing-cta-phone { background: #0066cc; color: white; }
+    .landing-cta-phone:hover { background: #ff6600; transform: translateY(-2px); }
+    .landing-cta-quote { background: white; color: #0066cc; border: 2px solid #0066cc; }
+    .landing-cta-quote:hover { background: #0066cc; color: white; transform: translateY(-2px); }
+    @media (max-width: 900px) { .landing-header-nav { display: none; } .landing-header-inner .landing-nav-ctas { margin-left: auto; } }
+    .gallery-hero { background: linear-gradient(135deg, var(--primary-blue), var(--accent-orange)); color: white; text-align: center; padding: 56px 20px; }
+    .gallery-hero h1 { font-family: 'Montserrat', Arial, sans-serif; font-size: clamp(1.6rem, 4vw, 2.4rem); font-weight: 800; margin-bottom: 12px; text-shadow: 0 2px 4px rgba(0,0,0,0.2); }
+    .gallery-hero p { font-size: clamp(0.95rem, 2vw, 1.1rem); opacity: 0.95; }
+    .gallery-page { max-width: 1200px; margin: 0 auto; padding: 48px 20px 60px; }
+    .gallery-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); gap: 28px; }
+    .gallery-item { background: white; border-radius: 16px; overflow: hidden; box-shadow: 0 8px 28px rgba(0,0,0,0.1); border: 2px solid var(--medium-gray); transition: all 0.3s ease; }
+    .gallery-item:hover { border-color: var(--primary-blue); box-shadow: 0 12px 40px rgba(0,102,204,0.15); transform: translateY(-4px); }
+    .gallery-item img { width: 100%; height: 260px; object-fit: cover; display: block; }
+    .gallery-item figcaption { padding: 18px 20px; font-size: 0.95rem; color: var(--text-dark); line-height: 1.5; }
+    .gallery-cta { text-align: center; margin-top: 56px; padding: 40px 24px; background: linear-gradient(135deg, var(--primary-blue), #004999); border-radius: 20px; color: white; }
+    .gallery-cta h2 { font-family: 'Montserrat', Arial, sans-serif; font-size: clamp(1.4rem, 3vw, 1.8rem); font-weight: 800; margin-bottom: 12px; color: white; }
+    .gallery-cta p { margin-bottom: 20px; opacity: 0.95; }
+    .gallery-cta a { display: inline-flex; align-items: center; gap: 8px; padding: 14px 28px; background: white; color: var(--primary-blue); border-radius: 50px; text-decoration: none; font-weight: 700; font-family: 'Montserrat', Arial, sans-serif; margin: 4px; transition: all 0.3s ease; }
+    .gallery-cta a:hover { background: var(--accent-orange); color: white; transform: translateY(-2px); }
+  </style>
+</head>
+<body>
+
+  <header class="landing-header">
+    <div class="landing-header-inner">
+      <a href="index.html" class="landing-logo-link">
+        <img src="https://img1.wsimg.com/isteam/ip/1b277bec-adfe-487a-a8c7-5e77b97e6d1d/blob-962e0d4.png/:/rs=w:104,h:104,cg:true,m/cr=w:104,h:104/qt=q:95" alt="GDS Ottawa" class="landing-logo" width="104" height="104">
+      </a>
+      <nav class="landing-header-nav">
+        <a href="index.html">Home</a>
+        <div class="nav-dropdown">
+          <a href="index.html#services" class="nav-dropdown-trigger">Services</a>
+          <div class="nav-dropdown-menu">
+            <a href="garage-door-installation.html">Garage Door Installation</a>
+            <a href="garage-door-spring-repair.html">Garage Door Spring Repair</a>
+            <a href="garage-door-cable-repair.html">Garage Door Cable Repair</a>
+            <a href="garage-door-opener.html">Garage Door Opener</a>
+            <a href="garage-door-maintenance.html">Garage Door Maintenance</a>
+          </div>
+        </div>
+        <a href="faq.html">FAQ</a>
+        <div class="nav-dropdown nav-dropdown-service-area">
+          <span class="nav-dropdown-trigger" role="button" aria-haspopup="true" aria-expanded="false" tabindex="0">Service Area &#9660;</span>
+          <div class="nav-dropdown-menu nav-dropdown-menu--scroll">
+            <a href="carp.html">Carp</a>
+            <a href="kanata.html">Kanata</a>
+            <a href="nepean.html">Nepean</a>
+            <a href="richmond.html">Richmond</a>
+            <a href="manotick.html">Manotick</a>
+            <a href="orleans.html">Orleans</a>
+            <a href="vanier.html">Vanier</a>
+            <a href="carleton-place.html">Carleton Place</a>
+            <a href="hunt-club.html">Hunt Club</a>
+            <a href="dunrobin.html">Dunrobin</a>
+            <a href="kemptville.html">Kemptville</a>
+            <a href="metcalfe.html">Metcalfe</a>
+            <a href="greely.html">Greely</a>
+            <a href="stittsville.html">Stittsville</a>
+            <a href="barrhaven.html">Barrhaven</a>
+            <a href="gloucester.html">Gloucester</a>
+            <a href="riverside-south.html">Riverside South</a>
+            <a href="findlay-creek.html">Findlay Creek</a>
+            <a href="alta-vista.html">Alta Vista</a>
+            <a href="westboro.html">Westboro</a>
+            <a href="rockcliffe-park.html">Rockcliffe Park</a>
+            <a href="embrun.html">Embrun</a>
+            <a href="russell.html">Russell</a>
+          </div>
+        </div>
+        <a href="about.html">About Us</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="blog.html">Blog</a>
+        <a href="contact-us.html">Contact Us</a>
+      </nav>
+      <div class="landing-nav-ctas">
+        <a href="tel:3437778893" class="landing-cta-phone">&#128222; 343-777-8893</a>
+        <a href="contact-us.html" class="landing-cta-quote">Get Free Quote</a>
+      </div>
+    </div>
+  </header>
+
+  <section class="gallery-hero">
+    <h1>Transformations: See Our Garage Door Work!</h1>
+    <p>Real repair, installation and upgrade photos from Ottawa and surrounding areas. 10% discount for seniors on all repairs.</p>
+  </section>
+
+  <div class="gallery-page">
+    <div class="gallery-grid">
+      <figure class="gallery-item">
+        <img src="https://img1.wsimg.com/isteam/ip/1b277bec-adfe-487a-a8c7-5e77b97e6d1d/20260224_153212.jpg/:/cr=t:0%25,l:0%25,w:100%25,h:100%25/rs=w:600,cg:true" alt="Garage door repair in Ottawa — bottom seal, retainer, cables, brackets, rollers in Barrhaven" loading="lazy" width="600" height="260">
+        <figcaption>New bottom seal, retainer, cables, bottom brackets, and rollers in Barrhaven</figcaption>
+      </figure>
+      <figure class="gallery-item">
+        <img src="https://img1.wsimg.com/isteam/ip/1b277bec-adfe-487a-a8c7-5e77b97e6d1d/20260227_100605.jpg/:/cr=t:0%25,l:0%25,w:100%25,h:100%25/rs=w:600,cg:true" alt="Garage door panel repair — reinforcement to cracked panel in Kanata" loading="lazy" width="600" height="260">
+        <figcaption>Adding a reinforcement to a cracked panel. Kanata</figcaption>
+      </figure>
+      <figure class="gallery-item">
+        <img src="https://img1.wsimg.com/isteam/ip/1b277bec-adfe-487a-a8c7-5e77b97e6d1d/20260227_140936.jpg/:/rs=w:600,cg:true,m" alt="Garage door opener installation in Stittsville" loading="lazy" width="600" height="260">
+        <figcaption>Replacing an old garage door opener with a new one in Stittsville</figcaption>
+      </figure>
+      <figure class="gallery-item">
+        <img src="https://img1.wsimg.com/isteam/ip/1b277bec-adfe-487a-a8c7-5e77b97e6d1d/1000067240.jpg/:/cr=t:0%25,l:0%25,w:100%25,h:100%25/rs=w:600,cg:true" alt="Cables, bottom brackets, and rollers replaced in Stittsville" loading="lazy" width="600" height="260">
+        <figcaption>The garage door cables, bottom brackets, and rollers were replaced in Stittsville</figcaption>
+      </figure>
+      <figure class="gallery-item">
+        <img src="https://img1.wsimg.com/isteam/ip/1b277bec-adfe-487a-a8c7-5e77b97e6d1d/1000065932.jpg/:/cr=t:0%25,l:0%25,w:100%25,h:100%25/rs=w:600,cg:true" alt="Springs, cables, bottom brackets and rollers replaced in Barrhaven" loading="lazy" width="600" height="260">
+        <figcaption>The set of springs, cables, bottom brackets and rollers replaced in Barrhaven</figcaption>
+      </figure>
+      <figure class="gallery-item">
+        <img src="https://img1.wsimg.com/isteam/ip/1b277bec-adfe-487a-a8c7-5e77b97e6d1d/1000065957.jpg/:/cr=t:0%25,l:0%25,w:100%25,h:100%25/rs=w:600,cg:true" alt="Before and after rusted brackets replaced" loading="lazy" width="600" height="260">
+        <figcaption>Before and after the rusted brackets were replaced</figcaption>
+      </figure>
+      <figure class="gallery-item">
+        <img src="https://img1.wsimg.com/isteam/ip/1b277bec-adfe-487a-a8c7-5e77b97e6d1d/IMG-20260206-WA0000(1).jpg/:/cr=t:0%25,l:0%25,w:100%25,h:100%25/rs=w:600,cg:true" alt="Garage door replacement in Nepean — old to new insulated" loading="lazy" width="600" height="260">
+        <figcaption>Garage door replacement in Nepean from an old non-insulated to a new insulated garage door</figcaption>
+      </figure>
+      <figure class="gallery-item">
+        <img src="https://img1.wsimg.com/isteam/ip/1b277bec-adfe-487a-a8c7-5e77b97e6d1d/IMG-20260206-WA0001(8).jpg/:/cr=t:0%25,l:0%25,w:100%25,h:100%25/rs=w:600,cg:true" alt="New garage door and weather stripping in Kanata" loading="lazy" width="600" height="260">
+        <figcaption>New insulated garage door in Kanata</figcaption>
+      </figure>
+      <figure class="gallery-item">
+        <img src="https://img1.wsimg.com/isteam/ip/1b277bec-adfe-487a-a8c7-5e77b97e6d1d/20260206_063252.jpg/:/cr=t:0%25,l:0%25,w:100%25,h:100%25/rs=w:600,cg:true" alt="Weather stripping replacement in Ottawa" loading="lazy" width="600" height="260">
+        <figcaption>Before and after weather stripping replacement in Ottawa</figcaption>
+      </figure>
+      <figure class="gallery-item">
+        <img src="https://img1.wsimg.com/isteam/ip/1b277bec-adfe-487a-a8c7-5e77b97e6d1d/blob-fddabbe.png/:/cr=t:0%25,l:0%25,w:100%25,h:100%25/rs=w:600,cg:true" alt="Insulated garage door installed in Kanata" loading="lazy" width="600" height="260">
+        <figcaption>Beautiful, insulated garage door installed in Kanata</figcaption>
+      </figure>
+      <figure class="gallery-item">
+        <img src="https://img1.wsimg.com/isteam/ip/1b277bec-adfe-487a-a8c7-5e77b97e6d1d/blob-2c95119.png/:/cr=t:0%25,l:0%25,w:100%25,h:100%25/rs=w:600,cg:true" alt="Garage door installation in Ottawa" loading="lazy" width="600" height="260">
+        <figcaption>Stunning garage door installed in Ottawa</figcaption>
+      </figure>
+      <figure class="gallery-item">
+        <img src="https://img1.wsimg.com/isteam/ip/1b277bec-adfe-487a-a8c7-5e77b97e6d1d/blob-0072188.png/:/cr=t:0%25,l:0%25,w:100%25,h:100%25/rs=w:600,cg:true" alt="Before and after garage door replacement in Ottawa" loading="lazy" width="600" height="260">
+        <figcaption>A new insulated garage door, beautiful and durable</figcaption>
+      </figure>
+      <figure class="gallery-item">
+        <img src="https://img1.wsimg.com/isteam/ip/1b277bec-adfe-487a-a8c7-5e77b97e6d1d/20251025_142148.jpg/:/cr=t:0%25,l:0%25,w:100%25,h:100%25/rs=w:600,cg:true" alt="New insulated garage door with windows in Ottawa" loading="lazy" width="600" height="260">
+        <figcaption>A new insulated garage door with windows in Ottawa</figcaption>
+      </figure>
+      <figure class="gallery-item">
+        <img src="https://img1.wsimg.com/isteam/ip/1b277bec-adfe-487a-a8c7-5e77b97e6d1d/20251025_090340.jpg/:/cr=t:0%25,l:0%25,w:100%25,h:100%25/rs=w:600,cg:true" alt="Old non-insulated garage door replaced in Ottawa" loading="lazy" width="600" height="260">
+        <figcaption>An old non-insulated garage door that was replaced in Ottawa</figcaption>
+      </figure>
+      <figure class="gallery-item">
+        <img src="https://img1.wsimg.com/isteam/ip/1b277bec-adfe-487a-a8c7-5e77b97e6d1d/20251106_094900.jpg/:/cr=t:0%25,l:0%25,w:100%25,h:100%25/rs=w:600,cg:true" alt="Modern garage door installed in Kanata" loading="lazy" width="600" height="260">
+        <figcaption>Modern garage door installed in Kanata. A new garage door in Ottawa</figcaption>
+      </figure>
+      <figure class="gallery-item">
+        <img src="https://img1.wsimg.com/isteam/ip/1b277bec-adfe-487a-a8c7-5e77b97e6d1d/20251105_091510.jpg/:/cr=t:0%25,l:0%25,w:100%25,h:100%25/rs=w:600,cg:true" alt="Old wooden garage door replaced by GDS Ottawa" loading="lazy" width="600" height="260">
+        <figcaption>An old wooden garage door that was replaced by GDS Ottawa</figcaption>
+      </figure>
+      <figure class="gallery-item">
+        <img src="https://img1.wsimg.com/isteam/ip/1b277bec-adfe-487a-a8c7-5e77b97e6d1d/20251020_211230.jpg/:/cr=t:0%25,l:0%25,w:100%25,h:100%25/rs=w:600,cg:true" alt="New bottom seal and retainer in Ottawa" loading="lazy" width="600" height="260">
+        <figcaption>Adding a new garage door bottom seal and retainer in Ottawa</figcaption>
+      </figure>
+      <figure class="gallery-item">
+        <img src="https://img1.wsimg.com/isteam/ip/1b277bec-adfe-487a-a8c7-5e77b97e6d1d/20251015_182306.jpg/:/cr=t:0%25,l:0%25,w:100%25,h:100%25/rs=w:600,cg:true" alt="Garage door openers ready to install in Ottawa" loading="lazy" width="600" height="260">
+        <figcaption>5 garage door openers ready to be installed in Ottawa, same day service</figcaption>
+      </figure>
+      <figure class="gallery-item">
+        <img src="https://img1.wsimg.com/isteam/ip/1b277bec-adfe-487a-a8c7-5e77b97e6d1d/20251015_061012%20(1).jpg/:/cr=t:0%25,l:0%25,w:100%25,h:100%25/rs=w:600,cg:true" alt="Garage door out of track repair in Ottawa" loading="lazy" width="600" height="260">
+        <figcaption>Garage door out of track repair in Ottawa</figcaption>
+      </figure>
+      <figure class="gallery-item">
+        <img src="https://img1.wsimg.com/isteam/ip/1b277bec-adfe-487a-a8c7-5e77b97e6d1d/20251005_183045.jpg/:/cr=t:0%25,l:0%25,w:100%25,h:100%25/rs=w:600,cg:true" alt="Garage door replacement in Stittsville" loading="lazy" width="600" height="260">
+        <figcaption>Before and after replacing a garage door in Stittsville. Garage Door Installation in Ottawa</figcaption>
+      </figure>
+      <figure class="gallery-item">
+        <img src="https://img1.wsimg.com/isteam/ip/1b277bec-adfe-487a-a8c7-5e77b97e6d1d/20251005_173951.jpg/:/cr=t:0%25,l:0%25,w:100%25,h:100%25/rs=w:600,cg:true" alt="Garage door opener replacement in Ottawa" loading="lazy" width="600" height="260">
+        <figcaption>Garage door opener replacement in Ottawa</figcaption>
+      </figure>
+      <figure class="gallery-item">
+        <img src="https://img1.wsimg.com/isteam/ip/1b277bec-adfe-487a-a8c7-5e77b97e6d1d/20250222_164415.jpg/:/cr=t:0%25,l:0%25,w:100%25,h:100%25/rs=w:600,cg:true" alt="Garage door repair in Nepean" loading="lazy" width="600" height="260">
+        <figcaption>Garage door repair in Nepean</figcaption>
+      </figure>
+      <figure class="gallery-item">
+        <img src="https://img1.wsimg.com/isteam/ip/1b277bec-adfe-487a-a8c7-5e77b97e6d1d/20250124_095313.jpg/:/cr=t:0%25,l:0%25,w:100%25,h:100%25/rs=w:600,cg:true" alt="New garage door and opener in Greely" loading="lazy" width="600" height="260">
+        <figcaption>New garage door &amp; new garage door opener in Greely</figcaption>
+      </figure>
+      <figure class="gallery-item">
+        <img src="https://img1.wsimg.com/isteam/ip/1b277bec-adfe-487a-a8c7-5e77b97e6d1d/20250128_131110.jpg/:/cr=t:0%25,l:0%25,w:100%25,h:100%25/rs=w:600,cg:true" alt="Cracked panel repair in Barrhaven" loading="lazy" width="600" height="260">
+        <figcaption>Cracked panel repair in Barrhaven. Same day fixes</figcaption>
+      </figure>
+      <figure class="gallery-item">
+        <img src="https://img1.wsimg.com/isteam/ip/1b277bec-adfe-487a-a8c7-5e77b97e6d1d/20250121_090341.jpg/:/cr=t:0%25,l:0%25,w:100%25,h:100%25/rs=w:600,cg:true" alt="Garage door opener gear replacement in Stittsville" loading="lazy" width="600" height="260">
+        <figcaption>Garage door opener gear replacement in Stittsville — old and new side by side</figcaption>
+      </figure>
+      <figure class="gallery-item">
+        <img src="https://img1.wsimg.com/isteam/ip/1b277bec-adfe-487a-a8c7-5e77b97e6d1d/20250121_200049.jpg/:/cr=t:0%25,l:0%25,w:100%25,h:100%25/rs=w:600,cg:true" alt="Garage door opener gear replacement in Ottawa" loading="lazy" width="600" height="260">
+        <figcaption>Garage door opener gear replacement in Ottawa</figcaption>
+      </figure>
+      <figure class="gallery-item">
+        <img src="https://img1.wsimg.com/isteam/ip/1b277bec-adfe-487a-a8c7-5e77b97e6d1d/20250115_105310.jpg/:/cr=t:0%25,l:0%25,w:100%25,h:100%25/rs=w:600,cg:true" alt="Rusted garage door cables replaced in Kanata" loading="lazy" width="600" height="260">
+        <figcaption>Rusted garage door cables replaced in Kanata</figcaption>
+      </figure>
+      <figure class="gallery-item">
+        <img src="https://img1.wsimg.com/isteam/ip/1b277bec-adfe-487a-a8c7-5e77b97e6d1d/blob-f2936a4.png/:/cr=t:0%25,l:0%25,w:100%25,h:100%25/rs=w:600,cg:true" alt="Rusted garage door cable replaced in Manotick" loading="lazy" width="600" height="260">
+        <figcaption>Rusted garage door cable replaced in Manotick</figcaption>
+      </figure>
+      <figure class="gallery-item">
+        <img src="https://img1.wsimg.com/isteam/ip/1b277bec-adfe-487a-a8c7-5e77b97e6d1d/20250110_075357-COLLAGE.jpg/:/cr=t:0%25,l:0%25,w:100%25,h:100%25/rs=w:600,cg:true" alt="Broken garage door spring replaced in Ottawa" loading="lazy" width="600" height="260">
+        <figcaption>Broken garage door spring replaced in Ottawa</figcaption>
+      </figure>
+    </div>
+
+    <div class="gallery-cta">
+      <h2>Need Repair or a New Door?</h2>
+      <p>Same-day service across Ottawa. Free estimates. 10% senior discount on repairs.</p>
+      <a href="tel:3437778893">&#128222; Call 343-777-8893</a>
+      <a href="contact-us.html">Get Free Quote</a>
+    </div>
+  </div>
+  <link rel="stylesheet" href="css/sticky-call.css">
+  <div class="sticky-call-bar" aria-label="Call us"><a href="tel:3437778893">&#128222; Call 343-777-8893</a></div>
+</body>
+</html>

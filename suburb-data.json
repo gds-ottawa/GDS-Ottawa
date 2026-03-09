@@ -1,0 +1,158 @@
+{
+  "suburbs": [
+    {
+      "name": "Kanata",
+      "slug": "kanata",
+      "metaDescription": "Garage door repair & installation in Kanata, Ontario. Same-day service, 343-777-8893. Kanata Lakes, Bridlewood, Beaverbrook, Morgan's Grant & all Kanata neighbourhoods.",
+      "mapQuery": "Kanata, Ottawa, ON",
+      "neighbourhoods": ["Kanata Lakes", "Bridlewood", "Beaverbrook", "Morgan's Grant", "Glen Cairn", "Katimavik", "Marchwood", "Kanata Heights", "Terry Fox", "South March"]
+    },
+    {
+      "name": "Barrhaven",
+      "slug": "barrhaven",
+      "metaDescription": "Garage door repair & installation in Barrhaven, Ottawa. Same-day service, 343-777-8893. Half Moon Bay, Longfields, Chapman Mills, Stonebridge & all Barrhaven areas.",
+      "mapQuery": "Barrhaven, Ottawa, ON",
+      "neighbourhoods": ["Half Moon Bay", "Longfields", "Chapman Mills", "Stonebridge", "Jockvale", "Strandherd", "Fallowfield", "Greenbank", "Riverside South"]
+    },
+    {
+      "name": "Orleans",
+      "slug": "orleans",
+      "metaDescription": "Garage door repair & installation in Orleans, Ottawa. Same-day service, 343-777-8893. Avalon, Chapel Hill, Convent Glen, Fallingbrook & all Orleans neighbourhoods.",
+      "mapQuery": "Orleans, Ottawa, ON",
+      "neighbourhoods": ["Avalon", "Chapel Hill", "Convent Glen", "Queenswood Heights", "Fallingbrook", "Chateauneuf", "Notre-Dame-des-Champs", "Cardinal Creek", "Orleans Gardens"]
+    },
+    {
+      "name": "Stittsville",
+      "slug": "stittsville",
+      "metaDescription": "Garage door repair & installation in Stittsville, Ontario. Same-day service, 343-777-8893. Westbrook, Fernbank, Fairwinds & all Stittsville areas.",
+      "mapQuery": "Stittsville, Ottawa, ON",
+      "neighbourhoods": ["Westbrook", "Fernbank", "Fairwinds", "Granite Ridge", "Settler's Ridge", "Fletcher's Creek", "Abbotsford", "Stittsville Main"]
+    },
+    {
+      "name": "Gloucester",
+      "slug": "gloucester",
+      "metaDescription": "Garage door repair & installation in Gloucester, Ottawa. Same-day service, 343-777-8893. Beacon Hill, Blair, Blackburn Hamlet & all Gloucester neighbourhoods.",
+      "mapQuery": "Gloucester, Ottawa, ON",
+      "neighbourhoods": ["Beacon Hill", "Blair", "Blackburn Hamlet", "Cyrville", "Gloucester South", "Orleans (east)", "Convent Glen"]
+    },
+    {
+      "name": "Riverside South",
+      "slug": "riverside-south",
+      "metaDescription": "Garage door repair & installation in Riverside South, Ottawa. Same-day service, 343-777-8893. Servicing Riverside South, Manotick & surrounding communities.",
+      "mapQuery": "Riverside South, Ottawa, ON",
+      "neighbourhoods": ["Riverside South", "Manotick", "Findlay Creek", "Leitrim", "Blossom Park", "Greely", "Bowman"]
+    },
+    {
+      "name": "Findlay Creek",
+      "slug": "findlay-creek",
+      "metaDescription": "Garage door repair & installation in Findlay Creek, Ottawa. Same-day service, 343-777-8893. Findlay Creek, Blossom Park, Leitrim & south Ottawa.",
+      "mapQuery": "Findlay Creek, Ottawa, ON",
+      "neighbourhoods": ["Findlay Creek", "Blossom Park", "Leitrim", "Riverside South", "Greely", "Manotick"]
+    },
+    {
+      "name": "Alta Vista",
+      "slug": "alta-vista",
+      "metaDescription": "Garage door repair & installation in Alta Vista, Ottawa. Same-day service, 343-777-8893. Alta Vista, Elmvale, Riverview & central Ottawa neighbourhoods.",
+      "mapQuery": "Alta Vista, Ottawa, ON",
+      "neighbourhoods": ["Alta Vista", "Elmvale", "Riverview", "Billings Bridge", "Heron Park", "Walkley", "South Keys"]
+    },
+    {
+      "name": "Westboro",
+      "slug": "westboro",
+      "metaDescription": "Garage door repair & installation in Westboro, Ottawa. Same-day service, 343-777-8893. Westboro, Wellington West, Hintonburg & west-end Ottawa.",
+      "mapQuery": "Westboro, Ottawa, ON",
+      "neighbourhoods": ["Westboro", "Wellington West", "Hintonburg", "Mechanicsville", "Holland", "McKellar Park", "Island Park"]
+    },
+    {
+      "name": "Rockcliffe Park",
+      "slug": "rockcliffe-park",
+      "metaDescription": "Garage door repair & installation in Rockcliffe Park, Ottawa. Same-day service, 343-777-8893. Rockcliffe Park, New Edinburgh & prestigious Ottawa neighbourhoods.",
+      "mapQuery": "Rockcliffe Park, Ottawa, ON",
+      "neighbourhoods": ["Rockcliffe Park", "New Edinburgh", "Vanier", "Sandy Hill", "Lowertown", "Overbrook"]
+    },
+    {
+      "name": "Vanier",
+      "slug": "vanier",
+      "metaDescription": "Garage door repair & installation in Vanier, Ottawa. Same-day service, 343-777-8893. Vanier, Overbrook, Lowertown & east-central Ottawa.",
+      "mapQuery": "Vanier, Ottawa, ON",
+      "neighbourhoods": ["Vanier", "Overbrook", "Lowertown", "New Edinburgh", "Sandy Hill", "Beechwood", "Rockcliffe Park"]
+    },
+    {
+      "name": "Manotick",
+      "slug": "manotick",
+      "metaDescription": "Garage door repair & installation in Manotick, Ontario. Same-day service, 343-777-8893. Manotick village, Riverside South, Greely & south Ottawa.",
+      "mapQuery": "Manotick, Ottawa, ON",
+      "neighbourhoods": ["Manotick", "Riverside South", "Greely", "North Gower", "Kars", "Bowman", "Rideau Glen"]
+    },
+    {
+      "name": "Carp",
+      "slug": "carp",
+      "metaDescription": "Garage door repair & installation in Carp, Ontario. Same-day service, 343-777-8893. Carp, Dunrobin, West Carleton & rural Ottawa.",
+      "mapQuery": "Carp, Ontario",
+      "neighbourhoods": ["Carp", "Dunrobin", "Kinburn", "Fitzroy Harbour", "Constance Bay", "West Carleton", "Carp Village"]
+    },
+    {
+      "name": "Richmond",
+      "slug": "richmond",
+      "metaDescription": "Garage door repair & installation in Richmond, Ontario. Same-day service, 343-777-8893. Richmond, North Gower, Manotick & south Ottawa communities.",
+      "mapQuery": "Richmond, Ontario",
+      "neighbourhoods": ["Richmond", "North Gower", "Manotick", "Kars", "Greely", "Stittsville", "Munster"]
+    },
+    {
+      "name": "Carleton Place",
+      "slug": "carleton-place",
+      "metaDescription": "Garage door repair & installation in Carleton Place, Ontario. Same-day service, 343-777-8893. Carleton Place, Beckwith, Mississippi Mills & Lanark County.",
+      "mapQuery": "Carleton Place, ON",
+      "neighbourhoods": ["Carleton Place", "Beckwith", "Mississippi Mills", "Almonte", "Pakenham", "Smiths Falls", "Lanark"]
+    },
+    {
+      "name": "Kemptville",
+      "slug": "kemptville",
+      "metaDescription": "Garage door repair & installation in Kemptville, Ontario. Same-day service, 343-777-8893. Kemptville, North Grenville & North Dundas.",
+      "mapQuery": "Kemptville, ON",
+      "neighbourhoods": ["Kemptville", "North Grenville", "Oxford Mills", "Bishop's Mills", "Heckston", "South Gower", "Spencerville"]
+    },
+    {
+      "name": "Metcalfe",
+      "slug": "metcalfe",
+      "metaDescription": "Garage door repair & installation in Metcalfe, Ontario. Same-day service, 343-777-8893. Metcalfe, Osgoode, Vernon & south Ottawa rural.",
+      "mapQuery": "Metcalfe, Ontario",
+      "neighbourhoods": ["Metcalfe", "Osgoode", "Vernon", "Greely", "Manotick", "North Gower", "Russell"]
+    },
+    {
+      "name": "Greely",
+      "slug": "greely",
+      "metaDescription": "Garage door repair & installation in Greely, Ontario. Same-day service, 343-777-8893. Greely, Metcalfe, Manotick & south Ottawa.",
+      "mapQuery": "Greely, Ontario",
+      "neighbourhoods": ["Greely", "Metcalfe", "Manotick", "Osgoode", "Vernon", "Riverside South", "Findlay Creek"]
+    },
+    {
+      "name": "Embrun",
+      "slug": "embrun",
+      "metaDescription": "Garage door repair & installation in Embrun, Ontario. Same-day service, 343-777-8893. Embrun, Russell, Limoges & Prescott-Russell.",
+      "mapQuery": "Embrun, ON",
+      "neighbourhoods": ["Embrun", "Russell", "Limoges", "St. Isidore", "Plantagenet", "Cumberland", "Orleans"]
+    },
+    {
+      "name": "Russell",
+      "slug": "russell",
+      "metaDescription": "Garage door repair & installation in Russell, Ontario. Same-day service, 343-777-8893. Russell, Embrun, Limoges & Prescott-Russell County.",
+      "mapQuery": "Russell, ON",
+      "neighbourhoods": ["Russell", "Embrun", "Limoges", "St. Isidore", "Plantagenet", "Cumberland", "Orleans", "Greely"]
+    },
+    {
+      "name": "Dunrobin",
+      "slug": "dunrobin",
+      "metaDescription": "Garage door repair & installation in Dunrobin, Ontario. Same-day service, 343-777-8893. Dunrobin, Carp, West Carleton & Kanata area.",
+      "mapQuery": "Dunrobin, Ontario",
+      "neighbourhoods": ["Dunrobin", "Carp", "Kinburn", "Fitzroy Harbour", "Constance Bay", "Kanata", "Stittsville"]
+    },
+    {
+      "name": "Hunt Club",
+      "slug": "hunt-club",
+      "metaDescription": "Garage door repair & installation in Hunt Club, Ottawa. Same-day service, 343-777-8893. Hunt Club, South Keys, Greenboro & south Ottawa.",
+      "mapQuery": "Hunt Club, Ottawa, ON",
+      "neighbourhoods": ["Hunt Club", "South Keys", "Greenboro", "Alta Vista", "Blossom Park", "Findlay Creek", "Leitrim"]
+    }
+  ]
+}
