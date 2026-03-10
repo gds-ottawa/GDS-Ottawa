@@ -69,6 +69,55 @@
       padding: 0 20px; 
     }
 
+    .gds-seo-links {
+      margin: 30px 0;
+      padding: 22px 24px;
+      background: #f8f9fa;
+      border-radius: 16px;
+      border-left: 4px solid var(--primary-blue);
+      box-shadow: 0 8px 24px rgba(0,0,0,0.04);
+    }
+    .gds-seo-links-title {
+      font-family: 'Montserrat', system-ui, sans-serif;
+      font-size: 1.2rem;
+      font-weight: 800;
+      color: var(--primary-dark);
+      margin-bottom: 6px;
+    }
+    .gds-seo-links-desc {
+      font-size: 0.95rem;
+      color: var(--text-light);
+      margin-bottom: 14px;
+    }
+    .gds-seo-links-list {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px 14px;
+    }
+    .gds-seo-links-list li { margin: 0; }
+    .gds-seo-links-list a {
+      display: inline-block;
+      padding: 8px 16px;
+      border-radius: 999px;
+      border: 1px solid var(--medium-gray);
+      font-size: 0.9rem;
+      font-weight: 600;
+      color: var(--primary-blue);
+      text-decoration: none;
+      background: #ffffff;
+      transition: all 0.2s ease;
+    }
+    .gds-seo-links-list a:hover {
+      border-color: var(--primary-blue);
+      background: var(--primary-blue);
+      color: #ffffff;
+      text-decoration: none;
+      transform: translateY(-1px);
+    }
+
     /* Header - match index */
     .landing-header {
       position: sticky;
@@ -1031,6 +1080,23 @@
     <p class="section-subtitle">
       Regular maintenance keeps your door running smoothly, prevents breakdowns, and extends the life of expensive components like springs and openers.
     </p>
+
+    <section class="gds-seo-links" aria-label="Areas we serve for maintenance">
+      <h2 class="gds-seo-links-title">Areas we serve</h2>
+      <p class="gds-seo-links-desc">Garage door maintenance and tune-ups across Ottawa and 23+ suburbs. No distance surcharges.</p>
+      <ul class="gds-seo-links-list">
+        <li><a href="kanata">Kanata</a></li>
+        <li><a href="nepean">Nepean</a></li>
+        <li><a href="barrhaven">Barrhaven</a></li>
+        <li><a href="stittsville">Stittsville</a></li>
+        <li><a href="orleans">Orleans</a></li>
+        <li><a href="gloucester">Gloucester</a></li>
+        <li><a href="manotick">Manotick</a></li>
+        <li><a href="greely">Greely</a></li>
+        <li><a href="carp">Carp</a></li>
+        <li><a href="contact-us">Get a free quote</a></li>
+      </ul>
+    </section>
 
     <!-- 21-Point Checklist -->
     <h3 class="section-title" style="margin-top: 60px;">Complete 21-Point Inspection & Service</h3>
