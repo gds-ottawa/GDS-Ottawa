@@ -913,8 +913,58 @@
         <a href="tel:3437778893" class="landing-cta-phone">&#128222; 343-777-8893</a>
         <a href="contact-us" class="landing-cta-quote">Get Free Quote</a>
       </div>
+      <button type="button" class="landing-hamburger" aria-label="Open menu" id="landingHamburger" onclick="toggleMobileMenu()"><span></span><span></span><span></span></button>
     </div>
   </header>
+  <div class="landing-mobile-overlay" id="landingMobileOverlay" onclick="toggleMobileMenu()" aria-hidden="true"></div>
+  <nav class="landing-mobile-menu" id="landingMobileMenu" aria-label="Mobile navigation">
+    <a href="/">Home</a>
+    <div class="landing-mobile-section-title">Services</div>
+    <div class="mobile-sub">
+      <a href="garage-door-installation">Garage Door Installation</a>
+      <a href="garage-door-spring-repair">Spring Repair</a>
+      <a href="garage-door-cable-repair">Cable Repair</a>
+      <a href="garage-door-opener">Opener</a>
+      <a href="garage-door-maintenance">Maintenance</a>
+    </div>
+    <a href="faq">FAQ</a>
+    <div class="landing-mobile-section-title">Service Area</div>
+    <div class="mobile-sub">
+      <a href="stittsville">Stittsville</a>
+      <a href="kanata">Kanata</a>
+      <a href="barrhaven">Barrhaven</a>
+      <a href="nepean">Nepean</a>
+      <a href="orleans">Orleans</a>
+      <a href="gloucester">Gloucester</a>
+      <a href="manotick">Manotick</a>
+      <a href="carp">Carp</a>
+      <a href="richmond">Richmond</a>
+      <a href="vanier">Vanier</a>
+      <a href="alta-vista">Alta Vista</a>
+      <a href="westboro">Westboro</a>
+    </div>
+    <a href="about">About Us</a>
+    <a href="gallery">Gallery</a>
+    <a href="blog">Blog</a>
+    <a href="contact-us">Contact Us</a>
+    <a href="tel:3437778893" class="landing-cta-phone" style="display:block;text-align:center;margin-top:16px;">&#128222; 343-777-8893</a>
+    <a href="contact-us" class="landing-cta-quote" style="display:block;text-align:center;margin-top:8px;">Get Free Quote</a>
+  </nav>
+  <script>
+  function toggleMobileMenu() {
+    var btn = document.getElementById('landingHamburger');
+    var menu = document.getElementById('landingMobileMenu');
+    var overlay = document.getElementById('landingMobileOverlay');
+    if (!btn || !menu || !overlay) return;
+    var isOpen = menu.classList.contains('open');
+    btn.classList.toggle('open');
+    menu.classList.toggle('open');
+    overlay.classList.toggle('open');
+    overlay.setAttribute('aria-hidden', isOpen ? 'true' : 'false');
+    btn.setAttribute('aria-label', isOpen ? 'Open menu' : 'Close menu');
+    document.body.style.overflow = isOpen ? '' : 'hidden';
+  }
+  </script>
 
   <nav aria-label="Breadcrumb" class="gds-breadcrumb-wrap">
     <div class="container">
