@@ -238,5 +238,258 @@
   </div>
   <link rel="stylesheet" href="css/sticky-call.css">
   <div class="sticky-call-bar" aria-label="Call us"><a href="tel:3437778893">&#128222; Call 343-777-8893</a></div>
+
+  <style>
+    .gds-footer {
+      --blue: #0066cc;
+      --blue-dark: #004999;
+      --orange: #ff6600;
+      --white: #ffffff;
+      --gray-900: #050816;
+      --gray-800: #101828;
+      --gray-700: #1d2939;
+      --gray-600: #cbd5f5;
+      --gray-400: #9ca3af;
+      --gray-300: #4b5563;
+      color: #e5e7eb;
+      position: relative;
+      overflow: hidden;
+      font-family: 'Open Sans', system-ui, sans-serif;
+      margin-top: 60px;
+    }
+    .gds-footer::before, .gds-footer::after {
+      content: ''; position: absolute; border-radius: 999px; filter: blur(80px); opacity: 0.45; z-index: 0;
+    }
+    .gds-footer::before { width: 480px; height: 480px; background: rgba(0,102,204,0.6); top: -240px; left: -120px; }
+    .gds-footer::after { width: 420px; height: 420px; background: rgba(255,102,0,0.4); bottom: -210px; right: -80px; }
+    .gds-footer-accent {
+      position: absolute; inset: 0;
+      background: radial-gradient(circle at 10% 0%, rgba(56,189,248,0.22) 0, transparent 55%), radial-gradient(circle at 90% 10%, rgba(248,250,252,0.06) 0, transparent 55%), linear-gradient(180deg, rgba(15,23,42,0.95), #020617 55%, #000 100%);
+      z-index: 0;
+    }
+    .gds-footer-cta { position: relative; z-index: 1; padding: 40px 20px 0; }
+    .gds-footer-cta-card {
+      max-width: 1100px; margin: 0 auto; padding: 28px 30px; border-radius: 20px;
+      background: radial-gradient(circle at top left, rgba(59,130,246,0.35) 0, rgba(15,23,42,0.98) 40%, rgba(15,23,42,1) 100%);
+      border: 1px solid rgba(148,163,184,0.45);
+      box-shadow: 0 18px 45px rgba(15,23,42,0.75), 0 0 0 1px rgba(15,23,42,0.9);
+      display: flex; align-items: center; justify-content: space-between; gap: 22px; overflow: hidden; position: relative;
+    }
+    .gds-footer-cta-card::before {
+      content: ''; position: absolute; inset: 0;
+      background: radial-gradient(circle at 0 0, rgba(56,189,248,0.22) 0, transparent 50%), radial-gradient(circle at 100% 100%, rgba(251,191,36,0.18) 0, transparent 55%);
+      opacity: 0.9; pointer-events: none;
+    }
+    .gds-footer-cta-text { position: relative; z-index: 1; max-width: 580px; }
+    .gds-footer-cta-text h3 { font-family: 'Montserrat', system-ui, sans-serif; font-size: clamp(1.4rem, 2.4vw, 1.85rem); font-weight: 800; color: #f9fafb; margin: 0 0 10px 0; letter-spacing: 0.02em; }
+    .gds-footer-cta-text p { margin: 0; font-size: 0.95rem; color: #e5e7eb; opacity: 0.9; }
+    .gds-footer-cta-buttons { position: relative; z-index: 1; display: flex; flex-direction: column; gap: 10px; min-width: 220px; align-items: stretch; }
+    .gds-footer-cta-btn {
+      display: inline-flex; align-items: center; justify-content: center; gap: 8px; padding: 11px 22px; border-radius: 999px; text-decoration: none;
+      font-family: 'Montserrat', system-ui, sans-serif; font-weight: 800; font-size: 0.9rem; letter-spacing: 0.03em; text-transform: uppercase; transition: all 0.25s ease; border-width: 1px; border-style: solid; cursor: pointer; white-space: nowrap;
+    }
+    .gds-footer-cta-btn-orange { background: linear-gradient(135deg, #fb923c, #ea580c); border-color: rgba(248,250,252,0.18); color: #0b1120; box-shadow: 0 12px 30px rgba(249,115,22,0.55), 0 0 0 1px rgba(15,23,42,0.9); }
+    .gds-footer-cta-btn-orange:hover { transform: translateY(-2px); box-shadow: 0 18px 45px rgba(248,113,22,0.7), 0 0 0 1px rgba(15,23,42,0.9); }
+    .gds-footer-cta-btn-outline { background: transparent; border-color: rgba(148,163,184,0.7); color: #e5e7eb; }
+    .gds-footer-cta-btn-outline:hover { background: rgba(15,23,42,0.9); border-color: rgba(148,163,184,0.95); transform: translateY(-2px); }
+    .gds-footer-main { position: relative; z-index: 1; max-width: 1200px; margin: 0 auto; padding: 40px 30px 30px; display: grid; grid-template-columns: minmax(0, 2fr) repeat(3, minmax(0, 1.4fr)); gap: 30px; }
+    .gds-footer-brand-logo { display: flex; align-items: center; gap: 12px; margin-bottom: 12px; }
+    .gds-footer-brand-logo img { border-radius: 999px; border: 2px solid rgba(248,250,252,0.5); box-shadow: 0 8px 24px rgba(15,23,42,0.85); }
+    .gds-footer-brand-name { font-family: 'Montserrat', system-ui, sans-serif; font-weight: 900; font-size: 1.1rem; letter-spacing: 0.06em; text-transform: uppercase; color: #f9fafb; }
+    .gds-footer-brand-sub { font-size: 0.7rem; font-weight: 700; letter-spacing: 0.24em; text-transform: uppercase; color: #f97316; }
+    .gds-footer-brand-desc { font-size: 0.9rem; line-height: 1.7; color: var(--gray-600); margin-bottom: 20px; }
+    .gds-footer-social { display: flex; gap: 10px; flex-wrap: wrap; }
+    .gds-footer-social a { width: 38px; height: 38px; border-radius: 10px; background: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.08); display: flex; align-items: center; justify-content: center; text-decoration: none; font-size: 1.1rem; color: var(--gray-600); transition: all 0.3s; }
+    .gds-footer-social a:hover { background: var(--orange); color: var(--white); border-color: var(--orange); transform: translateY(-3px); box-shadow: 0 4px 12px rgba(255,102,0,0.3); }
+    .gds-footer-heading { font-family: 'Montserrat', system-ui, sans-serif; font-size: 0.8rem; font-weight: 800; color: var(--orange); letter-spacing: 2px; text-transform: uppercase; margin-bottom: 20px; display: flex; align-items: center; gap: 8px; }
+    .gds-footer-heading::after { content: ''; flex: 1; height: 1px; background: linear-gradient(90deg, var(--orange), transparent); opacity: 0.3; }
+    .gds-footer-links { list-style: none; padding: 0; margin: 0; }
+    .gds-footer-links li { margin-bottom: 2px; }
+    .gds-footer-links a { display: inline-flex; align-items: center; gap: 6px; padding: 5px 0; text-decoration: none; font-size: 0.88rem; font-weight: 600; color: var(--gray-600); transition: all 0.25s; position: relative; }
+    .gds-footer-links a::before { content: ''; width: 0; height: 2px; background: var(--orange); position: absolute; bottom: 2px; left: 0; transition: width 0.3s; }
+    .gds-footer-links a:hover { color: var(--white); transform: translateX(4px); }
+    .gds-footer-links a:hover::before { width: 100%; }
+    .gds-footer-areas-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 0; }
+    .gds-footer-areas-grid a { font-size: 0.82rem; }
+    .gds-footer-contact-item { display: flex; align-items: flex-start; gap: 12px; margin-bottom: 16px; }
+    .gds-footer-contact-icon { width: 36px; height: 36px; border-radius: 10px; background: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.08); display: flex; align-items: center; justify-content: center; font-size: 1rem; flex-shrink: 0; }
+    .gds-footer-contact-label { font-size: 0.7rem; font-weight: 700; color: var(--gray-400); letter-spacing: 1px; text-transform: uppercase; margin-bottom: 2px; }
+    .gds-footer-contact-value { font-size: 0.92rem; font-weight: 700; color: var(--gray-800); line-height: 1.4; }
+    .gds-footer-contact-value a { color: var(--gray-800); text-decoration: none; transition: color 0.25s; }
+    .gds-footer-contact-value a:hover { color: var(--orange); }
+    .gds-footer-badges { display: flex; align-items: center; gap: 14px; margin-top: 20px; flex-wrap: wrap; }
+    .gds-footer-badge { display: flex; align-items: center; gap: 6px; padding: 6px 12px; background: rgba(255,255,255,0.04); border: 1px solid rgba(255,255,255,0.08); border-radius: 8px; font-size: 0.75rem; font-weight: 700; color: var(--gray-600); white-space: nowrap; }
+    .gds-footer-badge-icon { font-size: 1rem; }
+    .gds-footer-bottom { position: relative; z-index: 1; border-top: 1px solid rgba(255,255,255,0.06); }
+    .gds-footer-bottom-inner { max-width: 1200px; margin: 0 auto; padding: 22px 30px; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 12px; }
+    .gds-footeropyright { font-size: 0.8rem; color: var(--gray-400); }
+    .gds-footeropyright a { color: var(--gray-600); text-decoration: none; }
+    .gds-footer-bottom-links { display: flex; gap: 20px; }
+    .gds-footer-bottom-links a { font-size: 0.8rem; color: var(--gray-400); text-decoration: none; transition: color 0.25s; }
+    .gds-footer-bottom-links a:hover { color: var(--white); }
+    .gds-footer-top-btn { position: fixed; bottom: 80px; right: 24px; width: 46px; height: 46px; border-radius: 50%; background: var(--blue); color: var(--white); display: flex; align-items: center; justify-content: center; text-decoration: none; font-size: 1.3rem; box-shadow: 0 4px 20px rgba(0,102,204,0.4); transition: all 0.3s; z-index: 90; opacity: 0; visibility: hidden; transform: translateY(10px); }
+    .gds-footer-top-btn.visible { opacity: 1; visibility: visible; transform: translateY(0); }
+    .gds-footer-top-btn:hover { background: var(--orange); transform: translateY(-4px); box-shadow: 0 8px 25px rgba(255,102,0,0.4); }
+    @media (max-width: 960px) { .gds-footer-main { grid-template-columns: 1fr 1fr; gap: 35px; } .gds-footer-cta-card { flex-direction: column; text-align: center; } .gds-footer-cta-buttons { justify-content: center; } }
+    @media (max-width: 640px) { .gds-footer-main { grid-template-columns: 1fr; gap: 30px; padding: 40px 20px 30px; } .gds-footer-cta { padding: 30px 16px 0; } .gds-footer-cta-card { padding: 28px 22px; } .gds-footer-cta-buttons { flex-direction: column; width: 100%; } .gds-footer-cta-btn { width: 100%; justify-content: center; } .gds-footer-areas-grid { grid-template-columns: 1fr 1fr; } .gds-footer-bottom-inner { flex-direction: column; text-align: center; } .gds-footer-bottom-links { justify-content: center; } .gds-footer-badges { justify-content: center; } }
+  </style>
+
+  <footer class="gds-footer">
+    <div class="gds-footer-accent"></div>
+    <div class="gds-footer-cta">
+      <div class="gds-footer-cta-card">
+        <div class="gds-footer-cta-text">
+          <h3>Need Your Garage Door Fixed Today?</h3>
+          <p>Same-day service across Ottawa &amp; surrounding areas. Free estimates, no hidden fees, 1-year warranty.</p>
+        </div>
+        <div class="gds-footer-cta-buttons">
+          <a href="tel:3437778893" class="gds-footer-cta-btn gds-footer-cta-btn-orange">&#128222; Call 343-777-8893</a>
+          <a href="contact-us.html" class="gds-footer-cta-btn gds-footer-cta-btn-outline">Get Free Quote</a>
+        </div>
+      </div>
+    </div>
+    <div class="gds-footer-main">
+      <div>
+        <div class="gds-footer-brand-logo">
+          <img src="https://img1.wsimg.com/isteam/ip/1b277bec-adfe-487a-a8c7-5e77b97e6d1d/blob-962e0d4.png/:/rs=w:104,h:104,cg:true,m/cr=w:104,h:104/qt=q:95" alt="GDS Ottawa" width="52" height="52" loading="lazy">
+          <div>
+            <div class="gds-footer-brand-name">GDS Ottawa</div>
+            <span class="gds-footer-brand-sub">GARAGE DOORS &amp; OPENERS</span>
+          </div>
+        </div>
+        <p class="gds-footer-brand-desc">Family-owned garage door experts serving Ottawa since 2020. Licensed, insured, and trusted by 1,000+ homeowners. Same-day emergency repairs &amp; professional installations.</p>
+        <div class="gds-footer-social">
+          <a href="https://www.facebook.com/505472135986046" target="_blank" rel="noopener noreferrer" aria-label="Facebook">&#128216;</a>
+          <a href="https://www.instagram.com/GDSottawa" target="_blank" rel="noopener noreferrer" aria-label="Instagram">&#128247;</a>
+          <a href="https://www.youtube.com/@GDS-GarageDoorsOpenersOttawa" target="_blank" rel="noopener noreferrer" aria-label="YouTube">&#9654;&#65039;</a>
+          <a href="https://www.tiktok.com/@gds.garage.doors.ottawa" target="_blank" rel="noopener noreferrer" aria-label="TikTok">&#127925;</a>
+          <a href="https://www.linkedin.com/company/gds-garage-doors-openers-ottawa" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">&#128188;</a>
+          <a href="https://www.pinterest.com/gdsgaragedoorsopeners" target="_blank" rel="noopener noreferrer" aria-label="Pinterest">&#128204;</a>
+          <a href="https://www.x.com/GDSottawa" target="_blank" rel="noopener noreferrer" aria-label="X">&#10006;&#65039;</a>
+          <a href="https://www.yelp.com/biz/gds-garage-doors-and-openers-ottawa-ottawa" target="_blank" rel="noopener noreferrer" aria-label="Yelp">&#11088;</a>
+        </div>
+        <div class="gds-footer-badges">
+          <div class="gds-footer-badge"><span class="gds-footer-badge-icon">&#128737;&#65039;</span> BBB A Rated</div>
+          <div class="gds-footer-badge"><span class="gds-footer-badge-icon">&#11088;</span> 5.0 Google</div>
+          <div class="gds-footer-badge"><span class="gds-footer-badge-icon">&#9989;</span> HomeStars</div>
+        </div>
+      </div>
+      <div>
+        <h4 class="gds-footer-heading">Services</h4>
+        <ul class="gds-footer-links">
+          <li><a href="garage-door-spring-repair.html">Spring Repair</a></li>
+          <li><a href="garage-door-cable-repair.html">Cable Repair</a></li>
+          <li><a href="garage-door-opener.html">Opener Repair &amp; Install</a></li>
+          <li><a href="garage-door-installation.html">New Door Installation</a></li>
+          <li><a href="garage-door-maintenance.html">Maintenance &amp; Tune-Up</a></li>
+        </ul>
+        <h4 class="gds-footer-heading" style="margin-top: 22px;">Quick Links</h4>
+        <ul class="gds-footer-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="faq.html">FAQ</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="contact-us.html">Contact Us</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="gds-footer-heading">Service Areas</h4>
+        <div class="gds-footer-areas-grid">
+          <ul class="gds-footer-links">
+            <li><a href="kanata.html">Kanata</a></li>
+            <li><a href="barrhaven.html">Barrhaven</a></li>
+            <li><a href="nepean.html">Nepean</a></li>
+            <li><a href="stittsville.html">Stittsville</a></li>
+            <li><a href="orleans.html">Orleans</a></li>
+            <li><a href="gloucester.html">Gloucester</a></li>
+            <li><a href="manotick.html">Manotick</a></li>
+            <li><a href="greely.html">Greely</a></li>
+            <li><a href="carp.html">Carp</a></li>
+            <li><a href="richmond.html">Richmond</a></li>
+            <li><a href="embrun.html">Embrun</a></li>
+            <li><a href="russell.html">Russell</a></li>
+          </ul>
+          <ul class="gds-footer-links">
+            <li><a href="alta-vista.html">Alta Vista</a></li>
+            <li><a href="westboro.html">Westboro</a></li>
+            <li><a href="rockcliffe-park.html">Rockcliffe Park</a></li>
+            <li><a href="riverside-south.html">Riverside South</a></li>
+            <li><a href="findlay-creek.html">Findlay Creek</a></li>
+            <li><a href="vanier.html">Vanier</a></li>
+            <li><a href="hunt-club.html">Hunt Club</a></li>
+            <li><a href="dunrobin.html">Dunrobin</a></li>
+            <li><a href="kemptville.html">Kemptville</a></li>
+            <li><a href="metcalfe.html">Metcalfe</a></li>
+            <li><a href="carleton-place.html">Carleton Place</a></li>
+          </ul>
+        </div>
+      </div>
+      <div>
+        <h4 class="gds-footer-heading">Contact</h4>
+        <div class="gds-footer-contact-item">
+          <div class="gds-footer-contact-icon">&#128222;</div>
+          <div>
+            <div class="gds-footer-contact-label">Phone</div>
+            <div class="gds-footer-contact-value"><a href="tel:3437778893">343-777-8893</a></div>
+          </div>
+        </div>
+        <div class="gds-footer-contact-item">
+          <div class="gds-footer-contact-icon">&#128172;</div>
+          <div>
+            <div class="gds-footer-contact-label">WhatsApp</div>
+            <div class="gds-footer-contact-value"><a href="https://wa.me/13437778893" target="_blank" rel="noopener">Text Us Anytime</a></div>
+          </div>
+        </div>
+        <div class="gds-footer-contact-item">
+          <div class="gds-footer-contact-icon">&#128231;</div>
+          <div>
+            <div class="gds-footer-contact-label">Email</div>
+            <div class="gds-footer-contact-value"><a href="mailto:gdsottawa@gmail.com">gdsottawa@gmail.com</a></div>
+          </div>
+        </div>
+        <div class="gds-footer-contact-item">
+          <div class="gds-footer-contact-icon">&#128336;</div>
+          <div>
+            <div class="gds-footer-contact-label">Hours</div>
+            <div class="gds-footer-contact-value">9 AM – 9 PM<br>7 Days a Week</div>
+          </div>
+        </div>
+        <div class="gds-footer-contact-item">
+          <div class="gds-footer-contact-icon">&#128205;</div>
+          <div>
+            <div class="gds-footer-contact-label">Service Area</div>
+            <div class="gds-footer-contact-value">Ottawa &amp; 23+ Suburbs<br>No Distance Surcharges</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="gds-footer-bottom">
+      <div class="gds-footer-bottom-inner">
+        <div class="gds-footeropyright">
+          &copy; 2026 <a href="index.html">GDS - Garage Doors &amp; Openers Ottawa</a>. All rights reserved. Licensed &amp; insured.
+        </div>
+        <div class="gds-footer-bottom-links">
+          <a href="contact-us.html">Contact</a>
+          <a href="faq.html">FAQ</a>
+          <a href="about.html">About</a>
+          <a href="gallery.html">Gallery</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <a href="#" class="gds-footer-top-btn" id="backToTop" aria-label="Back to top">&#9650;</a>
+
+  <script>
+  (function() {
+    var btn = document.getElementById('backToTop');
+    if (!btn) return;
+    window.addEventListener('scroll', function() {
+      if (window.scrollY > 600) { btn.classList.add('visible'); } else { btn.classList.remove('visible'); }
+    });
+  })();
+  </script>
+
 </body>
 </html>
