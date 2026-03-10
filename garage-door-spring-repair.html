@@ -72,6 +72,57 @@
       padding: 0 20px; 
     }
 
+    .gds-seo-links {
+      margin: 30px 0;
+      padding: 22px 24px;
+      background: #f8f9fa;
+      border-radius: 16px;
+      border-left: 4px solid var(--primary-blue);
+      box-shadow: 0 8px 24px rgba(0,0,0,0.04);
+    }
+    .gds-seo-links-title {
+      font-family: 'Montserrat', system-ui, sans-serif;
+      font-size: 1.2rem;
+      font-weight: 800;
+      color: var(--primary-dark);
+      margin-bottom: 6px;
+    }
+    .gds-seo-links-desc {
+      font-size: 0.95rem;
+      color: var(--text-light);
+      margin-bottom: 14px;
+    }
+    .gds-seo-links-list {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px 14px;
+    }
+    .gds-seo-links-list li {
+      margin: 0;
+    }
+    .gds-seo-links-list a {
+      display: inline-block;
+      padding: 8px 16px;
+      border-radius: 999px;
+      border: 1px solid var(--medium-gray);
+      font-size: 0.9rem;
+      font-weight: 600;
+      color: var(--primary-blue);
+      text-decoration: none;
+      background: #ffffff;
+      transition: all 0.2s ease;
+    }
+    .gds-seo-links-list a:hover {
+      border-color: var(--primary-blue);
+      background: var(--primary-blue);
+      color: #ffffff;
+      text-decoration: none;
+      transform: translateY(-1px);
+    }
+
     /* Header - match index */
     .landing-header {
       position: sticky;
@@ -1044,21 +1095,6 @@
       </div>
     </div>
   </header>
-
-<nav aria-label="Breadcrumb" class="gds-breadcrumb-wrap">
-  <div class="container">
-    <ol class="gds-breadcrumb" itemscope itemtype="https://schema.org/BreadcrumbList">
-      <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
-        <a itemprop="item" href="/"><span itemprop="name">Home</span></a>
-        <meta itemprop="position" content="1">
-      </li>
-      <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
-        <span itemprop="name">Spring Repair</span>
-        <meta itemprop="position" content="2">
-      </li>
-    </ol>
-  </div>
-</nav>
 
 <!-- Hero Section -->
 <section class="hero-section">
