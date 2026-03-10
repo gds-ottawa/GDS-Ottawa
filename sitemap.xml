@@ -2,52 +2,51 @@
 <urlset xmlns="https://www.sitemaps.org/schemas/sitemap/0.9">
   <!-- Core pages -->
   <url><loc>https://garagedoorsolutionsottawa.ca/</loc></url>
-  <url><loc>https://garagedoorsolutionsottawa.ca/contact-us.html</loc></url>
-  <url><loc>https://garagedoorsolutionsottawa.ca/about.html</loc></url>
-  <url><loc>https://garagedoorsolutionsottawa.ca/blog.html</loc></url>
-  <url><loc>https://garagedoorsolutionsottawa.ca/gallery.html</loc></url>
-  <url><loc>https://garagedoorsolutionsottawa.ca/faq.html</loc></url>
+  <url><loc>https://garagedoorsolutionsottawa.ca/contact-us</loc></url>
+  <url><loc>https://garagedoorsolutionsottawa.ca/about</loc></url>
+  <url><loc>https://garagedoorsolutionsottawa.ca/blog</loc></url>
+  <url><loc>https://garagedoorsolutionsottawa.ca/gallery</loc></url>
+  <url><loc>https://garagedoorsolutionsottawa.ca/faq</loc></url>
 
   <!-- Service pages -->
-  <url><loc>https://garagedoorsolutionsottawa.ca/garage-door-installation.html</loc></url>
-  <url><loc>https://garagedoorsolutionsottawa.ca/garage-door-spring-repair.html</loc></url>
-  <url><loc>https://garagedoorsolutionsottawa.ca/garage-door-cable-repair.html</loc></url>
-  <url><loc>https://garagedoorsolutionsottawa.ca/garage-door-opener.html</loc></url>
-  <url><loc>https://garagedoorsolutionsottawa.ca/garage-door-maintenance.html</loc></url>
+  <url><loc>https://garagedoorsolutionsottawa.ca/garage-door-installation</loc></url>
+  <url><loc>https://garagedoorsolutionsottawa.ca/garage-door-spring-repair</loc></url>
+  <url><loc>https://garagedoorsolutionsottawa.ca/garage-door-cable-repair</loc></url>
+  <url><loc>https://garagedoorsolutionsottawa.ca/garage-door-opener</loc></url>
+  <url><loc>https://garagedoorsolutionsottawa.ca/garage-door-maintenance</loc></url>
 
   <!-- Area pages -->
-  <url><loc>https://garagedoorsolutionsottawa.ca/alta-vista.html</loc></url>
-  <url><loc>https://garagedoorsolutionsottawa.ca/barrhaven.html</loc></url>
-  <url><loc>https://garagedoorsolutionsottawa.ca/carp.html</loc></url>
-  <url><loc>https://garagedoorsolutionsottawa.ca/carleton-place.html</loc></url>
-  <url><loc>https://garagedoorsolutionsottawa.ca/dunrobin.html</loc></url>
-  <url><loc>https://garagedoorsolutionsottawa.ca/embrun.html</loc></url>
-  <url><loc>https://garagedoorsolutionsottawa.ca/findlay-creek.html</loc></url>
-  <url><loc>https://garagedoorsolutionsottawa.ca/gloucester.html</loc></url>
-  <url><loc>https://garagedoorsolutionsottawa.ca/greely.html</loc></url>
-  <url><loc>https://garagedoorsolutionsottawa.ca/hunt-club.html</loc></url>
-  <url><loc>https://garagedoorsolutionsottawa.ca/kanata.html</loc></url>
-  <url><loc>https://garagedoorsolutionsottawa.ca/kemptville.html</loc></url>
-  <url><loc>https://garagedoorsolutionsottawa.ca/manotick.html</loc></url>
-  <url><loc>https://garagedoorsolutionsottawa.ca/metcalfe.html</loc></url>
-  <url><loc>https://garagedoorsolutionsottawa.ca/nepean.html</loc></url>
-  <url><loc>https://garagedoorsolutionsottawa.ca/orleans.html</loc></url>
-  <url><loc>https://garagedoorsolutionsottawa.ca/richmond.html</loc></url>
-  <url><loc>https://garagedoorsolutionsottawa.ca/riverside-south.html</loc></url>
-  <url><loc>https://garagedoorsolutionsottawa.ca/rockcliffe-park.html</loc></url>
-  <url><loc>https://garagedoorsolutionsottawa.ca/russell.html</loc></url>
-  <url><loc>https://garagedoorsolutionsottawa.ca/stittsville.html</loc></url>
-  <url><loc>https://garagedoorsolutionsottawa.ca/vanier.html</loc></url>
-  <url><loc>https://garagedoorsolutionsottawa.ca/westboro.html</loc></url>
+  <url><loc>https://garagedoorsolutionsottawa.ca/alta-vista</loc></url>
+  <url><loc>https://garagedoorsolutionsottawa.ca/barrhaven</loc></url>
+  <url><loc>https://garagedoorsolutionsottawa.ca/carp</loc></url>
+  <url><loc>https://garagedoorsolutionsottawa.ca/carleton-place</loc></url>
+  <url><loc>https://garagedoorsolutionsottawa.ca/dunrobin</loc></url>
+  <url><loc>https://garagedoorsolutionsottawa.ca/embrun</loc></url>
+  <url><loc>https://garagedoorsolutionsottawa.ca/findlay-creek</loc></url>
+  <url><loc>https://garagedoorsolutionsottawa.ca/gloucester</loc></url>
+  <url><loc>https://garagedoorsolutionsottawa.ca/greely</loc></url>
+  <url><loc>https://garagedoorsolutionsottawa.ca/hunt-club</loc></url>
+  <url><loc>https://garagedoorsolutionsottawa.ca/kanata</loc></url>
+  <url><loc>https://garagedoorsolutionsottawa.ca/kemptville</loc></url>
+  <url><loc>https://garagedoorsolutionsottawa.ca/manotick</loc></url>
+  <url><loc>https://garagedoorsolutionsottawa.ca/metcalfe</loc></url>
+  <url><loc>https://garagedoorsolutionsottawa.ca/nepean</loc></url>
+  <url><loc>https://garagedoorsolutionsottawa.ca/orleans</loc></url>
+  <url><loc>https://garagedoorsolutionsottawa.ca/richmond</loc></url>
+  <url><loc>https://garagedoorsolutionsottawa.ca/riverside-south</loc></url>
+  <url><loc>https://garagedoorsolutionsottawa.ca/rockcliffe-park</loc></url>
+  <url><loc>https://garagedoorsolutionsottawa.ca/russell</loc></url>
+  <url><loc>https://garagedoorsolutionsottawa.ca/stittsville</loc></url>
+  <url><loc>https://garagedoorsolutionsottawa.ca/vanier</loc></url>
+  <url><loc>https://garagedoorsolutionsottawa.ca/westboro</loc></url>
 
   <!-- Blog posts -->
-  <url><loc>https://garagedoorsolutionsottawa.ca/blog/garage-door-maintenance-winter-ottawa.html</loc></url>
-  <url><loc>https://garagedoorsolutionsottawa.ca/blog/garage-door-wont-open-close-ottawa.html</loc></url>
-  <url><loc>https://garagedoorsolutionsottawa.ca/blog/garage-door-spring-replacement-ottawa.html</loc></url>
-  <url><loc>https://garagedoorsolutionsottawa.ca/blog/best-garage-door-openers-ottawa.html</loc></url>
-  <url><loc>https://garagedoorsolutionsottawa.ca/blog/when-to-replace-vs-repair-garage-door-ottawa.html</loc></url>
-  <url><loc>https://garagedoorsolutionsottawa.ca/blog/insulated-garage-doors-ottawa-worth-it.html</loc></url>
-  <url><loc>https://garagedoorsolutionsottawa.ca/blog/garage-door-repair-cost-ottawa-2025.html</loc></url>
-  <url><loc>https://garagedoorsolutionsottawa.ca/blog/emergency-garage-door-repair-ottawa.html</loc></url>
+  <url><loc>https://garagedoorsolutionsottawa.ca/blog/garage-door-maintenance-winter-ottawa</loc></url>
+  <url><loc>https://garagedoorsolutionsottawa.ca/blog/garage-door-wont-open-close-ottawa</loc></url>
+  <url><loc>https://garagedoorsolutionsottawa.ca/blog/garage-door-spring-replacement-ottawa</loc></url>
+  <url><loc>https://garagedoorsolutionsottawa.ca/blog/best-garage-door-openers-ottawa</loc></url>
+  <url><loc>https://garagedoorsolutionsottawa.ca/blog/when-to-replace-vs-repair-garage-door-ottawa</loc></url>
+  <url><loc>https://garagedoorsolutionsottawa.ca/blog/insulated-garage-doors-ottawa-worth-it</loc></url>
+  <url><loc>https://garagedoorsolutionsottawa.ca/blog/garage-door-repair-cost-ottawa-2025</loc></url>
+  <url><loc>https://garagedoorsolutionsottawa.ca/blog/emergency-garage-door-repair-ottawa</loc></url>
 </urlset>
-
