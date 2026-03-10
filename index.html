@@ -975,6 +975,14 @@
       --bg-subtle: #f5f7fa;
       font-family: 'Open Sans', Arial, sans-serif;
       overflow-x: hidden;
+      content-visibility: auto;
+      contain-intrinsic-size: auto 800px;
+    }
+    @media (max-width: 768px) {
+      .services-homepage {
+        content-visibility: auto;
+        contain-intrinsic-size: auto 600px;
+      }
     }
     .services-homepage *,
     .services-homepage *::before,
@@ -1403,7 +1411,7 @@
 
   <div class="services-homepage animate-on-scroll" id="services">
     <header class="services-logo-section">
-      <img src="https://img1.wsimg.com/isteam/ip/1b277bec-adfe-487a-a8c7-5e77b97e6d1d/blob-962e0d4.png/:/rs=w:104,h:104,cg:true,m/cr=w:104,h:104/qt=q:95" alt="GDS Garage Doors and Openers Ottawa - Logo" class="services-logo" width="104" height="104">
+      <img src="https://img1.wsimg.com/isteam/ip/1b277bec-adfe-487a-a8c7-5e77b97e6d1d/blob-962e0d4.png/:/rs=w:104,h:104,cg:true,m/cr=w:104,h:104/qt=q:95" alt="GDS Garage Doors and Openers Ottawa - Logo" class="services-logo" width="104" height="104" loading="lazy">
       <div class="services-logo-tagline">GDS - Garage Doors & Openers Ottawa</div>
       <div class="services-logo-subtitle">Your Trusted Local Garage Door Experts</div>
     </header>
