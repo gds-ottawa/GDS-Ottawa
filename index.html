@@ -184,22 +184,457 @@
     </div>
   </header>
 
-  <!-- ========== LANDING: Hero ========== -->
-  <section class="landing-hero">
-    <div class="landing-hero-blob" aria-hidden="true"></div>
-    <div class="landing-hero-blob" aria-hidden="true"></div>
-    <div class="landing-hero-blob" aria-hidden="true"></div>
-    <div class="landing-hero-inner">
-      <span class="landing-hero-badge">Same-Day Service • Licensed & Insured</span>
-      <h1>Garage Door Repair &amp; Installation <span class="accent">in Ottawa</span></h1>
-      <p class="landing-hero-p">From emergency spring replacement to new door installation. We’re your local experts—fully stocked trucks, upfront pricing, and a 100% satisfaction guarantee.</p>
-      <div class="landing-hero-ctas">
-        <a href="tel:3437778893" class="landing-hero-cta-primary">📞 Call 343-777-8893</a>
-        <a href="contact-us.html" class="landing-hero-cta-secondary">Get Free Quote</a>
+  <!-- ========== PREMIUM HERO / LANDING v2 (replaces old landing-hero) ========== -->
+  <style>
+    .gds-hero {
+      --blue: #0066cc;
+      --blue-dark: #004999;
+      --blue-deep: #0a1628;
+      --orange: #ff6600;
+      --orange-warm: #ff8533;
+      --green: #25D366;
+      --gold: #ffd700;
+      --white: #ffffff;
+      --gray-light: #f0f4f8;
+      position: relative;
+      min-height: 100vh;
+      min-height: 100svh;
+      background: linear-gradient(170deg, var(--blue-deep) 0%, #0d2240 40%, var(--blue-dark) 70%, var(--blue) 100%);
+      display: flex;
+      flex-direction: column;
+      overflow: hidden;
+      font-family: 'Open Sans', system-ui, sans-serif;
+    }
+    .gds-hero::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background:
+        radial-gradient(ellipse at 20% 80%, rgba(255,102,0,0.08) 0%, transparent 50%),
+        radial-gradient(ellipse at 80% 20%, rgba(0,102,204,0.12) 0%, transparent 50%),
+        url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.02'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+      z-index: 0;
+      pointer-events: none;
+    }
+    .gds-hero-orb {
+      position: absolute;
+      border-radius: 50%;
+      filter: blur(80px);
+      opacity: 0.15;
+      z-index: 0;
+      animation: orbFloat 8s ease-in-out infinite;
+    }
+    .gds-hero-orb:nth-child(1) { width: 400px; height: 400px; background: var(--orange); top: -10%; right: -5%; animation-delay: 0s; }
+    .gds-hero-orb:nth-child(2) { width: 350px; height: 350px; background: var(--blue); bottom: -10%; left: -5%; animation-delay: -3s; }
+    .gds-hero-orb:nth-child(3) { width: 200px; height: 200px; background: var(--green); top: 50%; left: 50%; animation-delay: -5s; opacity: 0.08; }
+    @keyframes orbFloat { 0%, 100% { transform: translate(0,0) scale(1); } 50% { transform: translate(20px,-20px) scale(1.1); } }
+    .gds-hero-topbar {
+      position: relative;
+      z-index: 2;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 12px 30px;
+      background: rgba(0,0,0,0.2);
+      backdrop-filter: blur(10px);
+      border-bottom: 1px solid rgba(255,255,255,0.08);
+      flex-shrink: 0;
+    }
+    .gds-hero-topbar-left { display: flex; align-items: center; gap: 12px; }
+    .gds-hero-topbar-logo {
+      width: 42px; height: 42px;
+      border-radius: 50%;
+      border: 2px solid rgba(255,255,255,0.2);
+      object-fit: cover;
+    }
+    .gds-hero-topbar-brand {
+      color: var(--white);
+      font-family: 'Montserrat', system-ui, sans-serif;
+      font-weight: 800;
+      font-size: 0.95rem;
+      letter-spacing: 0.5px;
+    }
+    .gds-hero-topbar-sub {
+      color: var(--orange);
+      font-size: 0.7rem;
+      font-weight: 700;
+      letter-spacing: 2px;
+      display: block;
+    }
+    .gds-hero-topbar-right { display: flex; align-items: center; gap: 16px; }
+    .gds-hero-topbar-hours {
+      color: rgba(255,255,255,0.7);
+      font-size: 0.8rem;
+      font-weight: 600;
+    }
+    .gds-hero-topbar-phone {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      background: var(--orange);
+      color: var(--white);
+      padding: 8px 18px;
+      border-radius: 50px;
+      text-decoration: none;
+      font-family: 'Montserrat', system-ui, sans-serif;
+      font-weight: 800;
+      font-size: 0.85rem;
+      transition: all 0.3s;
+      box-shadow: 0 4px 15px rgba(255,102,0,0.4);
+    }
+    .gds-hero-topbar-phone:hover { background: var(--orange-warm); transform: translateY(-2px); box-shadow: 0 6px 20px rgba(255,102,0,0.5); }
+    .gds-hero-main {
+      flex: 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+      z-index: 1;
+      padding: clamp(30px, 5vw, 60px) 20px;
+    }
+    .gds-hero-inner { max-width: 1100px; width: 100%; text-align: center; }
+    .gds-hero-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: rgba(255,255,255,0.08);
+      backdrop-filter: blur(10px);
+      border: 1px solid rgba(255,255,255,0.15);
+      padding: 8px 22px;
+      border-radius: 50px;
+      margin-bottom: 24px;
+      animation: heroFadeIn 0.8s ease-out 0.2s both;
+    }
+    .gds-hero-badge-dot {
+      width: 8px; height: 8px;
+      border-radius: 50%;
+      background: var(--green);
+      box-shadow: 0 0 8px var(--green);
+      animation: dotPulse 2s ease-in-out infinite;
+    }
+    @keyframes dotPulse { 0%, 100% { opacity: 1; } 50% { opacity: 0.4; } }
+    .gds-hero-badge span {
+      color: var(--white);
+      font-size: 0.85rem;
+      font-weight: 600;
+      letter-spacing: 0.5px;
+    }
+    .gds-hero-h1 {
+      font-family: 'Montserrat', system-ui, sans-serif;
+      font-size: clamp(2.2rem, 6vw, 4rem);
+      font-weight: 800;
+      color: var(--white);
+      line-height: 1.1;
+      margin-bottom: 18px;
+      animation: heroFadeIn 0.8s ease-out 0.4s both;
+    }
+    .gds-hero-h1 .accent {
+      background: linear-gradient(135deg, var(--orange), var(--gold));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+    @keyframes heroFadeIn { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: translateY(0); } }
+    .gds-hero-sub {
+      font-size: clamp(1rem, 2.5vw, 1.25rem);
+      color: rgba(255,255,255,0.85);
+      max-width: 700px;
+      margin: 0 auto 28px;
+      line-height: 1.7;
+      animation: heroFadeIn 0.8s ease-out 0.6s both;
+    }
+    .gds-hero-phone-cta {
+      display: inline-flex;
+      align-items: center;
+      gap: 12px;
+      background: linear-gradient(135deg, var(--orange), var(--orange-warm));
+      color: var(--white);
+      padding: 18px 44px;
+      border-radius: 60px;
+      text-decoration: none;
+      font-family: 'Montserrat', system-ui, sans-serif;
+      font-weight: 900;
+      font-size: clamp(1.3rem, 3vw, 1.8rem);
+      letter-spacing: 0.5px;
+      transition: all 0.4s ease;
+      box-shadow: 0 10px 40px rgba(255,102,0,0.45), 0 0 0 0 rgba(255,102,0,0.3);
+      animation: heroFadeIn 0.8s ease-out 0.8s both, phonePulse 3s ease-in-out 2s infinite;
+      margin-bottom: 14px;
+    }
+    .gds-hero-phone-cta:hover {
+      transform: translateY(-4px) scale(1.03);
+      box-shadow: 0 16px 50px rgba(255,102,0,0.55);
+    }
+    @keyframes phonePulse {
+      0%, 100% { box-shadow: 0 10px 40px rgba(255,102,0,0.45), 0 0 0 0 rgba(255,102,0,0.3); }
+      50% { box-shadow: 0 10px 40px rgba(255,102,0,0.45), 0 0 0 12px rgba(255,102,0,0); }
+    }
+    .gds-hero-phone-icon { font-size: 1.4em; }
+    .gds-hero-secondary-cta {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      color: var(--white);
+      border: 2px solid rgba(255,255,255,0.3);
+      padding: 12px 28px;
+      border-radius: 50px;
+      text-decoration: none;
+      font-family: 'Montserrat', system-ui, sans-serif;
+      font-weight: 700;
+      font-size: 0.95rem;
+      transition: all 0.3s;
+      margin-left: 12px;
+      animation: heroFadeIn 0.8s ease-out 0.9s both;
+    }
+    .gds-hero-secondary-cta:hover { background: var(--white); color: var(--blue); transform: translateY(-2px); }
+    .gds-hero-cta-row {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-bottom: 30px;
+    }
+    .gds-hero-problems {
+      animation: heroFadeIn 0.8s ease-out 1s both;
+      margin-bottom: 32px;
+    }
+    .gds-hero-problems-label {
+      color: rgba(255,255,255,0.6);
+      font-size: 0.85rem;
+      font-weight: 600;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      margin-bottom: 14px;
+    }
+    .gds-hero-problems-grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      justify-content: center;
+    }
+    .gds-hero-problem-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: rgba(255,255,255,0.06);
+      border: 2px solid rgba(255,255,255,0.12);
+      color: var(--white);
+      padding: 11px 20px;
+      border-radius: 12px;
+      text-decoration: none;
+      font-family: 'Montserrat', system-ui, sans-serif;
+      font-weight: 700;
+      font-size: 0.85rem;
+      transition: all 0.3s;
+      backdrop-filter: blur(5px);
+    }
+    .gds-hero-problem-btn:hover {
+      background: rgba(255,102,0,0.15);
+      border-color: var(--orange);
+      color: var(--orange);
+      transform: translateY(-3px);
+      box-shadow: 0 8px 25px rgba(255,102,0,0.2);
+    }
+    .gds-hero-problem-btn span:first-child { font-size: 1.2em; }
+    .gds-hero-trust {
+      display: flex;
+      justify-content: center;
+      gap: clamp(16px, 3vw, 36px);
+      flex-wrap: wrap;
+      animation: heroFadeIn 0.8s ease-out 1.2s both;
+      padding: 20px 0;
+    }
+    .gds-hero-trust-item {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      color: var(--white);
+    }
+    .gds-hero-trust-icon {
+      width: 44px; height: 44px;
+      border-radius: 12px;
+      background: rgba(255,255,255,0.08);
+      border: 1px solid rgba(255,255,255,0.1);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.3rem;
+      flex-shrink: 0;
+    }
+    .gds-hero-trust-text { text-align: left; }
+    .gds-hero-trust-number {
+      font-family: 'Montserrat', system-ui, sans-serif;
+      font-weight: 800;
+      font-size: 1.1rem;
+      color: var(--white);
+      line-height: 1.2;
+    }
+    .gds-hero-trust-label {
+      font-size: 0.75rem;
+      color: rgba(255,255,255,0.6);
+      font-weight: 600;
+    }
+    .gds-hero-showcase {
+      display: flex;
+      gap: 16px;
+      justify-content: center;
+      align-items: center;
+      animation: heroFadeIn 0.8s ease-out 1.4s both;
+      margin-top: 10px;
+    }
+    .gds-hero-showcase-card {
+      width: 180px;
+      height: 120px;
+      border-radius: 14px;
+      overflow: hidden;
+      position: relative;
+      box-shadow: 0 8px 30px rgba(0,0,0,0.3);
+      border: 2px solid rgba(255,255,255,0.15);
+      transition: transform 0.3s;
+    }
+    .gds-hero-showcase-card:hover { transform: scale(1.05); }
+    .gds-hero-showcase-card img {
+      width: 100%; height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+    .gds-hero-showcase-badge {
+      position: absolute;
+      top: 8px; left: 8px;
+      padding: 3px 10px;
+      border-radius: 6px;
+      font-family: 'Montserrat', system-ui, sans-serif;
+      font-size: 0.65rem;
+      font-weight: 800;
+      letter-spacing: 1px;
+      color: var(--white);
+    }
+    .gds-hero-showcase-badge.before { background: rgba(220,53,69,0.85); }
+    .gds-hero-showcase-badge.after { background: rgba(40,167,69,0.85); }
+    .gds-hero-showcase-arrow {
+      color: var(--orange);
+      font-size: 1.8rem;
+      font-weight: 900;
+      text-shadow: 0 2px 10px rgba(255,102,0,0.5);
+      flex-shrink: 0;
+    }
+    .gds-hero-bottom-line {
+      height: 5px;
+      background: linear-gradient(90deg, var(--blue), var(--orange), var(--blue));
+      flex-shrink: 0;
+      position: relative;
+      z-index: 2;
+    }
+    @media (max-width: 768px) {
+      .gds-hero-topbar { padding: 10px 16px; }
+      .gds-hero-topbar-hours { display: none; }
+      .gds-hero-phone-cta { padding: 16px 32px; font-size: 1.2rem; width: 100%; max-width: 400px; justify-content: center; }
+      .gds-hero-secondary-cta { margin-left: 0; width: 100%; max-width: 400px; justify-content: center; }
+      .gds-hero-cta-row { flex-direction: column; align-items: center; }
+      .gds-hero-showcase-card { width: 140px; height: 95px; }
+      .gds-hero-trust { gap: 12px; }
+      .gds-hero-trust-icon { width: 38px; height: 38px; font-size: 1.1rem; }
+      .gds-hero-trust-number { font-size: 0.95rem; }
+      .gds-hero-problem-btn { padding: 9px 14px; font-size: 0.8rem; }
+    }
+    @media (max-width: 480px) {
+      .gds-hero-showcase { flex-wrap: wrap; gap: 8px; }
+      .gds-hero-showcase-card { width: 120px; height: 80px; }
+      .gds-hero-showcase-arrow { font-size: 1.3rem; }
+      .gds-hero-trust-item { gap: 8px; }
+    }
+  </style>
+
+  <section class="gds-hero">
+    <div class="gds-hero-orb" aria-hidden="true"></div>
+    <div class="gds-hero-orb" aria-hidden="true"></div>
+    <div class="gds-hero-orb" aria-hidden="true"></div>
+    <div class="gds-hero-topbar">
+      <div class="gds-hero-topbar-left">
+        <img src="https://img1.wsimg.com/isteam/ip/1b277bec-adfe-487a-a8c7-5e77b97e6d1d/blob-962e0d4.png/:/rs=w:104,h:104,cg:true,m/cr=w:104,h:104/qt=q:95" alt="GDS Ottawa" class="gds-hero-topbar-logo" width="42" height="42">
+        <div>
+          <div class="gds-hero-topbar-brand">GDS Ottawa</div>
+          <span class="gds-hero-topbar-sub">GARAGE DOORS &amp; OPENERS</span>
+        </div>
       </div>
-      <p class="landing-hero-trust">⭐ 5.0 Google (32+ reviews) <span>•</span> ⚡ Same-day <span>•</span> 🛡️ Licensed & bonded</p>
-      <p class="landing-hero-guarantee" style="margin-top: 14px; font-size: 0.95rem; font-weight: 700; opacity: 0.95;">Satisfaction guaranteed &bull; Upfront pricing &bull; Same-day service</p>
+      <div class="gds-hero-topbar-right">
+        <span class="gds-hero-topbar-hours">Open 9 AM – 9 PM Daily</span>
+        <a href="tel:3437778893" class="gds-hero-topbar-phone">&#128222; 343-777-8893</a>
+      </div>
     </div>
+    <div class="gds-hero-main">
+      <div class="gds-hero-inner">
+        <div class="gds-hero-badge">
+          <span class="gds-hero-badge-dot"></span>
+          <span>Same-Day Service &bull; Licensed &amp; Insured &bull; Serving Ottawa Since 2020</span>
+        </div>
+        <h1 class="gds-hero-h1">
+          Garage Door Repair &amp;<br>Installation <span class="accent">in Ottawa</span>
+        </h1>
+        <p class="gds-hero-sub">Emergency spring replacement, new door installations, opener upgrades — fully stocked trucks, upfront pricing, 100% satisfaction guarantee.</p>
+        <div class="gds-hero-cta-row">
+          <a href="tel:3437778893" class="gds-hero-phone-cta">
+            <span class="gds-hero-phone-icon">&#128222;</span>
+            343-777-8893
+          </a>
+          <a href="contact-us.html" class="gds-hero-secondary-cta">Get Free Quote</a>
+        </div>
+        <div class="gds-hero-problems">
+          <p class="gds-hero-problems-label">What's wrong with your door?</p>
+          <div class="gds-hero-problems-grid">
+            <a href="#services" class="gds-hero-problem-btn"><span>&#128295;</span> Broken Spring</a>
+            <a href="#services" class="gds-hero-problem-btn"><span>&#9881;&#65039;</span> Opener Not Working</a>
+            <a href="#services" class="gds-hero-problem-btn"><span>&#128683;</span> Door Won't Close</a>
+            <a href="#services" class="gds-hero-problem-btn"><span>&#10052;&#65039;</span> Weather Damage</a>
+            <a href="#services" class="gds-hero-problem-btn"><span>&#127968;</span> Need New Door</a>
+            <a href="#services" class="gds-hero-problem-btn"><span>&#128680;</span> Off-Track Emergency</a>
+          </div>
+        </div>
+        <div class="gds-hero-trust">
+          <div class="gds-hero-trust-item">
+            <div class="gds-hero-trust-icon">&#11088;</div>
+            <div class="gds-hero-trust-text">
+              <div class="gds-hero-trust-number">5.0 Google</div>
+              <div class="gds-hero-trust-label">32+ Reviews</div>
+            </div>
+          </div>
+          <div class="gds-hero-trust-item">
+            <div class="gds-hero-trust-icon">&#9889;</div>
+            <div class="gds-hero-trust-text">
+              <div class="gds-hero-trust-number">Same-Day</div>
+              <div class="gds-hero-trust-label">1–2 Hour Response</div>
+            </div>
+          </div>
+          <div class="gds-hero-trust-item">
+            <div class="gds-hero-trust-icon">&#128737;&#65039;</div>
+            <div class="gds-hero-trust-text">
+              <div class="gds-hero-trust-number">Licensed</div>
+              <div class="gds-hero-trust-label">Insured &amp; Bonded</div>
+            </div>
+          </div>
+          <div class="gds-hero-trust-item">
+            <div class="gds-hero-trust-icon">&#128170;</div>
+            <div class="gds-hero-trust-text">
+              <div class="gds-hero-trust-number">1,000+</div>
+              <div class="gds-hero-trust-label">Projects Completed</div>
+            </div>
+          </div>
+        </div>
+        <div class="gds-hero-showcase">
+          <div class="gds-hero-showcase-card">
+            <img src="https://img1.wsimg.com/isteam/ip/1b277bec-adfe-487a-a8c7-5e77b97e6d1d/20251025_090340.jpg/:/cr=t:0%25,l:0%25,w:100%25,h:100%25/rs=w:400,cg:true" alt="Old garage door before replacement in Ottawa" loading="eager" width="180" height="120">
+            <span class="gds-hero-showcase-badge before">BEFORE</span>
+          </div>
+          <span class="gds-hero-showcase-arrow" aria-hidden="true">&#10132;</span>
+          <div class="gds-hero-showcase-card">
+            <img src="https://img1.wsimg.com/isteam/ip/1b277bec-adfe-487a-a8c7-5e77b97e6d1d/20251025_142148.jpg/:/cr=t:0%25,l:0%25,w:100%25,h:100%25/rs=w:400,cg:true" alt="New insulated garage door after installation in Ottawa" loading="eager" width="180" height="120">
+            <span class="gds-hero-showcase-badge after">AFTER</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="gds-hero-bottom-line"></div>
   </section>
 
   <!-- ========== YOUR SECTION: Services (schema + styles + content) – add more sections below as you send them ========== -->
