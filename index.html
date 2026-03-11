@@ -816,152 +816,7 @@
     <div class="gds-hero-bottom-line"></div>
   </section>
 
-  <!-- ========== YOUR SECTION: Services (schema + styles + content) – add more sections below as you send them ========== -->
-  <!-- ============================================ -->
-  <!-- ENHANCED SERVICES SECTION - HOMEPAGE v2.0 -->
-  <!-- SEO + Design improvements -->
-  <!-- Ready to embed - No HTML/HEAD/BODY tags -->
-  <!-- ============================================ -->
-
-  <!-- Schema.org Structured Data - LocalBusiness + Services -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "LocalBusiness",
-    "name": "GDS - Garage Doors & Openers Ottawa",
-    "alternateName": "GDS Ottawa",
-    "url": "https://garagedoorsolutionsottawa.ca/",
-    "telephone": "+1-343-777-8893",
-    "image": "https://img1.wsimg.com/isteam/ip/1b277bec-adfe-487a-a8c7-5e77b97e6d1d/blob-962e0d4.png",
-    "priceRange": "$$",
-    "address": {
-      "@type": "PostalAddress",
-      "addressLocality": "Ottawa",
-      "addressRegion": "ON",
-      "addressCountry": "CA"
-    },
-    "geo": {
-      "@type": "GeoCoordinates",
-      "latitude": 45.4215,
-      "longitude": -75.6972
-    },
-    "openingHoursSpecification": {
-      "@type": "OpeningHoursSpecification",
-      "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],
-      "opens": "09:00",
-      "closes": "21:00"
-    },
-    "areaServed": [
-      {"@type": "City", "name": "Ottawa"},
-      {"@type": "City", "name": "Kanata"},
-      {"@type": "City", "name": "Barrhaven"},
-      {"@type": "City", "name": "Orleans"},
-      {"@type": "City", "name": "Nepean"},
-      {"@type": "City", "name": "Stittsville"},
-      {"@type": "City", "name": "Gloucester"},
-      {"@type": "City", "name": "Manotick"},
-      {"@type": "City", "name": "Greely"},
-      {"@type": "City", "name": "Embrun"},
-      {"@type": "City", "name": "Russell"},
-      {"@type": "City", "name": "Alta Vista"},
-      {"@type": "City", "name": "Westboro"},
-      {"@type": "City", "name": "Rockcliffe Park"}
-    ],
-    "hasOfferCatalog": {
-      "@type": "OfferCatalog",
-      "name": "Garage Door Services",
-      "itemListElement": [
-        {
-          "@type": "OfferCatalog",
-          "name": "Emergency Garage Door Repair",
-          "itemListElement": [
-            {
-              "@type": "Offer",
-              "itemOffered": {
-                "@type": "Service",
-                "name": "Torsion Spring Replacement",
-                "description": "Emergency torsion spring replacement with 10,000-cycle rated hardware. Both springs replaced together for proper balance."
-              },
-              "priceSpecification": {
-                "@type": "PriceSpecification",
-                "price": "250",
-                "priceCurrency": "CAD",
-                "minPrice": "250",
-                "maxPrice": "350"
-              }
-            },
-            {
-              "@type": "Offer",
-              "itemOffered": {
-                "@type": "Service",
-                "name": "Cable and Drum Repair",
-                "description": "Snapped cable repair with aircraft-grade cable rated 2,000+ lbs. Includes rollers and bottom brackets."
-              },
-              "priceSpecification": {
-                "@type": "PriceSpecification",
-                "price": "150",
-                "priceCurrency": "CAD",
-                "minPrice": "150",
-                "maxPrice": "250"
-              }
-            },
-            {
-              "@type": "Offer",
-              "itemOffered": {
-                "@type": "Service",
-                "name": "Off-Track Door Repair",
-                "description": "Emergency off-track garage door repair including track straightening, roller replacement, and realignment."
-              }
-            }
-          ]
-        },
-        {
-          "@type": "OfferCatalog",
-          "name": "Garage Door Opener Services",
-          "itemListElement": [
-            {
-              "@type": "Offer",
-              "itemOffered": {
-                "@type": "Service",
-                "name": "Garage Door Opener Installation",
-                "description": "Belt-drive and chain-drive opener installation from LiftMaster, Chamberlain, and Genie. Smart WiFi options available."
-              },
-              "priceSpecification": {
-                "@type": "PriceSpecification",
-                "price": "650",
-                "priceCurrency": "CAD",
-                "minPrice": "650",
-                "maxPrice": "950"
-              }
-            }
-          ]
-        },
-        {
-          "@type": "OfferCatalog",
-          "name": "New Garage Door Installation",
-          "itemListElement": [
-            {
-              "@type": "Offer",
-              "itemOffered": {
-                "@type": "Service",
-                "name": "Insulated Garage Door Installation",
-                "description": "Premium insulated steel garage door installation with R-18 ratings. Multiple styles and 10+ colors available."
-              },
-              "priceSpecification": {
-                "@type": "PriceSpecification",
-                "price": "1800",
-                "priceCurrency": "CAD",
-                "minPrice": "1800"
-              }
-            }
-          ]
-        }
-      ]
-    },
-    "sameAs": []
-  }
-  </script>
-
+  <!-- Services section - schema moved to end of page for faster first paint -->
   <style>
     .services-homepage {
       --primary-blue: #0066cc;
@@ -998,6 +853,8 @@
       max-width: 600px;
       margin-left: auto;
       margin-right: auto;
+      min-height: 140px;
+      contain: layout style;
     }
     .services-logo {
       width: clamp(80px, 15vw, 104px);
@@ -1404,9 +1261,9 @@
     }
   </style>
 
-  <div class="services-homepage animate-on-scroll" id="services">
+  <div class="services-homepage in-view" id="services">
     <header class="services-logo-section">
-      <img src="https://img1.wsimg.com/isteam/ip/1b277bec-adfe-487a-a8c7-5e77b97e6d1d/blob-962e0d4.png/:/rs=w:104,h:104,cg:true,m/cr=w:104,h:104/qt=q:95" alt="GDS Garage Doors and Openers Ottawa - Logo" class="services-logo" width="104" height="104" loading="lazy">
+      <img src="https://img1.wsimg.com/isteam/ip/1b277bec-adfe-487a-a8c7-5e77b97e6d1d/blob-962e0d4.png/:/rs=w:104,h:104,cg:true,m/cr=w:104,h:104/qt=q:95" alt="GDS Garage Doors and Openers Ottawa - Logo" class="services-logo" width="104" height="104" loading="eager" decoding="async">
       <div class="services-logo-tagline">GDS - Garage Doors & Openers Ottawa</div>
       <div class="services-logo-subtitle">Your Trusted Local Garage Door Experts</div>
     </header>
@@ -5429,6 +5286,11 @@
       </div>
     </div>
   </section>
+
+  <!-- Schema.org LocalBusiness (moved from top for faster first paint of services section) -->
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"LocalBusiness","name":"GDS - Garage Doors & Openers Ottawa","alternateName":"GDS Ottawa","url":"https://garagedoorsolutionsottawa.ca/","telephone":"+1-343-777-8893","image":"https://img1.wsimg.com/isteam/ip/1b277bec-adfe-487a-a8c7-5e77b97e6d1d/blob-962e0d4.png","priceRange":"$$","address":{"@type":"PostalAddress","addressLocality":"Ottawa","addressRegion":"ON","addressCountry":"CA"},"geo":{"@type":"GeoCoordinates","latitude":45.4215,"longitude":-75.6972},"openingHoursSpecification":{"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],"opens":"09:00","closes":"21:00"},"areaServed":[{"@type":"City","name":"Ottawa"},{"@type":"City","name":"Kanata"},{"@type":"City","name":"Barrhaven"},{"@type":"City","name":"Orleans"},{"@type":"City","name":"Nepean"},{"@type":"City","name":"Stittsville"},{"@type":"City","name":"Gloucester"},{"@type":"City","name":"Manotick"},{"@type":"City","name":"Greely"},{"@type":"City","name":"Embrun"},{"@type":"City","name":"Russell"},{"@type":"City","name":"Alta Vista"},{"@type":"City","name":"Westboro"},{"@type":"City","name":"Rockcliffe Park"}],"hasOfferCatalog":{"@type":"OfferCatalog","name":"Garage Door Services","itemListElement":[{"@type":"OfferCatalog","name":"Emergency Garage Door Repair","itemListElement":[{"@type":"Offer","itemOffered":{"@type":"Service","name":"Torsion Spring Replacement","description":"Emergency torsion spring replacement with 10,000-cycle rated hardware. Both springs replaced together for proper balance."},"priceSpecification":{"@type":"PriceSpecification","price":"250","priceCurrency":"CAD","minPrice":"250","maxPrice":"350"}},{"@type":"Offer","itemOffered":{"@type":"Service","name":"Cable and Drum Repair","description":"Snapped cable repair with aircraft-grade cable rated 2,000+ lbs. Includes rollers and bottom brackets."},"priceSpecification":{"@type":"PriceSpecification","price":"150","priceCurrency":"CAD","minPrice":"150","maxPrice":"250"}},{"@type":"Offer","itemOffered":{"@type":"Service","name":"Off-Track Door Repair","description":"Emergency off-track garage door repair including track straightening, roller replacement, and realignment."}}]},{"@type":"OfferCatalog","name":"Garage Door Opener Services","itemListElement":[{"@type":"Offer","itemOffered":{"@type":"Service","name":"Garage Door Opener Installation","description":"Belt-drive and chain-drive opener installation from LiftMaster, Chamberlain, and Genie. Smart WiFi options available."},"priceSpecification":{"@type":"PriceSpecification","price":"650","priceCurrency":"CAD","minPrice":"650","maxPrice":"950"}}]},{"@type":"OfferCatalog","name":"New Garage Door Installation","itemListElement":[{"@type":"Offer","itemOffered":{"@type":"Service","name":"Insulated Garage Door Installation","description":"Premium insulated steel garage door installation with R-18 ratings. Multiple styles and 10+ colors available."},"priceSpecification":{"@type":"PriceSpecification","price":"1800","priceCurrency":"CAD","minPrice":"1800"}}]}]},"sameAs":[]}
+  </script>
 
   <script>
   function toggleFaq(btn) {
