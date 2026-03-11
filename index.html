@@ -2117,16 +2117,25 @@
     }
     .areas-grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(min(100%, 140px), 1fr));
+      grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
       gap: 10px;
     }
     .area-chip {
-      display: flex; align-items: center; justify-content: center;
-      background: white; border: 2px solid #0066cc;
-      padding: 10px 16px; border-radius: 25px;
-      font-weight: 600; font-size: clamp(0.85rem, 1.5vw, 0.95rem);
-      color: #0066cc; text-decoration: none !important;
-      transition: all 0.3s; min-height: 40px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      white-space: nowrap;
+      background: white;
+      border: 2px solid #0066cc;
+      padding: 12px 18px;
+      border-radius: 25px;
+      font-weight: 600;
+      font-size: clamp(0.85rem, 1.5vw, 0.95rem);
+      color: #0066cc;
+      text-decoration: none !important;
+      transition: all 0.3s;
+      min-height: 50px;
     }
     .area-chip:hover {
       background: linear-gradient(135deg, #0066cc, #ff6600);
