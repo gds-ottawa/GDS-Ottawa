@@ -646,13 +646,15 @@
       background-repeat: no-repeat;
     }
     .gds-hero-request-submit {
+      grid-column: 1 / -1;
       width: 100%;
+      margin-top: 12px;
       border-radius: 999px;
       border: none;
-      padding: 12px 18px;
+      padding: 14px 20px;
       font-family: 'Montserrat', system-ui, sans-serif;
       font-weight: 800;
-      font-size: 0.95rem;
+      font-size: 1rem;
       background: linear-gradient(135deg, var(--orange), var(--orange-warm));
       color: var(--white);
       cursor: pointer;
@@ -832,7 +834,7 @@
           <span>Same-Day Service &bull; Licensed &amp; Insured &bull; Serving Ottawa Since 2020</span>
         </div>
         <h1 class="gds-hero-h1">
-          Garage Door Repair &amp;<br>Installation <span class="accent">in Ottawa</span>
+          Garage Door Repair &amp;<br>Installation <span class="accent">in Ottawa</span> 🇨🇦
         </h1>
         <p class="gds-hero-sub">Emergency spring replacement, new door installations, opener upgrades — fully stocked trucks, upfront pricing, 100% satisfaction guarantee.</p>
         <div class="gds-hero-cta-row">
@@ -840,7 +842,6 @@
             <span class="gds-hero-phone-icon">&#128222;</span>
             343-777-8893
           </a>
-          <a href="contact-us" class="gds-hero-secondary-cta">Get Free Quote</a>
         </div>
         <div class="gds-hero-problems">
           <p class="gds-hero-problems-label">What's wrong with your door?</p>
@@ -902,10 +903,11 @@
             <h2 class="gds-hero-request-title">Request Service</h2>
             <p class="gds-hero-request-subtitle">We arrive in under 90 minutes in every Ottawa area.</p>
           </div>
-          <form class="gds-hero-request-form" action="contact-us" method="GET">
+          <form class="gds-hero-request-form" action="https://formspree.io/f/xreyppqz" method="POST">
+            <input type="hidden" name="_subject" value="Homepage Hero - Request Quote">
             <div class="gds-hero-request-row">
               <label for="heroService">Service Needed</label>
-              <select id="heroService" name="service" required>
+              <select id="heroService" name="Service Needed" required>
                 <option value="">Select a service...</option>
                 <option value="spring-repair">Garage Door Spring Repair</option>
                 <option value="cable-repair">Garage Door Cable Repair</option>
@@ -920,7 +922,7 @@
             </div>
             <div class="gds-hero-request-row">
               <label for="heroArea">Your Area</label>
-              <select id="heroArea" name="area" required>
+              <select id="heroArea" name="Your Area" required>
                 <option value="">Select your neighborhood...</option>
                 <option value="Ottawa">Ottawa (Central)</option>
                 <option value="Kanata">Kanata</option>
@@ -944,9 +946,9 @@
             </div>
             <div class="gds-hero-request-row">
               <label for="heroPhone">Your Phone</label>
-              <input id="heroPhone" name="phone" type="tel" placeholder="(613) 000-0000" required>
+              <input id="heroPhone" name="Phone" type="tel" placeholder="(613) 000-0000" required>
             </div>
-            <button type="submit" class="gds-hero-request-submit">Call for Instant Quote</button>
+            <button type="submit" class="gds-hero-request-submit">Get a Free Quote</button>
           </form>
         </div>
       </div>
