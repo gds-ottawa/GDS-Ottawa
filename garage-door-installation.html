@@ -731,6 +731,57 @@
       font-weight: 600;
       color: var(--text-dark);
     }
+    .catalog-pdf-wrap {
+      margin-top: 28px;
+      margin-bottom: 20px;
+    }
+    .catalog-pdf-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      justify-content: center;
+      margin-bottom: 20px;
+    }
+    .catalog-pdf-actions a {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 12px 24px;
+      border-radius: 50px;
+      font-weight: 700;
+      font-size: 0.95rem;
+      text-decoration: none !important;
+      font-family: 'Montserrat', Arial, sans-serif;
+      transition: all 0.3s ease;
+    }
+    .catalog-pdf-view { background: var(--primary-blue); color: white !important; border: 2px solid var(--primary-blue); }
+    .catalog-pdf-view:hover { background: #0052a3; transform: translateY(-2px); }
+    .catalog-pdf-download { background: white; color: var(--primary-blue) !important; border: 2px solid var(--primary-blue); }
+    .catalog-pdf-download:hover { background: var(--primary-blue); color: white !important; transform: translateY(-2px); }
+    .catalog-pdf-iframe-wrap {
+      width: 100%;
+      max-width: 900px;
+      margin: 0 auto;
+      border-radius: 16px;
+      overflow: hidden;
+      box-shadow: 0 10px 40px rgba(0,0,0,0.15);
+      border: 2px solid var(--medium-gray);
+      background: #f0f0f0;
+      min-height: 600px;
+    }
+    .catalog-pdf-iframe-wrap iframe {
+      display: block;
+      width: 100%;
+      height: 600px;
+      border: none;
+    }
+    .catalog-pdf-fallback {
+      padding: 40px 20px;
+      text-align: center;
+      color: var(--text-light);
+      font-size: 1rem;
+    }
+    .catalog-pdf-fallback a { color: var(--primary-blue); font-weight: 600; }
 
     /* Pricing Box */
     .pricing-box {
@@ -1358,22 +1409,19 @@
       </div>
     </div>
 
-    <!-- Garage Door Catalog: browse designs & colors, link to full PDF -->
+    <!-- Garage Door Catalog: designs, colors, view & download PDF -->
     <section class="catalog-section" id="catalog" aria-label="Garage door catalog">
       <h2 class="catalog-title">📋 Garage Door Catalog</h2>
-      <p class="catalog-subtitle">Browse the designs and colors we supply. View the full catalog below for detailed options, dimensions, and finishes.</p>
-      <div class="catalog-cta-wrap">
-        <a href="assets/Garage-Doors-Catalog.pdf" target="_blank" rel="noopener" class="btn-catalog" aria-label="Open garage door catalog PDF">📄 View Full Catalog (PDF)</a>
-      </div>
+      <p class="catalog-subtitle">Browse the designs and colors we supply. View or download the full catalog below.</p>
+
       <h3 class="catalog-designs-title">Designs We Supply</h3>
       <div class="catalog-designs-grid">
-        <span class="catalog-design-chip">Raised Panel</span>
-        <span class="catalog-design-chip">Carriage House</span>
-        <span class="catalog-design-chip">Flush / Modern</span>
-        <span class="catalog-design-chip">Full-View Glass</span>
-        <span class="catalog-design-chip">Short Panel</span>
-        <span class="catalog-design-chip">Windows &amp; Hardware</span>
+        <span class="catalog-design-chip">Classic 300 &amp; Heritage 500</span>
+        <span class="catalog-design-chip">Coach House 400 &amp; Carriage 600</span>
+        <span class="catalog-design-chip">Modern 800 – Flush</span>
+        <span class="catalog-design-chip">Modern 800 – Grooved</span>
       </div>
+
       <h3 class="catalog-colors-title">Colors Available</h3>
       <div class="catalog-colors-grid">
         <div class="catalog-color-swatch">
@@ -1385,28 +1433,39 @@
           <span class="swatch-label">Almond</span>
         </div>
         <div class="catalog-color-swatch">
-          <span class="swatch" style="background: #d4d0c8;" title="Light grey"></span>
-          <span class="swatch-label">Light Grey</span>
+          <span class="swatch" style="background: #c4b8a8;" title="Sandstone"></span>
+          <span class="swatch-label">Sandstone</span>
         </div>
         <div class="catalog-color-swatch">
-          <span class="swatch" style="background: #8b8680;" title="Slate"></span>
-          <span class="swatch-label">Slate</span>
+          <span class="swatch" style="background: #4a4a4a;" title="Charcoal"></span>
+          <span class="swatch-label">Charcoal</span>
         </div>
         <div class="catalog-color-swatch">
           <span class="swatch" style="background: #5c5348;" title="Brown"></span>
           <span class="swatch-label">Brown</span>
         </div>
         <div class="catalog-color-swatch">
+          <span class="swatch" style="background: #3d3028;" title="Dark Brown"></span>
+          <span class="swatch-label">Dark Brown</span>
+        </div>
+        <div class="catalog-color-swatch">
           <span class="swatch" style="background: #2d2d2d;" title="Black"></span>
           <span class="swatch-label">Black</span>
         </div>
         <div class="catalog-color-swatch">
-          <span class="swatch" style="background: #4a5f7a;" title="Navy"></span>
-          <span class="swatch-label">Navy</span>
+          <span class="swatch" style="background: linear-gradient(135deg, #6b5344 0%, #8b7355 50%, #5c4a3d 100%);" title="Woodgrain"></span>
+          <span class="swatch-label">Woodgrain</span>
         </div>
-        <div class="catalog-color-swatch">
-          <span class="swatch" style="background: #3d5c3d;" title="Forest"></span>
-          <span class="swatch-label">Forest</span>
+      </div>
+
+      <div class="catalog-pdf-wrap">
+        <div class="catalog-pdf-actions">
+          <a href="assets/Garage-Doors-Catalog.pdf" target="_blank" rel="noopener" class="catalog-pdf-view" aria-label="View catalog in new tab">👁️ View in new tab</a>
+          <a href="assets/Garage-Doors-Catalog.pdf" download="GDS-Garage-Doors-Catalog.pdf" class="catalog-pdf-download" aria-label="Download catalog PDF">⬇️ Download PDF</a>
+        </div>
+        <div class="catalog-pdf-iframe-wrap">
+          <iframe src="assets/Garage-Doors-Catalog.pdf#toolbar=1&navpanes=1" title="Garage door catalog PDF" allow="fullscreen"></iframe>
+          <p class="catalog-pdf-fallback">If the preview doesn't load, <a href="assets/Garage-Doors-Catalog.pdf" target="_blank" rel="noopener">open the catalog in a new tab</a> or <a href="assets/Garage-Doors-Catalog.pdf" download="GDS-Garage-Doors-Catalog.pdf">download the PDF</a>.</p>
         </div>
       </div>
     </section>
