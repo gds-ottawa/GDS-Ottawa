@@ -617,6 +617,121 @@
       margin-top: 15px;
     }
 
+    /* Garage Door Catalog section */
+    .catalog-section {
+      background: linear-gradient(135deg, #f8f9fa, #e9ecef);
+      padding: clamp(40px, 5vw, 55px) 20px;
+      border-radius: 20px;
+      margin: clamp(40px, 5vw, 50px) 0;
+      border: 2px solid var(--primary-blue);
+      box-shadow: 0 8px 30px rgba(0, 102, 204, 0.08);
+    }
+    .catalog-section .catalog-title {
+      font-family: 'Montserrat', Arial, sans-serif;
+      font-size: clamp(1.6rem, 4vw, 2.2rem);
+      font-weight: 800;
+      text-align: center;
+      color: var(--primary-dark);
+      margin-bottom: 10px;
+    }
+    .catalog-section .catalog-subtitle {
+      text-align: center;
+      color: var(--text-light);
+      font-size: 1.05rem;
+      max-width: 700px;
+      margin: 0 auto 28px;
+      line-height: 1.6;
+    }
+    .catalog-cta-wrap {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+    .catalog-cta-wrap .btn-catalog {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      padding: 16px 32px;
+      border-radius: 50px;
+      background: linear-gradient(135deg, var(--primary-blue), #0052a3);
+      color: white !important;
+      text-decoration: none !important;
+      font-family: 'Montserrat', Arial, sans-serif;
+      font-weight: 700;
+      font-size: 1.1rem;
+      border: 3px solid transparent;
+      box-shadow: 0 8px 25px rgba(0, 102, 204, 0.35);
+      transition: all 0.3s ease;
+    }
+    .catalog-cta-wrap .btn-catalog:hover {
+      background: linear-gradient(135deg, var(--accent-orange), #e55a00);
+      transform: translateY(-3px);
+      box-shadow: 0 12px 35px rgba(255, 102, 0, 0.4);
+    }
+    .catalog-designs-title,
+    .catalog-colors-title {
+      font-family: 'Montserrat', Arial, sans-serif;
+      font-size: clamp(1.15rem, 2.5vw, 1.35rem);
+      font-weight: 700;
+      color: var(--primary-dark);
+      margin-bottom: 16px;
+      text-align: center;
+    }
+    .catalog-designs-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(min(100%, 160px), 1fr));
+      gap: 14px;
+      max-width: 900px;
+      margin: 0 auto 36px;
+    }
+    .catalog-design-chip {
+      background: white;
+      border: 2px solid var(--medium-gray);
+      border-radius: 12px;
+      padding: 14px 16px;
+      text-align: center;
+      font-weight: 600;
+      font-size: 0.95rem;
+      color: var(--primary-dark);
+      transition: all 0.25s ease;
+    }
+    .catalog-design-chip:hover {
+      border-color: var(--primary-blue);
+      background: rgba(0, 102, 204, 0.06);
+      color: var(--primary-blue);
+    }
+    .catalog-colors-grid {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 14px;
+      max-width: 900px;
+      margin: 0 auto;
+    }
+    .catalog-color-swatch {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 8px;
+      flex: 0 0 auto;
+    }
+    .catalog-color-swatch .swatch {
+      width: 56px;
+      height: 56px;
+      border-radius: 12px;
+      border: 2px solid rgba(0,0,0,0.12);
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      transition: transform 0.2s ease;
+    }
+    .catalog-color-swatch .swatch:hover {
+      transform: scale(1.08);
+    }
+    .catalog-color-swatch .swatch-label {
+      font-size: 0.8rem;
+      font-weight: 600;
+      color: var(--text-dark);
+    }
+
     /* Pricing Box */
     .pricing-box {
       background: linear-gradient(135deg, var(--primary-blue), var(--accent-orange));
@@ -1242,6 +1357,59 @@
 
       </div>
     </div>
+
+    <!-- Garage Door Catalog: browse designs & colors, link to full PDF -->
+    <section class="catalog-section" id="catalog" aria-label="Garage door catalog">
+      <h2 class="catalog-title">📋 Garage Door Catalog</h2>
+      <p class="catalog-subtitle">Browse the designs and colors we supply. View the full catalog below for detailed options, dimensions, and finishes.</p>
+      <div class="catalog-cta-wrap">
+        <a href="assets/Garage-Doors-Catalog.pdf" target="_blank" rel="noopener" class="btn-catalog" aria-label="Open garage door catalog PDF">📄 View Full Catalog (PDF)</a>
+      </div>
+      <h3 class="catalog-designs-title">Designs We Supply</h3>
+      <div class="catalog-designs-grid">
+        <span class="catalog-design-chip">Raised Panel</span>
+        <span class="catalog-design-chip">Carriage House</span>
+        <span class="catalog-design-chip">Flush / Modern</span>
+        <span class="catalog-design-chip">Full-View Glass</span>
+        <span class="catalog-design-chip">Short Panel</span>
+        <span class="catalog-design-chip">Windows &amp; Hardware</span>
+      </div>
+      <h3 class="catalog-colors-title">Colors Available</h3>
+      <div class="catalog-colors-grid">
+        <div class="catalog-color-swatch">
+          <span class="swatch" style="background: #f5f5f0;" title="White"></span>
+          <span class="swatch-label">White</span>
+        </div>
+        <div class="catalog-color-swatch">
+          <span class="swatch" style="background: #e8e0d5;" title="Almond"></span>
+          <span class="swatch-label">Almond</span>
+        </div>
+        <div class="catalog-color-swatch">
+          <span class="swatch" style="background: #d4d0c8;" title="Light grey"></span>
+          <span class="swatch-label">Light Grey</span>
+        </div>
+        <div class="catalog-color-swatch">
+          <span class="swatch" style="background: #8b8680;" title="Slate"></span>
+          <span class="swatch-label">Slate</span>
+        </div>
+        <div class="catalog-color-swatch">
+          <span class="swatch" style="background: #5c5348;" title="Brown"></span>
+          <span class="swatch-label">Brown</span>
+        </div>
+        <div class="catalog-color-swatch">
+          <span class="swatch" style="background: #2d2d2d;" title="Black"></span>
+          <span class="swatch-label">Black</span>
+        </div>
+        <div class="catalog-color-swatch">
+          <span class="swatch" style="background: #4a5f7a;" title="Navy"></span>
+          <span class="swatch-label">Navy</span>
+        </div>
+        <div class="catalog-color-swatch">
+          <span class="swatch" style="background: #3d5c3d;" title="Forest"></span>
+          <span class="swatch-label">Forest</span>
+        </div>
+      </div>
+    </section>
 
     <!-- Video Section -->
     <div style="background: linear-gradient(135deg, #f8f9fa, #e9ecef); padding: clamp(40px, 5vw, 50px) 20px; border-radius: 20px; margin: clamp(40px, 5vw, 50px) 0; border: 2px solid var(--primary-blue);">
