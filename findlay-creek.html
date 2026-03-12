@@ -814,46 +814,6 @@
   @keyframes slideIn { from { opacity: 0; transform: translateY(50px); } to { opacity: 1; transform: translateY(0); } }
   @media (max-width: 768px) { .trust-badges-homepage-section .badges-container { flex-direction: column; align-items: center; } .trust-badges-homepage-section .trust-badge:hover, .trust-badges-homepage-section .trust-badge-display:hover { transform: translateY(-5px) scale(1.02); } .trust-badges-homepage-section { padding: 45px 15px; } }
 
-  /* Final CTA Section v2 */
-  .final-cta-section { --primary-blue: #0066cc; --primary-blue-dark: #004999; --accent-orange: #ff6600; --danger: #dc3545; padding: 80px 20px; background: linear-gradient(135deg, var(--primary-blue) 0%, var(--primary-blue-dark) 50%, var(--primary-blue) 100%); position: relative; overflow: hidden; }
-  .final-cta-section::before { content: ''; position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: radial-gradient(circle at 20% 50%, rgba(255,102,0,0.1) 0%, transparent 50%), radial-gradient(circle at 80% 50%, rgba(255,102,0,0.1) 0%, transparent 50%); animation: ctaPulse 4s ease-in-out infinite; }
-  @keyframes ctaPulse { 0%, 100% { opacity: 1; } 50% { opacity: 0.5; } }
-  .final-cta-container { max-width: 1200px; margin: 0 auto; position: relative; z-index: 1; }
-  .final-cta-content { background: rgba(255,255,255,0.05); backdrop-filter: blur(10px); border-radius: 30px; padding: 60px 40px; border: 2px solid rgba(255,255,255,0.1); box-shadow: 0 20px 60px rgba(0,0,0,0.3); }
-  .final-cta-badge { display: inline-flex; align-items: center; gap: 8px; background: rgba(255,255,255,0.15); padding: 8px 20px; border-radius: 50px; font-family: 'Montserrat', system-ui, sans-serif; font-size: 0.9rem; font-weight: 700; color: white; margin-bottom: 25px; border: 1px solid rgba(255,255,255,0.2); }
-  .final-cta-title { font-family: 'Montserrat', system-ui, sans-serif; font-size: clamp(2.2rem, 5vw, 3.5rem); font-weight: 800; color: white; text-align: center; margin-bottom: 20px; line-height: 1.2; text-shadow: 0 4px 20px rgba(0,0,0,0.3); }
-  .final-cta-subtitle { font-family: 'Open Sans', system-ui, sans-serif; font-size: clamp(1.1rem, 2.5vw, 1.3rem); color: rgba(255,255,255,0.95); text-align: center; max-width: 800px; margin: 0 auto 40px; line-height: 1.7; }
-  .final-cta-trust-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 20px; margin-bottom: 45px; }
-  .final-cta-trust-item { background: rgba(255,255,255,0.1); padding: 20px; border-radius: 16px; text-align: center; border: 1px solid rgba(255,255,255,0.15); transition: all 0.3s ease; }
-  .final-cta-trust-item:hover { background: rgba(255,255,255,0.15); transform: translateY(-5px); }
-  .final-cta-trust-icon { font-size: 2.5rem; margin-bottom: 10px; display: block; }
-  .final-cta-trust-text { font-family: 'Open Sans', system-ui, sans-serif; font-size: 0.95rem; color: white; font-weight: 600; line-height: 1.4; }
-  .final-cta-buttons { display: flex; gap: 20px; justify-content: center; flex-wrap: wrap; margin-bottom: 35px; }
-  .final-cta-btn { display: inline-flex; align-items: center; justify-content: center; gap: 10px; padding: 18px 40px; border-radius: 50px; text-decoration: none; font-family: 'Montserrat', system-ui, sans-serif; font-weight: 800; font-size: 1.1rem; transition: all 0.4s ease; border: 3px solid transparent; box-shadow: 0 10px 30px rgba(0,0,0,0.2); position: relative; overflow: hidden; }
-  .final-cta-btn::before { content: ''; position: absolute; top: 50%; left: 50%; width: 0; height: 0; border-radius: 50%; background: rgba(255,255,255,0.3); transform: translate(-50%, -50%); transition: width 0.6s, height 0.6s; }
-  .final-cta-btn:hover::before { width: 300px; height: 300px; }
-  .final-cta-btn span { position: relative; z-index: 1; }
-  .final-cta-btn-primary { background: white; color: var(--primary-blue); }
-  .final-cta-btn-primary:hover { background: var(--accent-orange); color: white; transform: translateY(-5px) scale(1.05); box-shadow: 0 15px 40px rgba(255,102,0,0.4); }
-  .final-cta-btn-secondary { background: transparent; color: white; border-color: white; }
-  .final-cta-btn-secondary:hover { background: white; color: var(--primary-blue); transform: translateY(-5px) scale(1.05); }
-  .final-cta-btn-whatsapp { background: #25D366; color: white; }
-  .final-cta-btn-whatsapp:hover { background: #128C7E; transform: translateY(-5px) scale(1.05); box-shadow: 0 15px 40px rgba(37,211,102,0.4); }
-  .final-cta-info-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 25px; margin-top: 40px; padding-top: 40px; border-top: 2px solid rgba(255,255,255,0.2); }
-  .final-cta-info-item { text-align: center; color: white; }
-  .final-cta-info-icon { font-size: 2rem; margin-bottom: 10px; display: block; }
-  .final-cta-info-label { font-family: 'Montserrat', system-ui, sans-serif; font-size: 0.85rem; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 8px; opacity: 0.9; }
-  .final-cta-info-value { font-family: 'Open Sans', system-ui, sans-serif; font-size: 1.1rem; font-weight: 600; line-height: 1.5; }
-  .final-cta-info-value a { color: white; text-decoration: none; transition: color 0.3s ease; }
-  .final-cta-info-value a:hover { color: var(--accent-orange); }
-  .final-cta-emergency { background: linear-gradient(135deg, var(--danger), #c82333); padding: 25px 30px; border-radius: 20px; margin-top: 30px; text-align: center; border: 2px solid rgba(255,255,255,0.3); animation: emergencyPulse 2s ease-in-out infinite; }
-  @keyframes emergencyPulse { 0%, 100% { transform: scale(1); } 50% { transform: scale(1.02); } }
-  .final-cta-emergency-icon { font-size: 2.5rem; margin-bottom: 10px; }
-  .final-cta-emergency-text { font-family: 'Montserrat', system-ui, sans-serif; font-size: 1.3rem; font-weight: 800; color: white; margin-bottom: 5px; }
-  .final-cta-emergency-subtext { font-family: 'Open Sans', system-ui, sans-serif; font-size: 1rem; color: rgba(255,255,255,0.95); }
-  .final-cta-emergency-subtext a { color: white; text-decoration: underline; font-weight: 700; }
-  @media (max-width: 768px) { .final-cta-content { padding: 40px 25px; } .final-cta-buttons { flex-direction: column; gap: 15px; align-items: center; } .final-cta-btn { width: 100%; max-width: 400px; padding: 16px 30px; font-size: 1rem; } .final-cta-trust-grid { grid-template-columns: repeat(2, 1fr); gap: 15px; } .final-cta-info-grid { grid-template-columns: 1fr; gap: 20px; } }
-  @media (max-width: 480px) { .final-cta-section { padding: 60px 15px; } .final-cta-content { padding: 35px 20px; } .final-cta-btn { padding: 14px 25px; font-size: 0.95rem; } .final-cta-trust-grid { grid-template-columns: 1fr; } .final-cta-emergency { padding: 20px; } }
   </style>
 </head>
 <body>
@@ -2010,83 +1970,6 @@
             <a href="tel:3437778893" class="map-btn map-btn-white">&#128222; Call 343-777-8893</a>
             <a href="contact-us" class="map-btn map-btn-outline">Get Free Quote</a>
           </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Final CTA Section -->
-    <section class="final-cta-section" aria-label="Contact GDS Ottawa">
-      <div class="final-cta-container">
-        <div class="final-cta-content">
-
-          <div style="text-align: center;">
-            <span class="final-cta-badge">&#11088; 5.0 GOOGLE RATING &bull; 1,000+ SATISFIED CUSTOMERS</span>
-          </div>
-
-          <h2 class="final-cta-title">Ready to Fix Your Garage Door Today?</h2>
-
-          <p class="final-cta-subtitle">Don't wait for a broken spring or stuck door to ruin your day. Our Ottawa-based technicians are ready with same-day service, transparent pricing, and a 1-year warranty on all work.</p>
-
-          <div class="final-cta-trust-grid">
-            <div class="final-cta-trust-item">
-              <span class="final-cta-trust-icon" aria-hidden="true">&#9889;</span>
-              <p class="final-cta-trust-text">Same-Day<br>Service Available</p>
-            </div>
-            <div class="final-cta-trust-item">
-              <span class="final-cta-trust-icon" aria-hidden="true">&#128176;</span>
-              <p class="final-cta-trust-text">Transparent<br>Upfront Pricing</p>
-            </div>
-            <div class="final-cta-trust-item">
-              <span class="final-cta-trust-icon" aria-hidden="true">&#128737;&#65039;</span>
-              <p class="final-cta-trust-text">1-Year Warranty<br>All Work</p>
-            </div>
-            <div class="final-cta-trust-item">
-              <span class="final-cta-trust-icon" aria-hidden="true">&#11088;</span>
-              <p class="final-cta-trust-text">BBB A Rating<br>Licensed &amp; Insured</p>
-            </div>
-          </div>
-
-          <div class="final-cta-buttons">
-            <a href="tel:3437778893" class="final-cta-btn final-cta-btn-primary" aria-label="Call GDS Ottawa at 343-777-8893">
-              <span>&#128222; Call 343-777-8893</span>
-            </a>
-            <a href="https://wa.me/13437778893" target="_blank" rel="noopener" class="final-cta-btn final-cta-btn-whatsapp">
-              <span>&#128172; WhatsApp Quote</span>
-            </a>
-            <a href="contact-us" class="final-cta-btn final-cta-btn-secondary">
-              <span>&#128231; Request Free Quote</span>
-            </a>
-          </div>
-
-          <div class="final-cta-info-grid">
-            <div class="final-cta-info-item">
-              <span class="final-cta-info-icon" aria-hidden="true">&#128336;</span>
-              <div class="final-cta-info-label">Hours</div>
-              <div class="final-cta-info-value">Open Daily<br>9:00 AM – 9:00 PM</div>
-            </div>
-            <div class="final-cta-info-item">
-              <span class="final-cta-info-icon" aria-hidden="true">&#128205;</span>
-              <div class="final-cta-info-label">Service Area</div>
-              <div class="final-cta-info-value">All Ottawa &amp; Surrounding<br>23+ Neighbourhoods Including Findlay Creek</div>
-            </div>
-            <div class="final-cta-info-item">
-              <span class="final-cta-info-icon" aria-hidden="true">&#128222;</span>
-              <div class="final-cta-info-label">Contact</div>
-              <div class="final-cta-info-value"><a href="tel:3437778893">343-777-8893</a><br><a href="mailto:info@gdsottawa.ca">info@gdsottawa.ca</a></div>
-            </div>
-            <div class="final-cta-info-item">
-              <span class="final-cta-info-icon" aria-hidden="true">&#128181;</span>
-              <div class="final-cta-info-label">Pricing</div>
-              <div class="final-cta-info-value">Spring Repair from $250<br>Door Install from $1,800</div>
-            </div>
-          </div>
-
-          <div class="final-cta-emergency">
-            <div class="final-cta-emergency-icon" aria-hidden="true">&#128680;</div>
-            <div class="final-cta-emergency-text">EMERGENCY? WE'RE HERE TO HELP!</div>
-            <div class="final-cta-emergency-subtext">Door stuck open? Spring broke? <a href="tel:3437778893">Call now</a> for same-day help!</div>
-          </div>
-
         </div>
       </div>
     </section>
